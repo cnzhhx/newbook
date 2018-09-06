@@ -1,0 +1,89 @@
+<!DUCTYPE html>
+<html>
+<head>
+    <title>贪吃蛇</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            width: 800px;
+            height: 400px;
+            margin: 50px auto;
+        }
+        .btn {
+            width: 100px;
+            height: 40px;
+        }
+        .map {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="btn" id="begin">开始游戏</button>
+        <div class="map" id="map"></div>
+    </div>
+<script>
+    var begin = document.getElementById('begin');
+    var main = document.getElementById('main');
+    var map = document.getElementById('map');
+    //构造蛇类
+    function Snake(){
+        //大小 方向 
+        this.width = 20;
+        this.height = 20;
+        this.direction = "right";
+
+        //蛇的状态   有几节 在哪
+        this.state = [
+            {x:2, y:0},   // 蛇头
+            {x:1, y:0},
+            {x:0, y:0}    // 蛇尾
+        ];
+
+        //显示蛇的状态
+        this.display = function() {
+            for(var i=0; i<this.state.length; i++){
+                var appear = document.createElement('div');
+                appear.style.width = this.width + "px";
+                appear.style.height = this.height + "px";
+                appear.style.backgroundColor = '#0080FF';
+                appear.style.position = "absolute";
+                appear.style.left = this.state[i].x*this.width + 'px';
+                appear.style.top = this.state[i].y*this.height + 'px';
+                map.appendChild(appear);
+            }
+        };
+
+        //让蛇动起来  使最后一个到最前面
+        this.play = function() {
+            if(this.direction == 'right'){
+                this.state.pop();
+                this.state.unshift("{x:this.state[0].x+1, y:this.state[0].y}");
+            }else if(this.direction == 'down'){
+                this.state.pop();
+                this.state.unshift("{x:this.state[0].x, y:this.state[0].y+1}");
+            }else if(this.direction == 'left'){
+                this.state.pop();
+                this.state.unshift("{x:this.state[0].x-1, y:this.state[0].y}");               
+            }else if(this.direction == 'up'){
+                this.state.pop();
+                this.state.unshift("{x:this.state[0].x, y:this.state[0].y-1}");                  
+            }
+        }
+    };
+
+
+ 
+    var snake = new Snake();
+    snake.display();   // 初始化显示
+</script>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DUCTYPE html>
+<html>
+<head>
+    <title>继承</title>
+</head>
+<body>
+<script>
+    function Computer(age, cpu){
+        this.age = age;
+        this.cpu = cpu;
+    };
+
+    Computer.prototype.mouse = function() {
+        console.log("hahaha");
+    };
+
+    var computer1 = new Computer("15", "2500k")
+    console.log(computer1);
+    computer1.mouse();
+
+
+
+    function c() {
+    };
+
+    c.prototype = Computer.prototype;
+
+    function B(age, cpu) {
+        Computer.call(this, age, cpu);
+    }
+
+    B.prototype = new c();
+
+    var b = new B(10, 8400);
+    console.log(b.age);
+    b.mouse();
+    console.log(b.cpu);
+</script>
+</body>
+</html>
