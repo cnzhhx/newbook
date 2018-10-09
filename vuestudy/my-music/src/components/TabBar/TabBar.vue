@@ -3,13 +3,20 @@
       <div class="tab-div">
         <a class="tab-wy"></a>
         <ul class="tab-ul">
-          <li><span><a>发现音乐</a></span></li>
-          <li><span><a>我的音乐</a></span></li>
-          <li><span><a class="friend">朋友</a></span></li>
-          <li><span><a class="shop">商城</a></span></li>
-          <li><span><a>音乐人</a></span></li>
+          <li>
+            <span>
+              <a class="select taCor" @click="switchTo('/found/recommend');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">
+                发现音乐
+                <sub class="cor">&nbsp;</sub>
+              </a>
+            </span>
+          </li>
+          <li><span><a @click="switchTo('/my');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">我的音乐</a></span></li>
+          <li><span><a @click="switchTo('/friend');select($event)" class="friend" @mouseenter="enter($event)" @mouseleave="leave($event)">朋友</a></span></li>
+          <li><span><a @mouseenter="enter($event)" @mouseleave="leave($event)" class="shop">商城</a></span></li>
+          <li><span><a @mouseenter="enter($event)" @mouseleave="leave($event)">音乐人</a></span></li>
           <li class="downli">
-            <span><a>下载客户端</a></span>
+            <span><a @click="switchTo('/down');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">下载客户端</a></span>
             <sub class="downsub">&nbsp</sub>
           </li>
         </ul>
@@ -23,7 +30,41 @@
 <script>
     export default {
         name: "TabBar",
-
+        methods: {
+          switchTo(path) {
+            this.$router.replace(path);
+          },
+          select(e) {
+            let yanShi = document.getElementsByClassName('select');
+            if (yanShi.length !== 1) {
+              let yanShi1 = document.getElementsByClassName('select')[0];
+              let yanShi2 = document.getElementsByClassName('select')[1];
+              yanShi1.className = "";
+              yanShi2.className = "";
+              let cor = document.getElementsByClassName('cor')[0];
+              if(this.$route.path !== "/found/recommend"){
+                  e.target.className = "select";
+                  cor.style.display = "none";
+                }else{
+                  e.target.className = "select taCor";
+                  cor.style.display = "";
+                }
+            }
+          },
+          enter(e) {
+            if (e.target.className !== "select") {
+              if (e.target.className !== "select taCor") {
+                e.target.className = "select";
+              }
+            }
+          },
+          leave(e) {
+            let yanShi = document.getElementsByClassName('select');
+            if (yanShi.length !== 1) {
+              e.target.className = "";
+            }
+          }
+        }
     }
 </script>
 
@@ -58,16 +99,33 @@
   }
   .tab-ul li a{
     display: inline-block;
-    width: 97px;
+    width: 90px;
     height: 70px;
     text-align: center;
     line-height: 70px;
   }
+  .taCor{
+    position: relative;
+  }
+  .cor{
+    background: url('../../assets/topbar.png?a9f7156e2a8e78e6bf2104440246d04b') no-repeat -226px 0;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 64px;
+    width: 12px;
+    height: 7px;
+    margin-left: -6px;
+    overflow: hidden;
+  }
+  .select{
+    background-color: #000;
+  }
   .friend{
-    width: 66px !important;
+    width: 90px !important;
   }
   .shop{
-    width: 66px !important;
+    width: 90px !important;
   }
   .downli{
     position: relative;
