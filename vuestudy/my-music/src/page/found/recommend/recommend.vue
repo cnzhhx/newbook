@@ -15,7 +15,33 @@
         <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
       </div>
     </div>
-</div>
+    <div class="recommendBody">
+      <div class="recommendBodyLeft">
+        <div class="recommendBodyRightTop">
+          <div class="r-brt-1">
+            <a class="r-brt-1-a">热门推荐</a>
+            <div>
+              <a>华语</a>
+              <span>|</span>
+              <a>流行</a>
+              <span>|</span>
+              <a>摇滚</a>
+              <span>|</span>
+              <a>民谣</a>
+              <span>|</span>
+              <a>电子</a>
+            </div>
+          </div>
+          <div class="r-brt-2">
+
+          </div>
+        </div>
+      </div>
+      <div class="recommendBodyRight">
+
+      </div>
+    </div>
+  </div>
 </template>
 
 
@@ -34,11 +60,11 @@
     data () {
       return {
         images: [
-          {img: "/static/img/3.59c579b.jpg"},
-          {img: "/static/img/3.59c579b.jpg"},
-          {img: "/static/img/3.59c579b.jpg"},
-          {img: "/static/img/3.59c579b.jpg"},
-          {img: "/static/img/3.59c579b.jpg"}
+          {img: require("../../../assets/网易轮播图images/1.jpg")},
+          {img: require("../../../assets/网易轮播图images/2.jpg")},
+          {img: require("../../../assets/网易轮播图images/3.jpg")},
+          {img: require("../../../assets/网易轮播图images/4.jpg")},
+          {img: require("../../../assets/网易轮播图images/5.jpg")},
         ]
       }
     }
@@ -49,8 +75,8 @@
 <style>
   *{
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
   .recommend{
     margin-top: 1px;
@@ -113,5 +139,43 @@
     text-align: center;
     color: #8d8d8d;
     font-size: 12px;
+  }
+
+  .recommendBody{
+    width: 982px;
+    min-height: 700px;
+    margin: 0 auto;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+  }
+  .recommendBodyLeft{
+    width: 729px;
+    height: 500px;
+    float: left;
+  }
+  .recommendBodyRight{
+    width: 250px;
+    height: 500px;
+    float: right;
+  }
+  .recommendBodyRightTop{
+    padding: 20px 20px 40px;
+    width: 689px;
+    height: 523px;
+  }
+  .r-brt-1{
+    height: 33px;
+    padding: 0 10px 0 34px;
+    border-bottom: 2px solid #C10D0C;
+    background: url("../../../assets/index.png") no-repeat -225px -156px;
+  }
+  .r-brt-1-a{
+    color: #333;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    text-decoration: none;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
   }
 </style>
