@@ -20,7 +20,7 @@
         <div class="recommendBodyRightTop">
           <div class="r-brt-1">
             <a class="r-brt-1-a">热门推荐</a>
-            <div>
+            <div class="r-brt-1-d">
               <a>华语</a>
               <span>|</span>
               <a>流行</a>
@@ -31,10 +31,25 @@
               <span>|</span>
               <a>电子</a>
             </div>
+            <span class="r-brt-1-s">
+              <a>更多</a>
+              <i>&nbsp</i>
+            </span>
           </div>
-          <div class="r-brt-2">
-
-          </div>
+          <ul class="r-brt-2">
+            <li>
+              <div class="r-brt-2-d">
+                <img src="../../../assets/热门推荐images/109951163575819047.jpg"/>
+                <a class="r-brt-2-d-a" title="在这些孤单角色里，你是否找到了自己？"></a>
+                <div>
+                  <a></a>
+                  <span class="r-brt-2-d-d-s"></span>
+                  <span class="r-brt-2-d-d-s2">100万</span>
+                </div>
+              </div>
+              <p></p>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="recommendBodyRight">
@@ -115,7 +130,7 @@
     height: 336px;
     background: url("../../../assets/download.png") no-repeat 0 0;
     vertical-align: top;
-    margin-left: -4px;
+    margin-left: -5px;
     z-index: 1;
   }
   .aaa{
@@ -177,5 +192,114 @@
     line-height: 28px;
     text-decoration: none;
     font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+  }
+  .r-brt-1-d{
+    float: left;
+    margin: 7px 0 0 20px;
+    line-height: 16px;
+  }
+  .r-brt-1-d a{
+    color: #666;
+    font-size: 12px;
+    float: left;
+  }
+  .r-brt-1-d a:hover{
+    color: #666;
+    text-decoration: underline;
+    font-size: 12px;
+    float: left;
+  }
+
+  .r-brt-1-d span{
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 12px;
+    float: left;
+  }
+  .r-brt-1-s{
+    float: right;
+    margin-top: 9px;
+    color: #333;
+    font-size: 12px;
+  }
+  .r-brt-1-s a{
+    color: #666;
+    font-size: 12px;
+  }
+  .r-brt-1-s a:hover{
+    color: #666;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  .r-brt-1-s i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+    background: url("../../../assets/index.png") no-repeat 0 -240px;
+  }
+  .r-brt-2{
+    margin: 20px 0 0 -42px;
+  }
+  .r-brt-2 li{
+    width: 140px;
+    height: 204px;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 0 30px 50px;
+    line-height: 1.4;
+  }
+  .r-brt-2-d{
+    width: 140px;
+    height: 140px;
+    position: relative;
+    color: #333;
+  }
+  .r-brt-2-d-a{
+    color: #333;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../../assets/coverall.png") no-repeat 0 0;
+  }
+  .r-brt-2-d div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+    background: url("../../../assets/coverall.png") no-repeat 0 -537px;
+    color: #ccc;
+  }
+  .r-brt-2-d div a{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 16px;
+    height: 17px;
+    background: url("../../../assets/iconall.png") no-repeat 0 0;
+
+    display: inline-block;
+    float: right;
+    color: #333;
+  }
+  .r-brt-2-d-d-s{
+    float: left;
+    width: 14px;
+    height: 11px;
+    margin: 9px 5px 9px 10px;
+    display: inline-block;
+    background: url("../../../assets/iconall.png") no-repeat 0 -24px;
+  }
+  .r-brt-2-d-d-s2{
+    float: left;
+    margin: 7px 0 0 0;
+    color: #ccc;
+    font-size: 12px;
   }
 </style>
