@@ -1,18 +1,20 @@
 <template>
   <div class="recommend">
-    <div class="recommend1">
-      <div class="recommend2">
-        <div class="block">
-          <el-carousel trigger="click" height="336px" arrow="always">
-            <el-carousel-item v-for="(img, index) in images" :key="index">
-              <img :src="img.img"/>
-            </el-carousel-item>
-          </el-carousel>
+    <div id="bianse">
+      <div class="recommend1">
+        <div class="recommend2">
+          <div class="block">
+            <el-carousel trigger="click" height="336px" arrow="always"  @change="change($event)">
+              <el-carousel-item v-for="(img, index) in images" :key="index">
+                <img :src="img.img"/>
+              </el-carousel-item>
+            </el-carousel>
+          </div>
         </div>
-      </div>
-      <div class="pangB">
-        <a @mouseenter="enterdown($event)" @mouseleave="leavedown($event)" class="aaaa"></a>
-        <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+        <div class="pangB">
+          <a @mouseenter="enterdown($event)" @mouseleave="leavedown($event)" class="aaaa"></a>
+          <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+        </div>
       </div>
     </div>
     <div class="recommendBody">
@@ -37,9 +39,9 @@
             </span>
           </div>
           <ul class="r-brt-2">
-            <li>
+            <li v-for="(hotRecommend, index) in hotRecommends" :key="index">
               <div class="r-brt-2-d">
-                <img src="../../../assets/热门推荐images/109951163575819047.jpg"/>
+                <img :src="hotRecommend.img"/>
                 <a class="r-brt-2-d-a" title="在这些孤单角色里，你是否找到了自己？"></a>
                 <div>
                   <a></a>
@@ -47,7 +49,9 @@
                   <span class="r-brt-2-d-d-s2">100万</span>
                 </div>
               </div>
-              <p></p>
+              <p class="r-brt-2-p">
+                <a>{{hotRecommend.title}}</a>
+              </p>
             </li>
           </ul>
         </div>
@@ -70,21 +74,54 @@
       },
       leavedown(e) {
         e.target.className = "aaaa";
+      },
+      change(e){
+        let bianse = document.getElementById('bianse');
+        bianse.style.backgroundColor = this.images[e].color;
       }
     },
     data () {
       return {
         images: [
-          {img: require("../../../assets/网易轮播图images/1.jpg")},
-          {img: require("../../../assets/网易轮播图images/2.jpg")},
-          {img: require("../../../assets/网易轮播图images/3.jpg")},
-          {img: require("../../../assets/网易轮播图images/4.jpg")},
-          {img: require("../../../assets/网易轮播图images/5.jpg")},
+          {img: require("../../../assets/网易轮播图images/1.jpg"), color:"rgb(222,221,219)"},
+          {img: require("../../../assets/网易轮播图images/2.jpg"), color:"rgb(227,188,94)"},
+          {img: require("../../../assets/网易轮播图images/3.jpg"), color:"rgb(236,249,261)"},
+          {img: require("../../../assets/网易轮播图images/4.jpg"), color:"rgb(44,52,106)"},
+          {img: require("../../../assets/网易轮播图images/5.jpg"), color:"rgb(244,217,228)"},
+        ],
+        hotRecommends: [
+          {
+            img: require("../../../assets/热门推荐images/109951163471486090.jpg"), title: "毛式土嗨（今天政委不在家.jpg）"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163520422030.jpg"), title: "「星空电子」充满自由，无限希望"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163560553058.jpg"), title: "写城市的歌"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163575819047.jpg"), title: "在这些孤单角色里，你是否找到了自己？"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163582829847.jpg"), title: " 苏谭谭-流浪合唱完整版"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163596401683.jpg"), title: "《太空乐鉴赏与简史》"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163598029062.jpg"), title: " 《以物易食》第2集：她写的书和一盘辣酱鱿鱼"
+          },
+          {
+            img: require("../../../assets/热门推荐images/109951163598909773.jpg"), title: " 【马来西亚】原始雨林秘境中，邂逅历史遗迹洪荒盛景"
+          }
         ]
       }
+    },
+    mounted: function() {
+
     }
   }
-</script>
+ </script>
 
 
 <style>
@@ -95,6 +132,9 @@
   }
   .recommend{
     margin-top: 1px;
+    width: 100%;
+  }
+  #bianse{
     width: 100%;
     height: 336px;
   }
@@ -248,7 +288,7 @@
     float: left;
     display: inline-block;
     overflow: hidden;
-    padding: 0 0 30px 50px;
+    padding: 0 0 30px 42px;
     line-height: 1.4;
   }
   .r-brt-2-d{
@@ -302,4 +342,25 @@
     color: #ccc;
     font-size: 12px;
   }
+  .r-brt-2-p{
+    margin: 8px 0 3px;
+    font-size: 14px;
+    color: #333;
+  }
+  .r-brt-2-p a{
+    display: inline-block;
+    max-width: 100%;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+  }
+  .r-brt-2-p a:hover{
+    display: inline-block;
+    max-width: 100%;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: underline;
+  }
 </style>
+
