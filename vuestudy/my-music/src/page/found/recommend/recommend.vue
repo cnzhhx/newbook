@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="recommendBody">
-      <div class="recommendBodyLeft">
+      <div class="recommendBodyRight">
         <div class="recommendBodyRightTop">
           <div class="r-brt-1">
             <a class="r-brt-1-a">热门推荐</a>
@@ -56,8 +56,37 @@
           </ul>
         </div>
       </div>
-      <div class="recommendBodyRight">
-
+      <div class="recommendBodyLeft">
+        <div class="recommendBodyLeftTop">
+          <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+          <a>用户登录</a>
+        </div>
+        <div class="recommendBodyLeftCenter">
+          <h3>
+            <span>入驻歌手</span>
+            <a>查看全部 ></a>
+          </h3>
+          <ul class="r-blc-ul">
+            <li v-for="(singer, index) in singers" :key="index">
+              <a>
+                <div class="r-blc-ul-d1">
+                  <img :src="singer.img"/>
+                </div>
+                <div class="r-blc-ul-d2">
+                  <h4>
+                    <span>{{singer.name}}</span>
+                  </h4>
+                  <p>{{singer.introduce}}</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="r-blc-d">
+            <a>
+              <i>申请成为网易音乐人</i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -114,14 +143,19 @@
           {
             img: require("../../../assets/热门推荐images/109951163598909773.jpg"), title: " 【马来西亚】原始雨林秘境中，邂逅历史遗迹洪荒盛景"
           }
+        ],
+        singers: [
+          {name:"Fine乐团", introduce: "独立音乐人", img: require("../../../assets/入驻歌手images/3302932937408956.jpg")},
+          {name:"张惠妹aMEI", introduce: "台湾歌手张惠妹", img: require("../../../assets/入驻歌手images/5931865232210340.jpg")},
+          {name:"萬曉利", introduce: "民谣歌手、中国现代民谣的代表人物之一", img: require("../../../assets/入驻歌手images/19027048718765608.jpg")},
+          {name:"音乐人赵雷", introduce: "民谣歌手", img: require("../../../assets/入驻歌手images/7943971513291094.jpg")},
+          {name:"王三溥", introduce: "音乐人", img: require("../../../assets/入驻歌手images/109951162895674268.jpg")},
         ]
       }
-    },
-    mounted: function() {
-
     }
   }
- </script>
+  //  recommendBody中left跟right颠倒了   请注意
+</script>
 
 
 <style>
@@ -203,12 +237,12 @@
     border-left: 1px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
   }
-  .recommendBodyLeft{
+  .recommendBodyRight{
     width: 729px;
     height: 500px;
     float: left;
   }
-  .recommendBodyRight{
+  .recommendBodyLeft{
     width: 250px;
     height: 500px;
     float: right;
@@ -361,6 +395,153 @@
     font-size: 14px;
     text-align: left;
     text-decoration: underline;
+  }
+  .recommendBodyLeftTop{
+    height: 126px;
+    padding-top: 0;
+    background: url("../../../assets/index.png") no-repeat 0 0;
+  }
+  .recommendBodyLeftTop p{
+    width: 205px;
+    margin: 0 auto;
+    padding: 16px 0;
+    line-height: 22px;
+    color: #666;
+    font-size: 12px;
+  }
+  .recommendBodyLeftTop a{
+    display: block;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 0 #8a060b;
+    margin: 0 75px;
+    background: url("../../../assets/index.png") no-repeat 0 -195px;
+    font-size: 12px;
+  }
+  .recommendBodyLeftTop a:hover{
+    display: block;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 0 #8a060b;
+    margin: 0 75px;
+    background: url("../../../assets/index.png") no-repeat -110px -195px;
+    font-size: 12px;
+  }
+  .recommendBodyLeftCenter{
+    margin-top: 15px;
+  }
+  .recommendBodyLeftCenter h3{
+    position: relative;
+    height: 23px;
+    margin: 0 20px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+  }
+  .recommendBodyLeftCenter h3 span{
+    float: left;
+    color: #333;
+    font-size: 12px;
+  }
+  .recommendBodyLeftCenter h3 a{
+    float: right;
+    font-weight: normal;
+    color: #666;
+  }
+  .r-blc-ul{
+    margin: 6px 0 14px 20px;
+  }
+  .r-blc-ul li{
+    margin-top: 14px;
+    float: left;
+    width: 210px;
+    height: 62px;
+    background: #fafafa;
+  }
+  .r-blc-ul li a{
+    float: left;
+    width: 210px;
+    height: 62px;
+    background: #fafafa;
+    font-size: 12px;
+  }
+  .r-blc-ul-d1{
+    float: left;
+    width: 62px;
+    height: 62px;
+  }
+  .r-blc-ul-d2{
+    float: left;
+    width: 133px;
+    height: 60px;
+    padding-left: 14px;
+    border: 1px solid #e9e9e9;
+    border-left: none;
+  }
+  .r-blc-ul-d1 img{
+    float: left;
+    width: 62px;
+    height: 62px;
+  }
+  .r-blc-ul-d2 h4{
+    margin-top: 8px;
+  }
+  .r-blc-ul-d2 h4 span{
+    width: 90%;
+    font-size: 14px;
+    margin-left: -20px;
+    color: #333;
+    display: inline-block;
+  }
+  .r-blc-ul-d2 p{
+    width: 90%;
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+  }
+  .r-blc-d{
+    width: 250px;
+    height: 31px;
+    float: left;
+    margin-top: 10px;
+  }
+  .r-blc-d a{
+    margin-left: 20px;
+    border-radius: 4px;
+    color: #333;
+    padding: 0 5px 0 0;
+    background: url("../../../assets/button2.png") no-repeat right -100px;
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+  }
+  .r-blc-d a i{
+    width: 170px;
+    color: #333;
+    font-weight: bold;
+    background: url("../../../assets/button2.png") no-repeat 0 -59px;
+    padding: 0 15px 0 20px;
+    pointer-events: none;
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+    font-style: normal;
+    font-size: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-word;
   }
 </style>
 
