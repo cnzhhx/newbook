@@ -5,7 +5,7 @@
         <ul>
           <li><a><em @click="switchTo('/found/recommend');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em em1">推荐</em></a></li>
           <li><a><em @click="switchTo('/found/rankingList');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em1">排行榜</em></a></li>
-          <li><a><em @click="switchTo('/found/songSheet');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em1">歌单</em></a></li>
+          <li><a><em @click="switchTo('/found/songSheet');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em1" id="songSheet">歌单</em></a></li>
           <li><a><em @click="switchTo('/found/anchor');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em1">主播电台</em></a></li>
           <li><a><em @click="switchTo('/found/singer');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em1">歌手</em></a></li>
           <li><a><em @click="switchTo('/found/dvd');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)" class="em1">新碟上市</em></a></li>

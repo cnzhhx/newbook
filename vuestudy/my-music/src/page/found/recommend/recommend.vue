@@ -21,25 +21,25 @@
       <div class="recommendBodyRight">
         <div class="recommendBodyRightTop">
           <div class="r-brt-1">
-            <a class="r-brt-1-a">热门推荐</a>
+            <a class="r-brt-1-a"  @click="switchTo('/found/songSheet');select()">热门推荐</a>
             <div class="r-brt-1-d">
-              <a>华语</a>
+              <a @click="switchTo('/found/songSheet');select()">华语</a>
               <span>|</span>
-              <a>流行</a>
+              <a @click="switchTo('/found/songSheet');select()">流行</a>
               <span>|</span>
-              <a>摇滚</a>
+              <a @click="switchTo('/found/songSheet');select()">摇滚</a>
               <span>|</span>
-              <a>民谣</a>
+              <a @click="switchTo('/found/songSheet');select()">民谣</a>
               <span>|</span>
-              <a>电子</a>
+              <a @click="switchTo('/found/songSheet');select()">电子</a>
             </div>
             <span class="r-brt-1-s">
-              <a>更多</a>
+              <a @click="switchTo('/found/songSheet');select()">更多</a>
               <i>&nbsp</i>
             </span>
           </div>
           <ul class="r-brt-2">
-            <li v-for="(hotRecommend, index) in hotRecommends" :key="index">
+            <li v-for="(hotRecommend, index) in hotRecommends" :key="index" @click="switchTo('/found/songSheet');select()">
               <div class="r-brt-2-d">
                 <img :src="hotRecommend.img"/>
                 <a class="r-brt-2-d-a" title="在这些孤单角色里，你是否找到了自己？"></a>
@@ -107,6 +107,16 @@
       change(e){
         let bianse = document.getElementById('bianse');
         bianse.style.backgroundColor = this.images[e].color;
+      },
+      switchTo(path) {
+        this.$router.replace(path);
+      },
+      select() {
+        let yanShi = document.getElementsByClassName('em em1')[0];
+        let goal = document.getElementById("songSheet");
+        yanShi.className = "em1";
+        goal.className = "em em1";
+        goal.className = "em em1";
       }
     },
     data () {
@@ -158,7 +168,7 @@
 </script>
 
 
-<style>
+<style scoped>
   *{
     list-style: none;
     padding: 0;
