@@ -147,6 +147,7 @@
     height: 32px;
     position: relative;
   }
+
   .tab-in input{
     width: 121px;
     height: 16px;
