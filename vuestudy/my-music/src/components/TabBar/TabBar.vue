@@ -16,7 +16,7 @@
           <li><span><a @mouseenter="enter($event)" @mouseleave="leave($event)" class="shop">商城</a></span></li>
           <li><span><a @mouseenter="enter($event)" @mouseleave="leave($event)">音乐人</a></span></li>
           <li class="downli">
-            <span><a @click="switchTo('/down');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">下载客户端</a></span>
+            <span><a id="down" @click="switchTo('/down');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">下载客户端</a></span>
             <sub class="downsub">&nbsp</sub>
           </li>
         </ul>

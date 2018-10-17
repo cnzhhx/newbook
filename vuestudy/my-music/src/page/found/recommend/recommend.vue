@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="pangB">
-          <a @mouseenter="enterdown($event)" @mouseleave="leavedown($event)" class="aaaa"></a>
+          <a @mouseenter="enterdown($event)" @mouseleave="leavedown($event)" @click="switchTo('/down');selectd()" class="aaaa"></a>
           <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
         </div>
       </div>
@@ -21,25 +21,25 @@
       <div class="recommendBodyRight">
         <div class="recommendBodyRightTop">
           <div class="r-brt-1">
-            <a class="r-brt-1-a"  @click="switchTo('/found/songSheet');select()">热门推荐</a>
+            <a class="r-brt-1-a"  @click="switchTo('/found/songSheet');select1()">热门推荐</a>
             <div class="r-brt-1-d">
-              <a @click="switchTo('/found/songSheet');select()">华语</a>
+              <a @click="switchTo('/found/songSheet');select1()">华语</a>
               <span>|</span>
-              <a @click="switchTo('/found/songSheet');select()">流行</a>
+              <a @click="switchTo('/found/songSheet');select1()">流行</a>
               <span>|</span>
-              <a @click="switchTo('/found/songSheet');select()">摇滚</a>
+              <a @click="switchTo('/found/songSheet');select1()">摇滚</a>
               <span>|</span>
-              <a @click="switchTo('/found/songSheet');select()">民谣</a>
+              <a @click="switchTo('/found/songSheet');select1()">民谣</a>
               <span>|</span>
-              <a @click="switchTo('/found/songSheet');select()">电子</a>
+              <a @click="switchTo('/found/songSheet');select1()">电子</a>
             </div>
             <span class="r-brt-1-s">
-              <a @click="switchTo('/found/songSheet');select()">更多</a>
+              <a @click="switchTo('/found/songSheet');select1()">更多</a>
               <i>&nbsp</i>
             </span>
           </div>
           <ul class="r-brt-2">
-            <li v-for="(hotRecommend, index) in hotRecommends" :key="index" @click="switchTo('/found/songSheet');select()">
+            <li v-for="(hotRecommend, index) in hotRecommends" :key="index" @click="switchTo('/found/songSheet');select1()">
               <div class="r-brt-2-d">
                 <img :src="hotRecommend.img"/>
                 <a class="r-brt-2-d-a" title="在这些孤单角色里，你是否找到了自己？"></a>
@@ -111,12 +111,20 @@
       switchTo(path) {
         this.$router.replace(path);
       },
-      select() {
+      select1() {
         let yanShi = document.getElementsByClassName('em em1')[0];
         let goal = document.getElementById("songSheet");
         yanShi.className = "em1";
         goal.className = "em em1";
         goal.className = "em em1";
+      },
+      selectd() {
+        let yanShi = document.getElementsByClassName('select')[0];
+        let down = document.getElementById("down");
+        yanShi.className = "";
+        let cor = document.getElementsByClassName('cor')[0];
+        down.className = "select";
+        cor.style.display = "none";
       }
     },
     data () {
