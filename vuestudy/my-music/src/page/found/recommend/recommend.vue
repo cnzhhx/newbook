@@ -97,6 +97,10 @@
 
   export default {
     name: "recommend",
+    mounted(){
+      this.$store.dispatch('reqRecommends')
+    },
+
     methods: {
       enterdown(e) {
         e.target.className = "aaa";
