@@ -89,14 +89,20 @@
         </div>
       </div>
     </div>
+    <bottom></bottom>
   </div>
 </template>
 
 
 <script>
+  import Bottom from '../../../components/Bottom/Bottom'
+
 
   export default {
     name: "recommend",
+    components: {
+      Bottom
+    },
     mounted(){
       this.$store.dispatch('reqRecommends');
       this.$store.dispatch('reqImages');
