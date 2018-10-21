@@ -98,7 +98,9 @@
   export default {
     name: "recommend",
     mounted(){
-      this.$store.dispatch('reqRecommends')
+      this.$store.dispatch('reqRecommends');
+      this.$store.dispatch('reqImages');
+      this.$store.dispatch('reqSinger');
     },
 
     methods: {
@@ -110,7 +112,7 @@
       },
       change(e){
         let bianse = document.getElementById('bianse');
-        bianse.style.backgroundColor = this.images[e].color;
+        bianse.style.backgroundColor = this.$store.state.images[e].color;
       },
       switchTo(path) {
         this.$router.replace(path);
