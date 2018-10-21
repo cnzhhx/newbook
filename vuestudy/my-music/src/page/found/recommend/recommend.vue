@@ -103,6 +103,7 @@
       this.$store.dispatch('reqSinger');
     },
 
+
     methods: {
       enterdown(e) {
         e.target.className = "aaa";

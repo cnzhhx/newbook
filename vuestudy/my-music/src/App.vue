@@ -12,6 +12,9 @@ export default {
   name: 'App',
   components:{
     TabBar
+  },
+  beforeCreate(){
+    this.$router.replace("/found/recommend");
   }
 }
 </script>

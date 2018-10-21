@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
 
 //请求首页热门推荐
 router.get('/api/hotRecommends', (req, res)=>{
-
     const data = require('../data/hotRecommends');
     res.json({success_code: 200, message: data})
 });
@@ -16,16 +15,21 @@ router.get('/api/hotRecommends', (req, res)=>{
 
 //请求首页热门推荐
 router.get('/api/images', (req, res)=>{
-
     const data = require('../data/images');
     res.json({success_code: 200, message: data})
 });
 
 //请求推荐歌手
 router.get('/api/singer', (req, res)=>{
-
     const data = require('../data/singer');
     res.json({success_code: 200, message: data})
 });
+
+//请求歌单首页数据
+router.get('/api/GeRecommends', (req, res)=>{
+    const data = require('../data/GeRecommends');
+    res.json({success_code: 200, message: data})
+});
+
 
 module.exports = router;

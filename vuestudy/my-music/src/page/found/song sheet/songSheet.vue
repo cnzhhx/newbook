@@ -46,9 +46,12 @@
     name: "songSheet",
     data () {
       return {
-
       }
     },
+    mounted() {
+      this.$store.dispatch("reqGeRecommends");
+    },
+
     methods: {
       bianSe(e) {
         let ssbctr = document.getElementsByClassName('s-sbc-t-r')[0];

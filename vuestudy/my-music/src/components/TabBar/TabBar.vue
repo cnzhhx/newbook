@@ -13,8 +13,8 @@
           </li>
           <li><span><a @click="switchTo('/my');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">我的音乐</a></span></li>
           <li><span><a @click="switchTo('/friend');select($event)" class="friend" @mouseenter="enter($event)" @mouseleave="leave($event)">朋友</a></span></li>
-          <li><span><a @mouseenter="enter($event)" @mouseleave="leave($event)" class="shop">商城</a></span></li>
-          <li><span><a @mouseenter="enter($event)" @mouseleave="leave($event)">音乐人</a></span></li>
+          <li><span><a href="https://music.163.com/store/product" target="_blank" @mouseenter="enter($event)" @mouseleave="leave($event)" class="shop">商城</a></span></li>
+          <li><span><a href="https://music.163.com/nmusician/web/recruit" target="_blank" @mouseenter="enter($event)" @mouseleave="leave($event)" class="yinRen">音乐人</a></span></li>
           <li class="downli">
             <span><a id="down" @click="switchTo('/down');select($event)" @mouseenter="enter($event)" @mouseleave="leave($event)">下载客户端</a></span>
             <sub class="downsub">&nbsp</sub>
@@ -126,6 +126,12 @@
   }
   .shop{
     width: 90px !important;
+    text-decoration: none;
+    color: #ccc;
+  }
+  .yinRen{
+    text-decoration: none;
+    color: #ccc;
   }
   .downli{
     position: relative;
