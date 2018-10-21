@@ -36,14 +36,19 @@
         <div></div>
       </div>
     </div>
+    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
+  import Bottom from '../../../components/Bottom/Bottom'
 
 
   export default {
     name: "songSheet",
+    components:{
+      Bottom
+    },
     data () {
       return {
       }
@@ -79,18 +84,20 @@
   }
   .songSheet{
     margin-top: 1px;
+    height: 1300px;
   }
   .songSheetBig{
     width: 980px;
-    min-height: 700px;
     margin: 0 auto;
     background-color: #fff;
     border-left: 1px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
+    height: 1300px;
   }
   .songSheetBigCenter{
     padding: 40px;
     position: relative;
+    height: 1300px;
   }
   .s-sbc-t{
     height: 40px;

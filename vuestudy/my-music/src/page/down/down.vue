@@ -62,14 +62,19 @@
         </div>
       </div>
     </div>
+    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
+  import Bottom from '../../components/Bottom/Bottom'
+
 
   export default {
     name: 'down',
-
+    components: {
+      Bottom
+    }
   }
 </script>
 
