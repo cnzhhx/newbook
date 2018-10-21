@@ -21,7 +21,7 @@
           </li>
         </ul>
         <div class="tab-log"><a>登录</a></div>
-        <a class="tab-video">视频投稿</a>
+        <a class="tab-video" @click="videoEvent">视频投稿</a>
         <div class="tab-in"><input type="text" placeholder="音乐/视频/电台/用户"></div>
       </div>
     </div>
@@ -31,6 +31,9 @@
     export default {
         name: "TabBar",
         methods: {
+          videoEvent() {
+            alert("抱歉，暂不提供视频投稿服务！");
+          },
           switchTo(path) {
             this.$router.replace(path);
           },

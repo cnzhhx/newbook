@@ -5,42 +5,42 @@
       <div class="dt-c">
         <div class="dt-c-l"></div>
         <div class="dt-c-r">
-          <a class="dt-c-r-1">
+          <a class="dt-c-r-1" @click="downEvent">
             <i></i>
             <em>安卓版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-2">
+          <a class="dt-c-r-2" @click="downEvent">
             <i></i>
             <em>iPhone版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-3">
+          <a class="dt-c-r-3" @click="downEvent">
             <i></i>
             <em>iPad版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-4">
+          <a class="dt-c-r-4" @click="downEvent">
             <i></i>
             <em>Mac版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-5">
+          <a class="dt-c-r-5" @click="downEvent">
             <i></i>
             <em>PC版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-6">
+          <a class="dt-c-r-6" @click="downEvent">
             <i></i>
             <em>UWP版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-7">
+          <a class="dt-c-r-7" @click="downEvent">
             <i></i>
             <em>WP版</em>
             <div>V5.6.0</div>
           </a>
-          <a class="dt-c-r-8">
+          <a class="dt-c-r-8" @click="downEvent">
             <i></i>
             <em>Linux版</em>
             <div>V5.6.0</div>
@@ -74,6 +74,11 @@
     name: 'down',
     components: {
       Bottom
+    },
+    methods: {
+      downEvent() {
+        alert("抱歉，此页面无法下载该软件！");
+      }
     }
   }
 </script>
