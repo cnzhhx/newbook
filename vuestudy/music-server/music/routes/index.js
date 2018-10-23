@@ -31,5 +31,11 @@ router.get('/api/GeRecommends', (req, res)=>{
     res.json({success_code: 200, message: data})
 });
 
+//请求首页专辑
+router.get('/api/albums', (req, res)=>{
+    const data = require('../data/albums');
+    res.json({success_code: 200, message: data})
+});
+
 
 module.exports = router;

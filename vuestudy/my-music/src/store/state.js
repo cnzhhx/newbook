@@ -9,5 +9,8 @@ export default {
   singers: [],
 
   //推荐首页轮播图
-  images: []
+  images: [],
+
+  //首页专辑
+  albums: []
 }

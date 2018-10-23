@@ -55,6 +55,36 @@
             </li>
           </ul>
         </div>
+        <div class="recommendBodyRightCenter">
+          <div class="r-brc-d1">
+            <a class="r-brc-d1-a">新碟上架</a>
+            <span class="r-brc-d1-s">
+              <a>更多</a>
+              <i>&nbsp:</i>
+            </span>
+          </div>
+          <div class="r-brc-d2">
+            <div class="r-brc-d2-d">
+              <div class="r-brc-d2-dd">
+                <ul>
+                  <li v-for="(album, index) in $store.state.albums" :key="index">
+                    <div class="r-brc-d2-dd-d">
+                      <img :src="album.img"/>
+                      <a class="r-brc-d2-dd-d-a1"></a>
+                      <a class="r-brc-d2-dd-d-a2"></a>
+                    </div>
+                    <p class="r-brc-d2-dd-p1">
+                      <a>{{album.name}}</a>
+                    </p>
+                    <p class="r-brc-d2-dd-p2">
+                      <a>{{album.singer}}</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="recommendBodyLeft">
         <div class="recommendBodyLeftTop">
@@ -107,6 +137,7 @@
       this.$store.dispatch('reqRecommends');
       this.$store.dispatch('reqImages');
       this.$store.dispatch('reqSinger');
+      this.$store.dispatch('reqAlbum');
     },
 
 
@@ -173,7 +204,6 @@
     width: 730px;
     display: inline-block;
   }
-
   .el-carousel__item img {
     color: #475669;
     font-size: 14px;
@@ -181,15 +211,12 @@
     line-height: 336px;
     vertical-align: top;
   }
-
   .el-carousel__item:nth-child(2n) {
     background-color: #99a9bf;
   }
-
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
   }
-
   .pangB{
     display: inline-block;
     width: 254px;
@@ -221,10 +248,9 @@
     color: #8d8d8d;
     font-size: 12px;
   }
-
   .recommendBody{
     width: 982px;
-    min-height: 700px;
+    min-height: 900px;
     margin: 0 auto;
     border-left: 1px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
@@ -275,7 +301,6 @@
     font-size: 12px;
     float: left;
   }
-
   .r-brt-1-d span{
     margin: 0 10px;
     color: #ccc;
@@ -387,6 +412,131 @@
     font-size: 14px;
     text-align: left;
     text-decoration: underline;
+  }
+  .recommendBodyRightCenter{
+    margin-left: 20px;
+    width: 689px;
+  }
+  .r-brc-d1{
+    height: 33px;
+    padding: 0 10px 0 34px;
+    border-bottom: 2px solid #C10D0C;
+    background: url("../../../assets/index.png") no-repeat -225px -156px;
+  }
+  .r-brc-d1-a{
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    color: #333;
+  }
+  .r-brc-d1-s{
+    float: right;
+    margin-top: 9px;
+  }
+  .r-brc-d1-s a{
+    color: #666;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .r-brc-d1-s i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+    background: url("../../../assets/index.png") no-repeat 0 -240px;
+  }
+  .r-brc-d2{
+    position: relative;
+    zoom: 1;
+    height: 186px;
+    margin: 20px 0 37px;
+    border: 1px solid #d3d3d3;
+  }
+  .r-brc-d2-d{
+    height: 184px;
+    padding-left: 16px;
+    background: #f5f5f5;
+    border: 1px solid #fff;
+  }
+  .r-brc-d2-dd{
+    float: left;
+    width: 645px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .r-brc-d2-dd ul{
+    left: 20px;
+    transition: none 0s ease 0s;
+    position: absolute;
+    top: 0;
+    width: 645px;
+    margin: 28px 0 0 0;
+  }
+  .r-brc-d2-dd ul li{
+    float: left;
+    display: inline;
+    width: 118px;
+    height: 150px;
+    margin-left: 11px;
+    background: url("../../../assets/index.png") no-repeat -260px 100px;
+  }
+  .r-brc-d2-dd-d{
+    margin-bottom: 7px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .r-brc-d2-dd-d img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .r-brc-d2-dd-d-a1{
+    width: 118px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../../../assets/coverall.png") no-repeat 0 -570px;
+  }
+  .r-brc-d2-dd-d-a2{
+
+  }
+  .r-brc-d2-dd-p1{
+    width: 90%;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 18px;
+    word-wrap: normal;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .r-brc-d2-dd-p1 a{
+    color: #000;
+    height: 18px;
+    line-height: 18px;
+  }
+  .r-brc-d2-dd-p2{
+    width: 90%;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+  .r-brc-d2-dd-p2 a{
+    color: #666;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .recommendBodyLeftTop{
     height: 126px;

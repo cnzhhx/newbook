@@ -17,6 +17,10 @@ export const singer = ()=>ajax(BASE_URL + '/api/singer');
 //请求歌单首页
 export const GeRecommends = ()=>ajax(BASE_URL + '/api/GeRecommends');
 
+//请求首页专辑数据
+export const albums = ()=>ajax(BASE_URL + '/api/albums');
+
+
 
 
 

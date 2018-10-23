@@ -2,14 +2,16 @@ import {
   hotRecommends,
   images,
   singer,
-  GeRecommends
+  GeRecommends,
+  albums
 } from "../api/index"
 
 import {
   HOME_CASUAL,
   REQ_IMAGES,
   SINGER,
-  GE_RECOMMENDS
+  GE_RECOMMENDS,
+  ALBUM
 } from "./mutation-types"
 
 export default {
@@ -36,6 +38,11 @@ export default {
   async reqGeRecommends({commit}) {
     const result = await GeRecommends();
     commit(GE_RECOMMENDS, {GeRecommends: result.message.GeRecommends})
-  }
+  },
 
+  //获取首页专辑
+  async reqAlbum({commit}) {
+    const result = await albums();
+    commit(ALBUM, {albums: result.message.albums})
+  }
 }
