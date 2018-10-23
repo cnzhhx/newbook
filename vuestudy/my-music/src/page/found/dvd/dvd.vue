@@ -41,7 +41,7 @@
           </div>
         </div>
         <ul class="dc-ul1">
-          <li v-for="(dvd, index) in dvds" :key="index">
+          <li v-for="(dvd, index) in allDvds" :key="index">
             <div class="r-brc-d2-dd-d">
               <img :src="dvd.img"/>
               <a class="r-brc-d2-dd-d-a1"></a>
@@ -84,6 +84,28 @@
           {img: require("../../../assets/dvdImages/109951163599180014.jpg"), singer: "中国音乐公告牌", name: "中国音乐公告牌 第六期"},
           {img: require("../../../assets/dvdImages/109951163552724449.jpg"), singer: "Far East Movement  /...", name: "竹 (Bamboo)"},
           {img: require("../../../assets/dvdImages/109951163599384908.jpg"), singer: "NCT 127", name: "NCT #127 Regular-Irr..."}
+        ],
+        allDvds:[
+          {img: require("../../../assets/dvdImages/109951163606377163.jpg"), singer: "李荣浩", name: "耳朵"},
+          {img: require("../../../assets/dvdImages/109951163596240238.jpg"), singer: "IU", name: "삐삐"},
+          {img: require("../../../assets/dvdImages/109951163575279930.jpg"), singer: "Various Artists", name: "Billboard Presents Electric Asia Vol. 2"},
+          {img: require("../../../assets/dvdImages/109951163611604497.jpg"), singer: "布瑞吉Bridge", name: "新大陆"},
+          {img: require("../../../assets/dvdImages/109951163608338651.jpg"), singer: "혜화(暳花)", name: "郑恩地"},
+          {img: require("../../../assets/dvdImages/109951163609839359.jpg"), singer: "陈奕迅", name: "破坏王"},
+          {img: require("../../../assets/dvdImages/109951163599182962.jpg"), singer: "Rachael Yamagata", name: "Porch Songs"},
+          {img: require("../../../assets/dvdImages/109951163599180014.jpg"), singer: "中国音乐公告牌", name: "中国音乐公告牌 第六期"},
+          {img: require("../../../assets/dvdImages/109951163552724449.jpg"), singer: "Far East Movement  /...", name: "竹 (Bamboo)"},
+          {img: require("../../../assets/dvdImages/109951163599384908.jpg"), singer: "NCT 127", name: "NCT #127 Regular-Irr..."},
+          {img: require("../../../assets/dvdImages/109951163606377163.jpg"), singer: "李荣浩", name: "耳朵"},
+          {img: require("../../../assets/dvdImages/109951163596240238.jpg"), singer: "IU", name: "삐삐"},
+          {img: require("../../../assets/dvdImages/109951163575279930.jpg"), singer: "Various Artists", name: "Billboard Presents Electric Asia Vol. 2"},
+          {img: require("../../../assets/dvdImages/109951163611604497.jpg"), singer: "布瑞吉Bridge", name: "新大陆"},
+          {img: require("../../../assets/dvdImages/109951163608338651.jpg"), singer: "혜화(暳花)", name: "郑恩地"},
+          {img: require("../../../assets/dvdImages/109951163609839359.jpg"), singer: "陈奕迅", name: "破坏王"},
+          {img: require("../../../assets/dvdImages/109951163599182962.jpg"), singer: "Rachael Yamagata", name: "Porch Songs"},
+          {img: require("../../../assets/dvdImages/109951163599180014.jpg"), singer: "中国音乐公告牌", name: "中国音乐公告牌 第六期"},
+          {img: require("../../../assets/dvdImages/109951163552724449.jpg"), singer: "Far East Movement  /...", name: "竹 (Bamboo)"},
+          {img: require("../../../assets/dvdImages/109951163599384908.jpg"), singer: "NCT 127", name: "NCT #127 Regular-Irr..."}
         ]
       }
     }
@@ -96,7 +118,7 @@
   }
   .dvd1{
   width: 980px;
-  min-height: 700px;
+  height: 1500px;
   margin: 0 auto;
   background-color: #fff;
   border-left: 1px solid #d3d3d3;
