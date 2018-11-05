@@ -1,5 +1,6 @@
-let express = require('express');
+const express = require('express');
 const router = express.Router();
+const conn = require('./../db/db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -31,10 +32,47 @@ router.get('/api/GeRecommends', (req, res)=>{
     res.json({success_code: 200, message: data})
 });
 
+
+// const albumArr = require('./../data/albums').albums;
 //请求首页专辑
-router.get('/api/albums', (req, res)=>{
-    const data = require('../data/albums');
-    res.json({success_code: 200, message: data})
+router.get('/api/albums', (req, res, next)=>{
+    // //1.定义临时数组
+    // let temp_arr_all = [];
+    // //2.遍历
+    // for(let i=0; i<albumArr.length; i++){
+    //     //2.1取出单个数据对象
+    //     let oldItem = albumArr[i];
+    //     //2.2取出数据表中对应的字段
+    //     let temp_arr = [];
+    //     temp_arr.push(oldItem.img);
+    //     temp_arr.push(oldItem.singer);
+    //     temp_arr.push(oldItem.name);
+    //     //2.3合并到大的数组
+    //     temp_arr_all.push(temp_arr);
+    // }
+    //
+    // //3批量插入数据库表
+    // //3.1数据库查询语言
+    // let sqlStr = "INSERT INTO album(`img`,`singer`,`name`) VALUES ?";
+    // //3.2执行语句
+    // conn.query(sqlStr, [temp_arr_all], (error, results, fields) => {
+    //     if (error) {
+    //         console.log(error);
+    //         console.log('插入失败');
+    //     } else {
+    //         console.log('插入成功');
+    //     }
+    // });
+    //1.1 数据库查询的语句
+    let sqlStr2 = 'SELECT * FROM album';
+    // 1.2 执行语句
+    conn.query(sqlStr2, (error, results, fields) => {
+        if (error) {
+            res.json({err_code: 0, message: '请求数据失败'});
+        } else {
+            res.json({success_code: 200, message: results});
+        }
+    });
 });
 
 

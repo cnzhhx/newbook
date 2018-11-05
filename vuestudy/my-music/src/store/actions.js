@@ -43,6 +43,6 @@ export default {
   //获取首页专辑
   async reqAlbum({commit}) {
     const result = await albums();
-    commit(ALBUM, {albums: result.message.albums})
+    commit(ALBUM, {albums: result.message})
   }
 }
