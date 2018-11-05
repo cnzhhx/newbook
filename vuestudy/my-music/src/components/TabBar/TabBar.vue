@@ -20,7 +20,14 @@
             <sub class="downsub">&nbsp</sub>
           </li>
         </ul>
-        <div class="tab-log"><a>登录</a></div>
+        <div class="tab-log">
+          <a>登录</a>
+          <div class="loginSection">
+            <div @click.prevent="loginPhone()">手机号登陆</div>
+            <p></p>
+            <div>账号密码登陆</div>
+          </div>
+        </div>
         <a class="tab-video" @click="videoEvent">视频投稿</a>
         <div class="tab-in"><input type="text" placeholder="音乐/视频/电台/用户"></div>
       </div>
@@ -31,6 +38,11 @@
     export default {
         name: "TabBar",
         methods: {
+          loginPhone(){
+            let login = document.getElementById('login');
+            console.log(login);
+            login.style.display = 'inline-block';
+          },
           videoEvent() {
             alert("抱歉，暂不提供视频投稿服务！");
           },
@@ -198,4 +210,29 @@
     cursor: pointer;
   }
 
+  .loginSection{
+    display: none;
+    width: 100px;
+    height: 81px;
+  }
+  .tab-log:hover .loginSection{
+    display: inline-block;
+  }
+  .loginSection p{
+    height: 1px;
+    background-color: #333;
+  }
+  .loginSection div{
+    display: inline-block;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #232323;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .loginSection div:hover{
+    background-color: #353535;
+  }
 </style>
