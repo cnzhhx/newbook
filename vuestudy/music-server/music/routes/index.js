@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const conn = require('./../db/db');
+const svgCaptcha = require("svg-captcha");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -75,5 +76,15 @@ router.get('/api/albums', (req, res, next)=>{
     });
 });
 
+//一次性图形验证码
+router.get('/api/captcha', (req, res)=>{
+    let captcha = svgCaptcha.create({
+        color: true,
+        noise: 2,
+        ignorechars: "0oli",
+        size: 4
+    });
+    // console.log(captcha);
+});
 
 module.exports = router;
