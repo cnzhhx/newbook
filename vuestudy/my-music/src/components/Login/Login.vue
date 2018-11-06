@@ -15,9 +15,9 @@
 
       <div class="loginMi" id="loginMi">
         <div class="loginPush">
-          <input placeholder="手机号"/>
-          <div class="yanMa">获取验证码</div>
-          <div>获取验证码</div>
+          <input placeholder="手机号" v-model="phone"/>
+          <div v-if="!countDown" @click.prevent="getVerifiCode()" class="yanMa"  :class="{phone_right: phoneRight}">获取验证码</div>
+          <div v-else class="yanMa">已发送{{countDown}}s</div>
           <input placeholder="验证码"/>
         </div>
         <div class="loginTip">温馨提示：未注册my-music的用户，登录时将自动注册</div>
@@ -44,7 +44,33 @@
 <script>
     export default {
       name: "Login",
+      data() {
+        return {
+          phone: "", //手机号码
+          countDown: 0 //倒计时
+        }
+      },
+      computed: {
+        // 验证手机号是否合理
+        phoneRight() {
+          console.log(111);
+          return /^[1][1,2,5][0-9]{9}$/.test(this.phone);
+        }
+      },
       methods: {
+        getVerifiCode(){
+          //1.开启倒计时
+          if(this.phoneRight){
+            this.countDown = 60;
+            this.intervalId = setInterval(()=>{
+              this.countDown--;
+
+              if(this.countDown === 0){
+                clearInterval(this.intervalId);
+              }
+            }, 1000);
+          }
+        },
         Close() {
           let login = document.getElementById('login');
           login.style.display = 'none';
@@ -74,6 +100,9 @@
 </script>
 
 <style scoped>
+  .phone_right{
+    color: purple !important;
+  }
   #login{
     display: none;
     position: fixed;
