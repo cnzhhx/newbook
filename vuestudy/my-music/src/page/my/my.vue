@@ -4,7 +4,7 @@
       <div class="my1">
         <div class="pic">
           <h2>登录网易云音乐</h2>
-          <a>立即登录</a>
+          <a  @click.prevent="loginPhone()">立即登录</a>
         </div>
       </div>
     </div>
@@ -20,6 +20,12 @@
     name: 'my',
     components: {
       Bottom
+    },
+    methods: {
+      loginPhone(){
+        let login = document.getElementById('login');
+        login.style.display = 'inline-block';
+      }
     }
   }
 </script>

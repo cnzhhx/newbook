@@ -23,9 +23,9 @@
         <div class="tab-log">
           <a>登录</a>
           <div class="loginSection">
-            <div @click.prevent="loginPhone()">手机号登陆</div>
+            <div @click.prevent="loginPhone()">验证码登陆</div>
             <p></p>
-            <div>账号密码登陆</div>
+            <div @click.prevent="loginMi()">密码登陆</div>
           </div>
         </div>
         <a class="tab-video" @click="videoEvent">视频投稿</a>
@@ -40,8 +40,19 @@
         methods: {
           loginPhone(){
             let login = document.getElementById('login');
-            console.log(login);
             login.style.display = 'inline-block';
+          },
+          loginMi(){
+            let login = document.getElementById('login');
+            login.style.display = 'inline-block';
+            let yanzhenBar = document.getElementById('yanzhenBar');
+            let mimaBar = document.getElementById('mimaBar');
+            let loginMi = document.getElementById('loginMi');
+            let loginZh = document.getElementById('loginZh');
+            yanzhenBar.style.display = 'none';
+            mimaBar.style.display = 'inline-block';
+            loginMi.style.display = 'none';
+            loginZh.style.display = 'inline-block';
           },
           videoEvent() {
             alert("抱歉，暂不提供视频投稿服务！");
