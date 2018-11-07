@@ -141,9 +141,9 @@ router.post('/api/login_code', (req, res) => {
             } else { // 新用户
                 const addSql = "INSERT INTO zhhx_user_info(user_name, user_phone) VALUES (?, ?)";
                 const addSqlParams = [phone, phone];
-                conn.query(addSql, addSqlParams, (error, results, fields) => {
+                conn.query(addSql, addSqlParams , (error, results, fields) => {
                     results = JSON.parse(JSON.stringify(results));
-                    // console.log(results);
+                    console.log(results);
                     if (!error) {
                         req.session.userId = results.insertId;
                         let sqlStr = "SELECT * FROM zhhx_user_info WHERE id = '" + results.insertId + "' LIMIT 1";

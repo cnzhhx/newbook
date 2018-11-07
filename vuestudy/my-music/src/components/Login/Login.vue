@@ -60,7 +60,8 @@
           phone: "", //手机号码
           countDown: 0,//倒计时
           loginMode: true,
-          code: "" //验证码
+          code: "" ,//验证码
+          userInfo: {}
         }
       },
       computed: {
@@ -137,6 +138,14 @@
             //登录
             const result = await phoneCodeLogin(this.phone, this.code);
             console.log(result);
+
+            if(result.success_code === 200) {
+              this.userInfo = result.message;
+            }else{
+              this.userInfo = {
+                message: '登录失败， 手机或验证码不正确'
+              }
+            }
           }else{ //账号密码登录
 
           }
