@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const conn = require('./../db/db');
 const svgCaptcha = require("svg-captcha");
+const sms_util = require('./../util/sms_util');
+
+let users = {};  //用户信息
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -85,6 +88,26 @@ router.get('/api/captcha', (req, res)=>{
         size: 4
     });
     // console.log(captcha);
+
+    req.session.captchaText = captcha.text.toLocaleLowerCase();
+
+    res.type("svg");
+    res.send(captcha.data);
 });
+
+//发送验证码短信
+router.get('/api/send_code', (req, res)=>{
+    let phone = req.query.phone;
+
+    let code = sms_util.randomCode(6);
+
+    // sms_util.sendCode(phone, code, function (success) {
+    //
+    // })
+
+    users[phone] = code;
+    res.json({success_code: 200, message: code});
+});
+
 
 module.exports = router;

@@ -21,7 +21,8 @@ export const GeRecommends = ()=>ajax(BASE_URL + '/api/GeRecommends');
 export const albums = ()=>ajax(BASE_URL + '/api/albums');
 
 
-
+//请求短信验证码
+export const getPhoneCode = (phone)=>ajax(BASE_URL + '/api/send_code', {phone});
 
 
 

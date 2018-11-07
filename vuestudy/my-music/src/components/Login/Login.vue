@@ -30,8 +30,17 @@
           <input placeholder="用户名/手机"/>
           <input placeholder="密码"/>
           <input placeholder="验证码"/>
+          <img
+            alt="captcha"
+            ref="captcha"
+            @click.prevent="getCaptcha()"
+            class="miImg"
+            src="http://127.0.0.1:3000/api/captcha"/>
         </div>
       </div>
+
+
+
       <div class="loginSubmit">
         <div class="Submit">登陆</div>
         <div class="Close">返回</div>
@@ -42,6 +51,8 @@
 </template>
 
 <script>
+    import {getPhoneCode} from "../../api";
+
     export default {
       name: "Login",
       data() {
@@ -53,12 +64,14 @@
       computed: {
         // 验证手机号是否合理
         phoneRight() {
-          console.log(111);
           return /^[1][1,2,5][0-9]{9}$/.test(this.phone);
         }
       },
       methods: {
-        getVerifiCode(){
+        getCaptcha(){
+          this.$refs.captcha.src = "http://127.0.0.1:3000/api/captcha?time=" + new Date()
+        },
+        async getVerifiCode(){
           //1.开启倒计时
           if(this.phoneRight){
             this.countDown = 60;
@@ -70,6 +83,8 @@
               }
             }, 1000);
           }
+          let result = await getPhoneCode(this.phone);
+          console.log(result);
         },
         Close() {
           let login = document.getElementById('login');
@@ -100,6 +115,14 @@
 </script>
 
 <style scoped>
+  .miImg{
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    left: 186px;
+    top: 80px;
+  }
   .phone_right{
     color: purple !important;
   }
@@ -273,6 +296,7 @@
     width: 100px;
     margin-left: 122px;
     margin-top: 5px;
+    position: relative;
   }
   .shuRu input{
     width: 250px;
