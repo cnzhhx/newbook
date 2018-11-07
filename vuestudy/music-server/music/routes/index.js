@@ -109,5 +109,67 @@ router.get('/api/send_code', (req, res)=>{
     res.json({success_code: 200, message: code});
 });
 
+//手机验证码登录
+router.post('/api/login_code', (req, res) => {
+    // 1. 获取数据
+    const phone = req.body.phone;
+    const code = req.body.code;
+
+    // 2. 验证验证码是否正确
+    if (users[phone] !== code) {
+        res.json({err_code: 0, message: '验证码不正确!'});
+    }
+
+    // 3. 查询数据
+    delete  users[phone];
+
+    let sqlStr = "SELECT * FROM zhhx_user_info WHERE user_phone = '" + phone + "' LIMIT 1";
+
+    conn.query(sqlStr, (error, results, fields) => {
+        if (error) {
+            res.json({err_code: 0, message: '请求数据失败'});
+        } else {
+            results = JSON.parse(JSON.stringify(results));
+            if (results[0]) {  // 用户已经存在
+                // console.log(results[0]);
+                req.session.userId = results[0].id;
+                // 返回数据给客户端
+                res.json({
+                    success_code: 200,
+                    message: {id: results[0].id, user_name: results[0].user_name, user_phone: results[0].user_phone}
+                });
+            } else { // 新用户
+                const addSql = "INSERT INTO zhhx_user_info(user_name, user_phone) VALUES (?, ?)";
+                const addSqlParams = [phone, phone];
+                conn.query(addSql, addSqlParams, (error, results, fields) => {
+                    results = JSON.parse(JSON.stringify(results));
+                    // console.log(results);
+                    if (!error) {
+                        req.session.userId = results.insertId;
+                        let sqlStr = "SELECT * FROM zhhx_user_info WHERE id = '" + results.insertId + "' LIMIT 1";
+                        conn.query(sqlStr, (error, results, fields) => {
+                            if (error) {
+                                res.json({err_code: 0, message: '请求数据失败'});
+                            } else {
+                                results = JSON.parse(JSON.stringify(results));
+                                // 返回数据给客户端
+                                res.json({
+                                    success_code: 200,
+                                    message: {
+                                        id: results[0].id,
+                                        user_name: results[0].user_name,
+                                        user_phone: results[0].user_phone
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    });
+
+});
+
 
 module.exports = router;

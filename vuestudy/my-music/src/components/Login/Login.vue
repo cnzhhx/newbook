@@ -18,7 +18,7 @@
           <input placeholder="手机号" v-model="phone"/>
           <div v-if="!countDown" @click.prevent="getVerifiCode()" class="yanMa"  :class="{phone_right: phoneRight}">获取验证码</div>
           <div v-else class="yanMa">已发送{{countDown}}s</div>
-          <input placeholder="验证码"/>
+          <input placeholder="验证码" v-model="code"/>
         </div>
         <div class="loginTip">温馨提示：未注册my-music的用户，登录时将自动注册</div>
       </div>
@@ -42,7 +42,7 @@
 
 
       <div class="loginSubmit">
-        <div class="Submit">登陆</div>
+        <div class="Submit" @click.prevent="login()">登陆</div>
         <div class="Close">返回</div>
       </div>
     </div>
@@ -51,14 +51,16 @@
 </template>
 
 <script>
-    import {getPhoneCode} from "../../api";
+    import {getPhoneCode, phoneCodeLogin} from "../../api";
 
     export default {
       name: "Login",
       data() {
         return {
           phone: "", //手机号码
-          countDown: 0 //倒计时
+          countDown: 0,//倒计时
+          loginMode: true,
+          code: "" //验证码
         }
       },
       computed: {
@@ -99,6 +101,7 @@
           mimaBar.style.display = 'none';
           yanzhenBar.style.display = 'inline-block';
           loginMi.style.display = 'inline-block';
+          this.loginMode = true;
         },
         qie2() {
           let yanzhenBar = document.getElementById('yanzhenBar');
@@ -109,6 +112,34 @@
           mimaBar.style.display = 'inline-block';
           loginMi.style.display = 'none';
           loginZh.style.display = 'inline-block';
+          this.loginMode = false;
+        },
+        async login() {
+          //登录模式
+          if(this.loginMode) {//验证码登录
+            //校验
+            if(!this.phone) {
+              alert('请输入手机号码!');
+              return;
+            }else if(!this.phoneRight) {
+              alert('请输入正确的手机号码!');
+              return;
+            }
+
+            if(!this.code) {
+              alert('请输入验证码!');
+              return;
+            }else if(!(/^\d{6}$/gi.test(this.code))) {
+              alert('请输入正确的验证码!');
+              return;
+            }
+
+            //登录
+            const result = await phoneCodeLogin(this.phone, this.code);
+            console.log(result);
+          }else{ //账号密码登录
+
+          }
         }
       }
     }

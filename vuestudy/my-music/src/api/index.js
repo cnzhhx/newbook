@@ -24,7 +24,8 @@ export const albums = ()=>ajax(BASE_URL + '/api/albums');
 //请求短信验证码
 export const getPhoneCode = (phone)=>ajax(BASE_URL + '/api/send_code', {phone});
 
-
+//请求短信验证码
+export const phoneCodeLogin = (phone, code)=>ajax(BASE_URL + '/api/login_code', {phone, code}, 'POST');
 
 
 
