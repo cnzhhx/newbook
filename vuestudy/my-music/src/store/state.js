@@ -12,5 +12,9 @@ export default {
   images: [],
 
   //首页专辑
-  albums: []
+  albums: [],
+
+  //用户数据
+  userInfo: {}
+
 }

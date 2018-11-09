@@ -52,6 +52,7 @@
 
 <script>
     import {getPhoneCode, phoneCodeLogin} from "../../api";
+    import {mapActions} from "vuex"
 
     export default {
       name: "Login",
@@ -61,16 +62,17 @@
           countDown: 0,//倒计时
           loginMode: true,
           code: "" ,//验证码
-          userInfo: {}
+          userInfo: {} //用户信息
         }
       },
       computed: {
         // 验证手机号是否合理
         phoneRight() {
           return /^[1][1,2,5][0-9]{9}$/.test(this.phone);
-        }
+        },
       },
       methods: {
+        ...mapActions(['syncUserInfo']),
         getCaptcha(){
           this.$refs.captcha.src = "http://127.0.0.1:3000/api/captcha?time=" + new Date()
         },
@@ -141,6 +143,7 @@
 
             if(result.success_code === 200) {
               this.userInfo = result.message;
+              // console.log(this.userInfo.id);
             }else{
               this.userInfo = {
                 message: '登录失败， 手机或验证码不正确'
@@ -148,6 +151,16 @@
             }
           }else{ //账号密码登录
 
+          }
+
+          //后续处理
+          if(!this.userInfo.id) { //失败
+            alert(this.userInfo.message);
+          }else{ //成功
+            //同步用户数据
+            this.syncUserInfo(this.userInfo);
+            this.$router.replace('/found/recommend');
+            this.Close();
           }
         }
       }

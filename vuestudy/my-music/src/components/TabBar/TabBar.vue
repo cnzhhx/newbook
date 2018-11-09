@@ -21,12 +21,30 @@
           </li>
         </ul>
         <div class="tab-log">
-          <a>登录</a>
-          <div class="loginSection">
-            <div @click.prevent="loginPhone()">验证码登陆</div>
-            <p></p>
-            <div @click.prevent="loginMi()">密码登陆</div>
+          <!--<div id="loginBefore">-->
+            <!--<a>登录</a>-->
+            <!--<div class="loginSection">-->
+              <!--<div @click.prevent="loginPhone()">验证码登陆</div>-->
+              <!--<p></p>-->
+              <!--<div @click.prevent="loginMi()">密码登陆</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+          <div id="loginProcess">
+            <img class="imgMy" src="../../assets/1384285139964404.jpg" height="30" width="30"/>
+            <div class="loginSection">
+              <div>我的主页</div>
+              <p></p>
+              <div>我的消息</div>
+              <p></p>
+              <div>我的等级</div>
+              <p></p>
+              <div>个人设置</div>
+              <p></p>
+              <div>退出登录</div>
+            </div>
           </div>
+
         </div>
         <a class="tab-video" @click="videoEvent">视频投稿</a>
         <div class="tab-in"><input type="text" placeholder="音乐/视频/电台/用户"></div>
@@ -213,6 +231,9 @@
     font-size: 12px;
     color: #333;
   }
+  .imgMy{
+    border-radius: 50%;
+  }
   .tab-log a{
     display: block;
     width: 28px;
@@ -228,6 +249,7 @@
   }
   .tab-log:hover .loginSection{
     display: inline-block;
+    border-radius: 4px;
   }
   .loginSection p{
     height: 1px;

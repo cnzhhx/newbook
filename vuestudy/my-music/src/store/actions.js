@@ -11,7 +11,8 @@ import {
   REQ_IMAGES,
   SINGER,
   GE_RECOMMENDS,
-  ALBUM
+  ALBUM,
+  USER_INFO
 } from "./mutation-types"
 
 export default {
@@ -44,5 +45,10 @@ export default {
   async reqAlbum({commit}) {
     const result = await albums();
     commit(ALBUM, {albums: result.message})
-  }
+  },
+
+  // 6. 同步用户的信息
+  syncUserInfo({commit}, userInfo){
+    commit(USER_INFO, {userInfo});
+  },
 }
