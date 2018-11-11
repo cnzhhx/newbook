@@ -87,7 +87,42 @@
         </div>
       </div>
       <div class="recommendBodyLeft">
-        <div class="recommendBodyLeftTop">
+        <div v-if="$store.state.userInfo.id" class="recommendBodyLeftTop2">
+          <div style="height: 87px;width: 250px;">
+            <a class="r-blt-a">
+              <img src="../../../assets/1384285139964405.jpg"/>
+            </a>
+            <div class="r-blt-d">
+              <h4 style="overflow: hidden;">
+                <a>Hao-Xiang</a>
+              </h4>
+              <p>
+                <a>8<i></i></a>
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li class="r-blt-li1">
+              <a>
+                <strong>16</strong>
+                <span>动态</span>
+              </a>
+            </li>
+            <li class="r-blt-li2">
+              <a>
+                <strong>67</strong>
+                <span>关注</span>
+              </a>
+            </li>
+            <li class="r-blt-li3">
+              <a>
+                <strong>11</strong>
+                <span>粉丝</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div v-else class="recommendBodyLeftTop">
           <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
           <a   @click.prevent="loginPhone()">用户登录</a>
         </div>
@@ -578,6 +613,144 @@
     margin: 0 75px;
     background: url("../../../assets/index.png") no-repeat -110px -195px;
     font-size: 12px;
+  }
+  .recommendBodyLeftTop2{
+    height: 165px;
+    padding-top: 20px;
+    background: url("../../../assets/index.png") no-repeat 0 -270px;
+  }
+  .r-blt-a{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    padding: 2px;
+    background: #fff;
+    border: 1px solid #dadada;
+  }
+  .r-blt-a img{
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .r-blt-d{
+    float: left;
+    width: 115px;
+    margin-left: 18px;
+    padding-top: 3px;
+  }
+  .r-blt-d h4{
+    height: 18px;
+  }
+  .r-blt-d h4 a{
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .r-blt-d h4 a:hover{
+    text-decoration: underline;
+  }
+  .r-blt-d p{
+    width: 100%;
+    margin-top: 5px;
+  }
+  .r-blt-d p a{
+    display: inline-block;
+    height: 17px;
+    overflow: hidden;
+    padding-left: 25px;
+    line-height: 18px;
+    color: #999;
+    font-weight: bold;
+    font-style: italic;
+    background: url("../../../assets/icon2.png") no-repeat -130px -64px;
+    cursor: pointer;
+  }
+  .r-blt-d p a:hover{
+    color: #777;
+    text-decoration: none;
+    background: url("../../../assets/icon2.png") no-repeat -130px -84px;
+
+  }
+  .r-blt-d p a i{
+    float: right;
+    width: 8px;
+    height: 17px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url("../../../assets/icon2.png") no-repeat -192px -64px;
+  }
+  .recommendBodyLeftTop2 ul{
+    display: block;
+    margin: 22px 0 0 20px;
+  }
+  .recommendBodyLeftTop2 ul li{
+    list-style: none;
+  }
+  .recommendBodyLeftTop2 ul li a:hover{
+    text-decoration: none;
+    color: #0c73c2;
+  }
+  .r-blt-li1{
+    float: left;
+    height: 40px;
+    padding: 0 18px 0 0;
+    border-right: 1px solid #e4e4e4;
+  }
+  .r-blt-li1 a{
+    display: block;
+    color: #666;
+    cursor: pointer;
+  }
+  .r-blt-li1 a strong{
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    cursor: pointer;
+  }
+  .r-blt-li2{
+    float: left;
+    height: 40px;
+    padding: 0 18px;
+    border-right: 1px solid #e4e4e4;
+    list-style: none;
+  }
+  .r-blt-li2 a{
+    display: block;
+    color: #666;
+    cursor: pointer;
+  }
+  .r-blt-li2 a strong{
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    cursor: pointer;
+  }
+  .r-blt-li3{
+    border-right: none;
+    float: left;
+    height: 40px;
+    padding: 0 0 0 18px;
+  }
+  .r-blt-li3 a{
+    display: block;
+    color: #666;
+    cursor: pointer;
+  }
+  .r-blt-li3 a strong{
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    cursor: pointer;
   }
   .recommendBodyLeftCenter{
     margin-top: 15px;

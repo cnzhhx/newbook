@@ -21,16 +21,8 @@
           </li>
         </ul>
         <div class="tab-log">
-          <!--<div id="loginBefore">-->
-            <!--<a>登录</a>-->
-            <!--<div class="loginSection">-->
-              <!--<div @click.prevent="loginPhone()">验证码登陆</div>-->
-              <!--<p></p>-->
-              <!--<div @click.prevent="loginMi()">密码登陆</div>-->
-            <!--</div>-->
-          <!--</div>-->
 
-          <div id="loginProcess">
+          <div v-if="$store.state.userInfo.id" id="loginProcess">
             <img class="imgMy" src="../../assets/1384285139964404.jpg" height="30" width="30"/>
             <div class="loginSection">
               <div>我的主页</div>
@@ -44,6 +36,17 @@
               <div>退出登录</div>
             </div>
           </div>
+
+          <div v-else id="loginBefore">
+            <a>登录</a>
+            <div class="loginSection">
+              <div @click.prevent="loginPhone()">验证码登陆</div>
+              <p></p>
+              <div @click.prevent="loginMi()">密码登陆</div>
+            </div>
+          </div>
+
+
 
         </div>
         <a class="tab-video" @click="videoEvent">视频投稿</a>
