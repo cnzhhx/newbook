@@ -57,8 +57,9 @@
 
 <script>
     export default {
-        name: "TabBar",
-        methods: {
+      name: "TabBar",
+      props:["loginMode"],
+      methods: {
           loginPhone(){
             let login = document.getElementById('login');
             login.style.display = 'inline-block';

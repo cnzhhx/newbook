@@ -172,4 +172,80 @@ router.post('/api/login_code', (req, res) => {
 });
 
 
+//手机密码登录
+router.post('/api/login_pwd', (req, res) => {
+    // 1. 获取数据
+    const user_name = req.body.name;
+    const user_pwd = req.body.pwd;
+    const captcha = req.body.captcha.toLowerCase();
+
+    // console.log(captcha, req.session.captcha, req.session);
+
+    // 2. 验证图形验证码是否正确
+    console.log(req.session.captcha);
+    if (captcha !== req.session.captcha) {
+        res.json({err_code: 0, message: '图形验证码不正确!'});
+        return;
+    }
+    delete req.session.captcha;
+
+
+    // 3. 查询数据
+    let sqlStr = "SELECT * FROM pdd_user_info WHERE user_name = '" + user_name + "' LIMIT 1";
+    conn.query(sqlStr, (error, results, fields) => {
+        if (error) {
+            res.json({err_code: 0, message: '用户名不正确!'});
+        } else {
+            results = JSON.parse(JSON.stringify(results));
+            if (results[0]) {  // 用户已经存在
+                // 验证密码是否正确
+                if (results[0].user_pwd !== user_pwd) {
+                    res.json({err_code: 0, message: '密码不正确!'});
+                } else {
+                    req.session.userId = results[0].id;
+                    // 返回数据给客户端
+                    res.json({
+                        success_code: 200,
+                        message: {
+                            id: results[0].id,
+                            user_name: results[0].user_name,
+                            user_phone: results[0].user_phone
+                        },
+                        info: '登录成功!'
+                    });
+                }
+            } else { // 新用户
+                const addSql = "INSERT INTO pdd_user_info(user_name, user_pwd) VALUES (?, ?)";
+                const addSqlParams = [user_name, user_pwd];
+                conn.query(addSql, addSqlParams, (error, results, fields) => {
+                    results = JSON.parse(JSON.stringify(results));
+                    // console.log(results);
+                    if (!error) {
+                        req.session.userId = results.insertId;
+                        let sqlStr = "SELECT * FROM pdd_user_info WHERE id = '" + results.insertId + "' LIMIT 1";
+                        conn.query(sqlStr, (error, results, fields) => {
+                            if (error) {
+                                res.json({err_code: 0, message: '请求数据失败'});
+                            } else {
+                                results = JSON.parse(JSON.stringify(results));
+                                // 返回数据给客户端
+                                res.json({
+                                    success_code: 200,
+                                    message: {
+                                        id: results[0].id,
+                                        user_name: results[0].user_name,
+                                        user_phone: results[0].user_phone
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        }
+        console.log(req.session);
+    });
+});
+
+
 module.exports = router;

@@ -27,9 +27,9 @@
 
       <div class="loginZh" id="loginZh">
         <div class=shuRu>
-          <input placeholder="用户名/手机"/>
-          <input placeholder="密码"/>
-          <input placeholder="验证码"/>
+          <input placeholder="用户名/手机" type="text" v-model="user_name"/>
+          <input placeholder="密码" type="password" v-model="pwd"/>
+          <input placeholder="验证码" v-model="captcha"/>
           <img
             alt="captcha"
             ref="captcha"
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-    import {getPhoneCode, phoneCodeLogin} from "../../api";
+    import {getPhoneCode, phoneCodeLogin, pwdLogin} from "../../api";
     import {mapActions} from "vuex"
 
     export default {
@@ -62,7 +62,10 @@
           countDown: 0,//倒计时
           loginMode: true,
           code: "" ,//验证码
-          userInfo: {} //用户信息
+          userInfo: {}, //用户信息
+          user_name: "",//用户账号
+          captcha:"", //图形验证码
+          pwd: "",//密码
         }
       },
       computed: {
@@ -141,19 +144,35 @@
             const result = await phoneCodeLogin(this.phone, this.code);
             console.log(result);
 
-            if(result.success_code === 200) {
-              this.userInfo = result.message;
-              // console.log(this.userInfo.id);
-            }else{
-              this.userInfo = {
-                message: '登录失败， 手机或验证码不正确'
-              }
-            }
           }else{ //账号密码登录
+            //校验
+            if(!this.user_name) {
+              alert('请输入手机/用户名!');
+              return;
+            }else if(!this.pwd) {
+              alert('请输入密码!');
+              return;
+            }else if(!this.captcha) {
+              alert('请输入图形验证码!');
+              return;
+            }
 
+            //登录
+            const result = await pwdLogin(this.user_name, this.pwd, this.captcha);
+            console.log(result);
           }
 
           //后续处理
+
+          if(result.success_code === 200) {
+            this.userInfo = result.message;
+            // console.log(this.userInfo.id);
+          }else{
+            this.userInfo = {
+              message: '登录失败， 手机或验证码不正确'
+            }
+          }
+
           if(!this.userInfo.id) { //失败
             alert(this.userInfo.message);
           }else{ //成功

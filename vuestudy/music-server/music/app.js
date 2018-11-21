@@ -11,10 +11,10 @@ const usersRouter = require('./routes/users');
 const app = express();
 
 app.use(session({
-    secret: '123456',
+    secret: '123456', //对session id相关的cookie进行签名
+    cookie: {maxAge : 1000 * 60 * 60 *24}, //设置session的有效时间， 单位毫秒
     resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true}
+    saveUninitialized: true, // 是否保存未初始化的会话
 }));
 
 app.all("*", function(req, res, next) {
