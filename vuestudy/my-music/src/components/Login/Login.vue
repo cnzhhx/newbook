@@ -122,7 +122,9 @@
         },
         async login() {
           //登录模式
+          let result;
           if(this.loginMode) {//验证码登录
+
             //校验
             if(!this.phone) {
               alert('请输入手机号码!');
@@ -141,8 +143,10 @@
             }
 
             //登录
-            const result = await phoneCodeLogin(this.phone, this.code);
+            result = await phoneCodeLogin(this.phone, this.code);
             console.log(result);
+
+
 
           }else{ //账号密码登录
             //校验
@@ -161,7 +165,6 @@
             const result = await pwdLogin(this.user_name, this.pwd, this.captcha);
             console.log(result);
           }
-
           //后续处理
 
           if(result.success_code === 200) {

@@ -90,6 +90,9 @@ router.get('/api/captcha', (req, res)=>{
     // console.log(captcha);
 
     req.session.captchaText = captcha.text.toLocaleLowerCase();
+    console.log(req.session);
+
+
 
     res.type("svg");
     res.send(captcha.data);
@@ -179,10 +182,11 @@ router.post('/api/login_pwd', (req, res) => {
     const user_pwd = req.body.pwd;
     const captcha = req.body.captcha.toLowerCase();
 
-    // console.log(captcha, req.session.captcha, req.session);
+
+    console.log(req.session);
 
     // 2. 验证图形验证码是否正确
-    console.log(req.session.captcha);
+    // console.log(req.session.captcha);
     if (captcha !== req.session.captcha) {
         res.json({err_code: 0, message: '图形验证码不正确!'});
         return;
