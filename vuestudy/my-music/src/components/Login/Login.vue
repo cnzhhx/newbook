@@ -31,11 +31,12 @@
           <input placeholder="密码" type="password" v-model="pwd"/>
           <input placeholder="验证码" v-model="captcha"/>
           <img
+            id="loginZhimg"
             alt="captcha"
             ref="captcha"
             @click.prevent="getCaptcha()"
             class="miImg"
-            src="http://127.0.0.1:3000/api/captcha"/>
+            src="http://localhost:3000/api/captcha"/>
         </div>
       </div>
 
@@ -51,7 +52,7 @@
 </template>
 
 <script>
-    import {getPhoneCode, phoneCodeLogin, pwdLogin} from "../../api";
+    import {getPhoneCode, phoneCodeLogin, pwdLogin} from "../../api/index";
     import {mapActions} from "vuex"
 
     export default {
@@ -68,6 +69,12 @@
           pwd: "",//密码
         }
       },
+      // created: {
+      //   getCaptcha(){
+      //     var loginZhimg = document.getElementById(loginZhimg);
+      //     loginZhimg.src = 'http://localhost:3000/api/captcha';
+      //   },
+      // },
       computed: {
         // 验证手机号是否合理
         phoneRight() {
@@ -77,7 +84,7 @@
       methods: {
         ...mapActions(['syncUserInfo']),
         getCaptcha(){
-          this.$refs.captcha.src = "http://127.0.0.1:3000/api/captcha?time=" + new Date()
+          this.$refs.captcha.src = 'http://localhost:3000/api/captcha?time=' + new Date();
         },
         async getVerifiCode(){
           //1.开启倒计时
@@ -162,8 +169,10 @@
             }
 
             //登录
-            const result = await pwdLogin(this.user_name, this.pwd, this.captcha);
+            result = await pwdLogin(this.user_name, this.pwd, this.captcha);
             console.log(result);
+            console.log(result.success_code);
+
           }
           //后续处理
 

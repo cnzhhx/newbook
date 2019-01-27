@@ -4,7 +4,8 @@ import {
   SINGER,
   GE_RECOMMENDS,
   ALBUM,
-  USER_INFO
+  USER_INFO,
+  RESET_USER_INFO
 } from "./mutation-types"
 
 
@@ -39,4 +40,8 @@ export default {
   [USER_INFO](state, {userInfo}) {
     state.userInfo = userInfo;
   },
+
+  [RESET_USER_INFO](state) {
+    state.userInfo = {};
+  }
 }

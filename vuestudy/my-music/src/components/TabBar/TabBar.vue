@@ -33,7 +33,9 @@
               <p></p>
               <div>个人设置</div>
               <p></p>
-              <div>退出登录</div>
+              <div
+                @click.prevent = getLogout()
+              >退出登录</div>
             </div>
           </div>
 
@@ -56,10 +58,17 @@
 </template>
 
 <script>
+    import {mapActions} from 'vuex'
+
     export default {
       name: "TabBar",
       props:["loginMode"],
       methods: {
+          ...mapActions(["Logout"]),
+          getLogout() {
+            this.Logout([]);
+            this.$router.replace('/found/recommend');
+          },
           loginPhone(){
             let login = document.getElementById('login');
             login.style.display = 'inline-block';

@@ -87,9 +87,9 @@ router.get('/api/captcha', (req, res)=>{
         ignorechars: "0oli",
         size: 4
     });
-    // console.log(captcha);
+    console.log(captcha);
 
-    req.session.captchaText = captcha.text.toLocaleLowerCase();
+    req.session.captcha = captcha.text.toLocaleLowerCase();
     console.log(req.session);
 
 
@@ -186,7 +186,7 @@ router.post('/api/login_pwd', (req, res) => {
     console.log(req.session);
 
     // 2. 验证图形验证码是否正确
-    // console.log(req.session.captcha);
+
     if (captcha !== req.session.captcha) {
         res.json({err_code: 0, message: '图形验证码不正确!'});
         return;
@@ -195,7 +195,7 @@ router.post('/api/login_pwd', (req, res) => {
 
 
     // 3. 查询数据
-    let sqlStr = "SELECT * FROM pdd_user_info WHERE user_name = '" + user_name + "' LIMIT 1";
+    let sqlStr = "SELECT * FROM zhhx_user_info WHERE user_name = '" + user_name + "' LIMIT 1";
     conn.query(sqlStr, (error, results, fields) => {
         if (error) {
             res.json({err_code: 0, message: '用户名不正确!'});
@@ -226,7 +226,7 @@ router.post('/api/login_pwd', (req, res) => {
                     // console.log(results);
                     if (!error) {
                         req.session.userId = results.insertId;
-                        let sqlStr = "SELECT * FROM pdd_user_info WHERE id = '" + results.insertId + "' LIMIT 1";
+                        let sqlStr = "SELECT * FROM zhhx_user_info WHERE id = '" + results.insertId + "' LIMIT 1";
                         conn.query(sqlStr, (error, results, fields) => {
                             if (error) {
                                 res.json({err_code: 0, message: '请求数据失败'});
@@ -247,9 +247,49 @@ router.post('/api/login_pwd', (req, res) => {
                 });
             }
         }
-        console.log(req.session);
+
     });
 });
 
+/*
+*  根据session中的用户id获取用户信息
+* */
+router.get('/api/user_info', (req, res) => {
+    // 1.0 获取参数
+    let userId = req.session.userId;
+    // 1.1 数据库查询的语句
+    let sqlStr = "SELECT * FROM zhhx_user_info WHERE id = '" + userId + "' LIMIT 1";
+    conn.query(sqlStr, (error, results, fields) => {
+        if (error) {
+            res.json({err_code: 0, message: '请求数据失败'});
+        } else {
+            results = JSON.parse(JSON.stringify(results));
+            console.log(results);
+            if (!results[0]) {
+                delete req.session.userId;
+                res.json({error_code: 1, message: '请先登录'});
+            } else {
+                // 返回数据给客户端
+                res.json({
+                    success_code: 200,
+                    message: results[0]
+                });
+            }
+        }
+    });
+});
+
+/**
+ * 退出登录
+ */
+router.get('/api/logout', (req, res) => {
+    // 1. 清除session中userId
+    delete  req.session.userId;
+    // 2. 提示用户
+    res.json({
+        success_code: 200,
+        message: "退出登录成功"
+    });
+});
 
 module.exports = router;

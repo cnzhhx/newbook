@@ -3,7 +3,9 @@ import {
   images,
   singer,
   GeRecommends,
-  albums
+  albums,
+  getUserInfo,
+  getLogout
 } from "../api/index"
 
 import {
@@ -12,7 +14,8 @@ import {
   SINGER,
   GE_RECOMMENDS,
   ALBUM,
-  USER_INFO
+  USER_INFO,
+  RESET_USER_INFO
 } from "./mutation-types"
 
 export default {
@@ -51,4 +54,22 @@ export default {
   syncUserInfo({commit}, userInfo){
     commit(USER_INFO, {userInfo});
   },
+
+  // 7. 异步获取用户信息
+  async getUserInfo({commit}){
+    const result = await getUserInfo();
+    console.log(result);
+    if(result.success_code === 200){
+      commit(USER_INFO, {userInfo: result.message});
+    }
+  },
+
+  // 8. 退出登录
+  async Logout({commit}){
+    const result = await getLogout();
+    console.log(result);
+    if(result.success_code === 200){
+      commit(RESET_USER_INFO);
+    }
+  }
 }
