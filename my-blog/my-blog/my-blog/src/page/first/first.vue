@@ -13,8 +13,195 @@
                     <span></span>
                     特别推荐
                 </h2>
+                <ul >
+                    <li>
+                        <div class="tpic">
+                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                        </div>
+                        <b>女程序员职业生涯该如何发展？</b>
+                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <a class="readmore">阅读文章</a>
+                    </li>
+                    <li>
+                        <div class="tpic">
+                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                        </div>
+                        <b>女程序员职业生涯该如何发展？</b>
+                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <a class="readmore">阅读文章</a>
+                    </li>
+                    <li>
+                        <div class="tpic">
+                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                        </div>
+                        <b>女程序员职业生涯该如何发展？</b>
+                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <a class="readmore">阅读文章</a>
+                    </li>
+                    <li>
+                        <div class="tpic">
+                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                        </div>
+                        <b>女程序员职业生涯该如何发展？</b>
+                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <a class="readmore">阅读文章</a>
+                    </li>
+                    <li>
+                        <div class="tpic">
+                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                        </div>
+                        <b>女程序员职业生涯该如何发展？</b>
+                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <a class="readmore">阅读文章</a>
+                    </li>
+                    <li>
+                        <div class="tpic">
+                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                        </div>
+                        <b>女程序员职业生涯该如何发展？</b>
+                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <a class="readmore">阅读文章</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newblogs">
+                <h2 class="hometitle">最新文章</h2>
+                <ul class="list">
+                    <li>
+                        <h3 class="blogtitle">
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </h3>
+                        <div class="bloginfo">
+                            <span class="blogpic">
+                                <a href="#">
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
+                                </a>
+                            </span>
+                            <p></p>
+                        </div>
+                        <div class="autor"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="sidebar_widget widget_post_author">
+                <div class="author_info">
+                    <div class="widget_avatar">
+                        <a>
+                            <img src="../../assets/-34550ac663a8f32b.jpg" height="80" width="80"/>
+                        </a>
+                    </div>
+                    <h3>
+                        小zh
+                        <span class="admin_field">管理员</span>
+                    </h3>
+                    <div ></div>
+                </div>
+                <div class="author-social">
+                    <span class="author-weixin">
+                        <div></div>
+                    </span>
+                    <span class="author-qq">
+                        <div></div>
+                    </span>
+                    <span class="author-diy">
+                        <div></div>
+                    </span>
+                </div>
+                <p>小zh个人博客，是一个记录自己生活点滴、互联网技术的原创独立博客（xiaozhqq.cn）。{网站正在完善，站内文章皆为摘抄}</p>
+            </div>
+            <div class="author_count">
                 <ul>
-                    <li></li>
+                    <li>
+                        <span>文章</span>
+                        <strong>0</strong>
+                    </li>
+                    <li>
+                        <span>留言</span>
+                        <strong>0</strong>
+                    </li>
+                    <li>
+                        <span>浏览</span>
+                        <strong>0</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="paihang">
+                <h2 class="ab_title">
+                    <a href="#">点击排行</a>
+                </h2>
+                <ul>
+                    <li>
+                        <b>
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </b>
+                        <p>
+                            <i>
+                                <a>
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" height="98" width="90"/>
+                                </a>
+                            </i>
+                            四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专...
+                        </p>
+
+                    </li>
+                    <li>
+                        <b>
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </b>
+                        <p>
+                            <i>
+                                <a>
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" height="98" width="90"/>
+                                </a>
+                            </i>
+                            四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专...
+                        </p>
+
+                    </li>
+                    <li>
+                        <b>
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </b>
+                        <p>
+                            <i>
+                                <a>
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" height="98" width="90"/>
+                                </a>
+                            </i>
+                            四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专...
+                        </p>
+
+                    </li>
+                    <li>
+                        <b>
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </b>
+                        <p>
+                            <i>
+                                <a>
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" height="98" width="90"/>
+                                </a>
+                            </i>
+                            四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专...
+                        </p>
+
+                    </li>
+                    <li>
+                        <b>
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </b>
+                        <p>
+                            <i>
+                                <a>
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" height="98" width="90"/>
+                                </a>
+                            </i>
+                            四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专...
+                        </p>
+
+                    </li>
                 </ul>
             </div>
         </div>
@@ -27,8 +214,8 @@
         data() {
             return {
                 ImgFirst: [
-                    {img: require("./../../assets/banner01.jpg")},
-                    {img: require("./../../assets/banner02.jpg")}
+                    {img: require("../../assets/banner01.jpg")},
+                    {img: require("../../assets/banner02.jpg")}
                 ]
             }
         }
@@ -38,9 +225,10 @@
 <style scoped>
     .First{
         background: #f1f1f1;
+        height: 2000px;
     }
     .block{
-        margin-top: 20px;
+        padding-top: 20px;
         width: 60%;
         margin-left: 20%;
     }
@@ -88,5 +276,312 @@
         overflow: hidden;
         padding: 20px 10px;
         position: relative;
+    }
+    .tuijian li{
+        width: 26%;
+        float: left;
+        border-bottom: #ccc 1px solid;
+        border-left: #ccc 1px solid;
+        overflow: hidden;
+        padding: 3.5%;
+    }
+    .tuijian li:hover {
+        background: #fff;
+        box-shadow: #ccc 1px 1px 8px;
+    }
+    .tpic{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #CCC;
+    }
+    .tpic img{
+        display: inline-block;
+        width: 100%;
+        min-height: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .tuijian li b {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        height: 30px;
+        line-height: 30px;
+        margin: 10px 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .tuijian li span {
+        color: #999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        font-size: 14px;
+        height: 58px;
+    }
+    .readmore {
+        margin: 10px 0 0 0;
+        color: #096;
+        display: block;
+        text-decoration: none;
+    }
+    .readmore:before {
+        content: "+";
+        color: #063;
+    }
+    .rightbox{
+        width: 18%;
+        float: right;
+        overflow: hidden;
+        margin-right: 20%;
+    }
+    .sidebar_widget{
+        transition: all .3s ease-out 0s;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #eee;
+        vertical-align: top;
+    }
+    .author_info {
+        text-align: center;
+    }
+    .widget_avatar{
+        position: relative;
+        height: 100px;
+        margin-bottom: 54px;
+        background: url(../../assets/author-img.jpg) no-repeat center center;
+    }
+    .widget_avatar a{
+        display: block;
+        position: absolute;
+        top: 54px;
+        left: 50%;
+        margin-left: -40px;
+        padding: 6px;
+        background-color: transparent;
+        border-radius: 100%;
+    }
+    .widget_avatar a img{
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .admin_field{
+        background-color: #ffa600;
+        color: #fff;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 6px;
+        padding: 0 6px;
+        line-height: 24px;
+        border-radius: 2px;
+    }
+    .author-social{
+        text-align: center;
+        padding: 10px 0 20px;
+        position: relative;
+    }
+    .author-weixin{
+        display: inline-block;
+        margin-left: 10%;
+        border-radius: 2px;
+        float: left;
+    }
+    .author-weixin div{
+        width: 60px;
+        height: 35px;
+        background: url(../../assets/weixinlu.png) no-repeat;
+        cursor: pointer;
+    }
+    .author-weixin div:hover{
+        cursor: pointer;
+        width: 60px;
+        height: 35px;
+        background: url(../../assets/weixinhei.png) no-repeat;
+    }
+    .author-qq{
+        display: inline-block;
+        border-radius: 2px;
+        text-align: center;
+    }
+    .author-qq div{
+        width: 57px;
+        height: 35px;
+        background: url(../../assets/qqhong.png) no-repeat;
+        cursor: pointer;
+    }
+    .author-qq div:hover{
+        cursor: pointer;
+        width: 57px;
+        height: 35px;
+        background: url(../../assets/qqhei.png) no-repeat;
+    }
+    .author-diy{
+        display: inline-block;
+        margin-right: 10%;
+        border-radius: 2px;
+        float: right;
+    }
+    .author-diy div{
+        width: 57px;
+        height: 35px;
+        background: url(../../assets/weibolan.png) no-repeat;
+        cursor: pointer;
+    }
+    .author-diy div:hover{
+        cursor: pointer;
+        width: 57px;
+        height: 35px;
+        background: url(../../assets/weibohei.png) no-repeat;
+    }
+    .sidebar_widget p{
+        padding: 0 20px;
+        font-weight: 500;
+        text-align: justify;
+        margin-bottom: 18px;
+        line-height: 20px;
+        color: #666;
+        font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
+        font-size: 10px;
+    }
+    .author_count{
+        background-color: #fff;
+        border-top: 1px #efefef solid;
+    }
+    .author_count ul{
+        display: flex;
+        text-align: center;
+    }
+    .author_count ul li {
+        float: left;
+        width: 33.333%;
+        border-right: 1px #efefef solid;
+        padding: 8px 0;
+        font-weight: 300;
+    }
+    .author_count ul li span {
+        display: block;
+        font-size: 14px;
+        color: #999;
+        font-weight: 300;
+    }
+    .author_count ul li strong {
+        color: #666;
+        font-size: 12px;
+        font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
+        line-height: 1.42857143;
+    }
+    .paihang{
+        background: #FFF;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+    .ab_title{
+        text-align: center;
+        position: relative;
+        margin: 20px;
+    }
+    .ab_title:before {
+        content: "";
+        width: 25%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+    }
+    .ab_title:after {
+        content: "";
+        width: 25%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        right: 0;
+        bottom: 8px;
+    }
+    .ab_title a{
+        text-decoration: none;
+        color: #555;
+    }
+    .paihang ul{
+        padding: 10px;
+    }
+    .paihang ul li{
+        border-bottom: solid 1px #EAEAEA;
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 0;
+        overflow: hidden;
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    .paihang ul li b {
+        height: 30px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+    }
+    .paihang ul li a{
+        text-decoration: none;
+        color: #555;
+    }
+    .paihang ul li p {
+        line-height: 24px;
+        color: #888;
+        font-size: 14px;
+    }
+    .paihang li p i {
+        width: 100px;
+        height: 90px;
+        overflow: hidden;
+        display: block;
+        border: #efefef 1px solid;
+        float: left;
+        margin-right: 10px;
+    }
+    .hometitle{
+        padding: 0 10px;
+        line-height: 40px;
+        height: 40px;
+        font-size: 18px;
+        border-bottom: #000 2px solid;
+        position: relative;
+    }
+    .list{
+        padding: 10px;
+        overflow: hidden;
+    }
+    .list li{
+        border-bottom: #ccc 1px solid;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .blogtitle{
+        line-height: 30px;
+        margin: 10px 0;
+    }
+    .blogtitle a{
+        text-decoration: none;
+        color: #555;
+    }
+    .blogpic{
+        overflow: hidden;
+        width: 30%;
+        max-height: 100px;
+        display: block;
+        float: left;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+    .blogpic img{
+        width: 100%;
     }
 </style>

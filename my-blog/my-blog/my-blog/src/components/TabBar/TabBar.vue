@@ -9,10 +9,10 @@
             text-color="#fff"
             active-text-color="#ffd04b">
             <div id="xiaozh">小zh个人博客</div>
-            <el-menu-item index="1">网站首页</el-menu-item>
-            <el-menu-item index="2">关于我</el-menu-item>
-            <el-menu-item index="3">博客日记</el-menu-item>
-            <el-menu-item index="4">留言</el-menu-item>
+            <el-menu-item index="1" @click="switchTo('/first')">网站首页</el-menu-item>
+            <el-menu-item index="2" @click="switchTo('/about')">关于我</el-menu-item>
+            <el-menu-item index="3" @click="switchTo('/note')">博客笔记</el-menu-item>
+            <el-menu-item index="4" @click="switchTo('/message')">留言</el-menu-item>
         </el-menu>
     </div>
 </template>
@@ -29,7 +29,10 @@
         methods: {
             handleSelect(key, keyPath) {
                 console.log(key, keyPath);
-            }
+            },
+            switchTo(path) {
+                this.$router.replace(path);
+            },
         },
 
         mounted () {
