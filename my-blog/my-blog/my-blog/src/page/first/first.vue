@@ -13,55 +13,16 @@
                     <span></span>
                     特别推荐
                 </h2>
-                <ul >
-                    <li>
+                <ul>
+                    <li v-for="(hotRecommend, index) in $store.state.hotRecommends" :key="index">
                         <div class="tpic">
-                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
+                            <img :src="hotRecommend.img" :title="hotRecommend.title"/>
                         </div>
-                        <b>女程序员职业生涯该如何发展？</b>
-                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+                        <b>{{hotRecommend.title}}</b>
+                        <span>{{hotRecommend.content}}</span>
                         <a class="readmore">阅读文章</a>
                     </li>
-                    <li>
-                        <div class="tpic">
-                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
-                        </div>
-                        <b>女程序员职业生涯该如何发展？</b>
-                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
-                        <a class="readmore">阅读文章</a>
-                    </li>
-                    <li>
-                        <div class="tpic">
-                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
-                        </div>
-                        <b>女程序员职业生涯该如何发展？</b>
-                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
-                        <a class="readmore">阅读文章</a>
-                    </li>
-                    <li>
-                        <div class="tpic">
-                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
-                        </div>
-                        <b>女程序员职业生涯该如何发展？</b>
-                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
-                        <a class="readmore">阅读文章</a>
-                    </li>
-                    <li>
-                        <div class="tpic">
-                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
-                        </div>
-                        <b>女程序员职业生涯该如何发展？</b>
-                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
-                        <a class="readmore">阅读文章</a>
-                    </li>
-                    <li>
-                        <div class="tpic">
-                            <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"/>
-                        </div>
-                        <b>女程序员职业生涯该如何发展？</b>
-                        <span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
-                        <a class="readmore">阅读文章</a>
-                    </li>
+
                 </ul>
             </div>
             <div class="newblogs">
@@ -77,9 +38,115 @@
                                     <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
                                 </a>
                             </span>
-                            <p></p>
+                            <p>
+                                四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...
+                            </p>
                         </div>
-                        <div class="autor"></div>
+                        <div class="autor">
+                            <span class="dtime">
+                                2019-02-14
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="blogtitle">
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </h3>
+                        <div class="bloginfo">
+                            <span class="blogpic">
+                                <a href="#">
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
+                                </a>
+                            </span>
+                            <p>
+                                四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...
+                            </p>
+                        </div>
+                        <div class="autor">
+                            <span class="dtime">
+                                2019-02-14
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="blogtitle">
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </h3>
+                        <div class="bloginfo">
+                            <span class="blogpic">
+                                <a href="#">
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
+                                </a>
+                            </span>
+                            <p>
+                                四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...
+                            </p>
+                        </div>
+                        <div class="autor">
+                            <span class="dtime">
+                                2019-02-14
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="blogtitle">
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </h3>
+                        <div class="bloginfo">
+                            <span class="blogpic">
+                                <a href="#">
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
+                                </a>
+                            </span>
+                            <p>
+                                四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...
+                            </p>
+                        </div>
+                        <div class="autor">
+                            <span class="dtime">
+                                2019-02-14
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="blogtitle">
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </h3>
+                        <div class="bloginfo">
+                            <span class="blogpic">
+                                <a href="#">
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
+                                </a>
+                            </span>
+                            <p>
+                                四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...
+                            </p>
+                        </div>
+                        <div class="autor">
+                            <span class="dtime">
+                                2019-02-14
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="blogtitle">
+                            <a href="#">女程序员职业生涯该如何发展？</a>
+                        </h3>
+                        <div class="bloginfo">
+                            <span class="blogpic">
+                                <a href="#">
+                                    <img src="../../assets/43baa4c7c03ed66bae98696de5ebc64e.jpg"/>
+                                </a>
+                            </span>
+                            <p>
+                                四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...
+                            </p>
+                        </div>
+                        <div class="autor">
+                            <span class="dtime">
+                                2019-02-14
+                            </span>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -211,6 +278,9 @@
 <script>
     export default {
         name: "first",
+        mounted() {
+          this.$store.dispatch('reqRecommends')
+        },
         data() {
             return {
                 ImgFirst: [
@@ -245,6 +315,7 @@
         float: left;
         overflow: hidden;
         margin-left: 20%;
+        margin-top: 10px;
     }
     .tuijian{
         background: #fff;
@@ -337,6 +408,7 @@
         float: right;
         overflow: hidden;
         margin-right: 20%;
+        margin-top: 25px;
     }
     .sidebar_widget{
         transition: all .3s ease-out 0s;
@@ -582,6 +654,23 @@
         border-radius: 5px;
     }
     .blogpic img{
-        width: 100%;
+        width: 90%;
+    }
+    .bloginfo p {
+        color: #888;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .dtime{
+        margin: 0 10px 0 0;
+        padding-left: 20px;
+        float: left;
+        color: #838383;
+        font-size: 12px;
+        background: url("../../assets/newsbg02.png") no-repeat left center;
     }
 </style>
