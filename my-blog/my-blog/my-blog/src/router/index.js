@@ -5,6 +5,7 @@ import About from "./../page/about/about"
 import Note from "./../page/note/note"
 import Message from "./../page/message/message"
 import First from "./../page/first/first"
+import BFC from "./../page/blognote/BFC"
 
 Vue.use(Router);
 
@@ -20,11 +21,19 @@ export default new Router({
         },
         {
             path: "/note",
-            component: Note
+            component: Note,
+            children: [
+                //日常博客
+                {path: '/note/bfc', component: BFC}
+            ]
         },
         {
             path: "/message",
             component: Message
-        },
+        }
+        // {
+        //     path: "/bfc",
+        //     component: BFC
+        // }
     ]
 })

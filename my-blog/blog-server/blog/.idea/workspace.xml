@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9111b14d-f2f3-4908-b7e8-079eb61bf7d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/hotReommends.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/-34550ac663a8f32b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1384285139964404.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/43baa4c7c03ed66bae98696de5ebc64e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/author-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/newsbg02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/qqhei.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/qqhong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/weibohei.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/weibolan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/weixinhei.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/weixinlu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/api/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/mutation-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/blognote/BFC.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hotReommends.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/hotReommends.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/about/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/about/about.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/first/first.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/first/first.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/note/note.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/page/note/note.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/src/store/actions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,26 +32,26 @@
         <counts>
           <entry key="jpg" value="2" />
           <entry key="js" value="1" />
-          <entry key="json" value="1" />
+          <entry key="json" value="2" />
           <entry key="www" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="2" />
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="2" />
           <entry key="JavaScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="166" />
-          <entry key="json" value="98" />
+          <entry key="json" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="98" />
+          <entry key="JSON" value="140" />
           <entry key="JavaScript" value="166" />
         </counts>
       </usages-collector>
@@ -97,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/hotReommends.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="497">
+              <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -122,6 +96,8 @@
       <list>
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/data/paihang.json" />
+        <option value="$PROJECT_DIR$/data/paihangs.json" />
         <option value="$PROJECT_DIR$/data/hotReommends.json" />
       </list>
     </option>
@@ -226,12 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550125119295</updated>
-      <workItem from="1550125120460" duration="4577000" />
+      <workItem from="1550125120460" duration="6329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4577000" />
+    <option name="totallyTimeSpent" value="6329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -281,10 +257,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/paihangs.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/hotReommends.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="497">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
         </state>
       </provider>
     </entry>
