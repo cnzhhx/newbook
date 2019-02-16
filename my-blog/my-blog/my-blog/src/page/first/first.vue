@@ -269,7 +269,7 @@
         position: relative;
         height: 100px;
         margin-bottom: 54px;
-        background: url(../../assets/author-img.jpg) no-repeat center center;
+        background: url(../../assets/u=3782685451,3066622536&fm=27&gp=0.jpg) no-repeat center center;
     }
     .widget_avatar a{
         display: block;
