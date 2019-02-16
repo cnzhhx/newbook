@@ -3,31 +3,37 @@
    {
       "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
       "title": "BFC",
+      "path": "/note/bfc",
       "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
    },
    {
+     "img": "http://127.0.0.1:3000/images/u=109979889,2287623035&fm=26&gp=0.jpg",
+     "title": "面向对象-继承",
+     "path": "/note/inherit",
+     "content": "一．继承的概念   它有三个类，分别是超类型、父类型、子类型。举例:类:  动物  狗类   哈士奇对于狗类来说  动物是它的父类型,而哈士奇类是它的子类型"
+   },
+   {
      "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
      "title": "BFC",
+     "path": "/note/bfc",
      "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
    },
    {
      "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
      "title": "BFC",
+     "path": "/note/bfc",
      "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
    },
    {
      "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
      "title": "BFC",
+     "path": "/note/bfc",
      "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
    },
    {
      "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
      "title": "BFC",
-     "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
-   },
-   {
-     "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
-     "title": "BFC",
+     "path": "/note/bfc",
      "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
    }
  ]

@@ -3,7 +3,7 @@ import {
 } from "../api/index"
 
 import {
-    HOME_CASUAL,
+    HOME_CASUAL
 } from "./mutation-types"
 
 
@@ -14,8 +14,6 @@ export default {
     async reqRecommends({commit}) {
         const result = await hotRecommends();
         commit(HOME_CASUAL, {hotRecommends: result.message.hotRecommends})
-    }
-
-
+    },
 
 }

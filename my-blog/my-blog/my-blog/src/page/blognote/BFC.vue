@@ -184,12 +184,12 @@
 <style scoped>
     .page{
         background-color: rgb(241,241,241);
-        width: 100%;
+        width: 60%;
         height: 100%;
         padding: 20px 20% 0 20%;
     }
     .BFC{
-        width: 60%;
+        width: 100%;
         background-color: #fff;
     }
     .kongxi{

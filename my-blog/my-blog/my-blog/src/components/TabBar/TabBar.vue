@@ -1,19 +1,12 @@
 <template>
-    <div class="top-bar">
-        <el-menu
-            :default-active="activeIndex"
-            class="el-menu-demo"
-            mode="horizontal"
-            @select="handleSelect"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
+    <div class="pagetop">
+        <div class="top-bar">
             <div id="xiaozh">小zh个人博客</div>
-            <el-menu-item index="1" @click="switchTo('/first')">网站首页</el-menu-item>
-            <el-menu-item index="2" @click="switchTo('/about')">关于我</el-menu-item>
-            <el-menu-item index="3" @click="switchTo('/note')">博客笔记</el-menu-item>
-            <el-menu-item index="4" @click="switchTo('/message')">留言</el-menu-item>
-        </el-menu>
+            <div class="Right" @click="switchTo('/message');select($event)">留言</div>
+            <div class="Right" @click="switchTo('/note');select($event)">博客笔记</div>
+            <div class="Right" @click="switchTo('/about');select($event)">关于我</div>
+            <div class="Right" @click="switchTo('/first');select($event)">网站首页</div>
+        </div>
     </div>
 </template>
 
@@ -22,54 +15,93 @@
         name: "TabBar",
         data() {
             return {
-                activeIndex: '1',
-                screenWidth: document.body.clientWidth   // 这里是给到了一个默认值
+
             };
         },
+        mounted() {
+            let Right = document.getElementsByClassName("Right");
+            const lujing = this.$route.path;
+            for(let i=0; i<Right.length; i++) {
+                Right[i].className = "Right";
+            }
+            if(lujing.indexOf("/first") === 0){
+                Right[3].className = "Right taCor";
+            }else if(lujing.indexOf("/note") === 0){
+                Right[1].className = "Right taCor";
+            }else if(lujing.indexOf("/about") === 0){
+                Right[2].className = "Right taCor";
+            }else if(lujing.indexOf("/message") === 0){
+                Right[0].className = "Right taCor";
+            }
+        },
+        watch: {
+          $route(to, from)  {
+              let Right = document.getElementsByClassName("Right");
+              const lujing = this.$route.path;
+              for(let i=0; i<Right.length; i++) {
+                  Right[i].className = "Right";
+              }
+              if(lujing.indexOf("/first") === 0){
+                  Right[3].className = "Right taCor";
+              }else if(lujing.indexOf("/note") === 0){
+                  Right[1].className = "Right taCor";
+              }else if(lujing.indexOf("/about") === 0){
+                  Right[2].className = "Right taCor";
+              }else if(lujing.indexOf("/message") === 0){
+                  Right[0].className = "Right taCor";
+              }
+          }
+        },
         methods: {
-            handleSelect(key, keyPath) {
-                console.log(key, keyPath);
-            },
             switchTo(path) {
                 this.$router.replace(path);
             },
-        },
+            select(e) {
+                let Right = document.getElementsByClassName('Right');
+                for(let i=0; i<Right.length; i++) {
+                    Right[i].className = "Right";
+                }
+                e.target.className = "Right taCor";
+                }
 
-        mounted () {
-            const that = this;
-            window.onresize = () => {
-                return (() => {
-                    window.screenWidth = document.body.clientWidth;
-                    that.screenWidth = window.screenWidth
-                })()
-            }
-            let xiaozh = document.getElementById("xiaozh");
-            let leftz = document.getElementsByClassName("top-bar")[0];
-            xiaozh.style.left = leftz.offsetWidth*0.2 + "px";
-        },
-        watch: {
-            screenWidth (val) {
-                this.screenWidth = val;
-                let xiaozh = document.getElementById("xiaozh");
-                let leftz = document.getElementsByClassName("top-bar")[0];
-                xiaozh.style.left = leftz.offsetWidth*0.2 + "px";
-            }
         }
     }
 </script>
 
 <style>
-    #xiaozh{
-        position: absolute;
-        color: rgb(255, 255, 255);
-        border-bottom-color: transparent;
+    .pagetop{
+        width: 60%;
+        padding: 0 20%;
         background-color: rgb(84, 92, 100);
-        left: 50px;
-        top: 15px;
-        font-size: 20px;
+        height: 60px;
     }
-    .el-menu-demo{
-        padding-left: 60%;
-        position: relative;
+    #xiaozh{
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .Right{
+        float: right;
+        color: rgb(255, 255, 255);
+        height: 60px;
+        line-height: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: rgb(84, 92, 100);;
+    }
+    .Right:hover{
+        background-color: rgb(67, 74, 80);
+        color: #ffd04b;
+        border-bottom: 2px solid #ffd04b;
+    }
+    .taCor{
+        background-color: rgb(67, 74, 80);
+        color: #ffd04b;
+        border-bottom: 2px solid #ffd04b;
     }
 </style>
+

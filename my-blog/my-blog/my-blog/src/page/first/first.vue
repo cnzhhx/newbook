@@ -20,7 +20,7 @@
                         </div>
                         <b>{{hotRecommend.title}}</b>
                         <span>{{hotRecommend.content}}</span>
-                        <a class="readmore">阅读文章</a>
+                        <a @click="switchTo(hotRecommend.path)" class="readmore">阅读文章</a>
                     </li>
                 </ul>
             </div>
@@ -29,12 +29,12 @@
                 <ul class="list">
                     <li v-for="(hotRecommend, index) in $store.state.hotRecommends" :key="index">
                         <h3 class="blogtitle" >
-                            <a href="#">{{hotRecommend.title}}</a>
+                            <a @click="switchTo(hotRecommend.path)">{{hotRecommend.title}}</a>
                         </h3>
                         <div class="bloginfo">
                             <span class="blogpic">
                                 <a href="#">
-                                    <img :src="hotRecommend.img"/>
+                                    <img @click="switchTo(hotRecommend.path)" :src="hotRecommend.img"/>
                                 </a>
                             </span>
                             <p>
@@ -55,7 +55,7 @@
                 <div class="author_info">
                     <div class="widget_avatar">
                         <a>
-                            <img src="../../assets/-34550ac663a8f32b.jpg" height="80" width="80"/>
+                            <img  src="../../assets/-34550ac663a8f32b.jpg" height="80" width="80"/>
                         </a>
                     </div>
                     <h3>
@@ -105,7 +105,7 @@
                         <p>
                             <i>
                                 <a>
-                                    <img :src="hotRecommend.img" height="98" width="90"/>
+                                    <img @click="switchTo(hotRecommend.path)" class="big" :src="hotRecommend.img" height="98" width="90"/>
                                 </a>
                             </i>
                             {{hotRecommend.content}}
@@ -120,6 +120,11 @@
 <script>
     export default {
         name: "first",
+        methods: {
+            switchTo(path) {
+                this.$router.replace(path);
+            },
+        },
         mounted() {
           this.$store.dispatch('reqRecommends')
         },
@@ -240,6 +245,7 @@
         color: #096;
         display: block;
         text-decoration: none;
+        cursor: pointer;
     }
     .readmore:before {
         content: "+";
@@ -283,6 +289,9 @@
     }
     .widget_avatar a img{
         border-radius: 50%;
+        cursor: pointer;
+    }
+    .big{
         cursor: pointer;
     }
     .admin_field{
