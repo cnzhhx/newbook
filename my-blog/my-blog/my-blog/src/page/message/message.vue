@@ -6,7 +6,12 @@
                 <textarea id="my_textarea" cols="60" rows="10"></textarea>
                 <button @click="fabiao()" id="btn">发表</button>
             </div>
-            <ul id="ul"></ul>
+            <ul id="ul">
+                <li v-for="(LiuyanData, index) in $store.state.LiuyanDatas" :key="index">
+                    {{LiuyanData.liuyan}}
+                    <span>{{LiuyanData.time}}</span>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -45,7 +50,6 @@
                 my_textarea.value = '';
 
                 result = await liuYan(content, date);
-                console.log(result);
 
                 // let as =  ul.getElementsByTagName('a');
                 // for (let i = 0; i < as.length; i++) {
@@ -55,7 +59,10 @@
                 //     }
                 // }
             }
-        }
+        },
+        mounted() {
+            this.$store.dispatch('reqLiuyanDatas');
+        },
     }
 </script>
 
@@ -80,6 +87,15 @@
         margin:  0 80px;
     }
     #ul li a {
+        float: right;
+    }
+
+    #ul li {
+        border-bottom: 1px dashed #ccc;
+        line-height: 44px;
+    }
+
+    #ul li span {
         float: right;
     }
 

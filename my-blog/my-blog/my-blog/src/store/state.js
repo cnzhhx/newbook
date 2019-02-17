@@ -4,6 +4,6 @@ export default {
     hotRecommends: [],
 
     //留言
-
+    LiuyanDatas: []
 
 }

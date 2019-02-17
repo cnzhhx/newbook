@@ -1,9 +1,11 @@
 import {
-    hotRecommends
+    hotRecommends,
+    liuyanDatas
 } from "../api/index"
 
 import {
-    HOME_CASUAL
+    HOME_CASUAL,
+    LIUYAN_DATAS
 } from "./mutation-types"
 
 
@@ -15,5 +17,10 @@ export default {
         const result = await hotRecommends();
         commit(HOME_CASUAL, {hotRecommends: result.message.hotRecommends})
     },
+
+    async reqLiuyanDatas({commit}) {
+        const result = await liuyanDatas();
+        commit(LIUYAN_DATAS, {liuyan_Datas: result.message})
+    }
 
 }
