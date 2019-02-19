@@ -13,28 +13,28 @@
      "content": "一．继承的概念   它有三个类，分别是超类型、父类型、子类型。举例:类:  动物  狗类   哈士奇对于狗类来说  动物是它的父类型,而哈士奇类是它的子类型"
    },
    {
-     "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
-     "title": "BFC",
-     "path": "/note/bfc",
-     "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
+     "img": "http://127.0.0.1:3000/images/jichenglian.png",
+     "title": "继承的具体方式详解",
+     "path": "/note/inheritNote",
+     "content": "一． 继承-原型链继承1.原型链每个函数都能构造出一个对象，这个对象内部有个属性指向这个函数的原型对象；"
    },
    {
-     "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
-     "title": "BFC",
-     "path": "/note/bfc",
-     "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
+     "img": "http://127.0.0.1:3000/images/e9a39d461772ea47c308cb371ca904dd.jpeg",
+     "title": "你不知道的JS—第一章",
+     "path": "/note/unknownjs1",
+     "content": "1.1类型ECMAScript语言类型包括Undefined、Null、Boolean、String、Number和Object。"
    },
    {
-     "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
-     "title": "BFC",
-     "path": "/note/bfc",
-     "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
+     "img": "http://127.0.0.1:3000/images/u=3826702416,1930501860&fm=26&gp=0.jpg",
+     "title": "你不知道的JS—第二章",
+     "path": "/note/unknownjs2",
+     "content": "第二章 值   2.1 数组在JavaScript中，数组可以容纳任何类型的值。"
    },
    {
-     "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
-     "title": "BFC",
-     "path": "/note/bfc",
-     "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
+     "img": "http://127.0.0.1:3000/images/u=1526418290,3710003004&fm=26&gp=0.jpg",
+     "title": "你不知道的JS—第三章",
+     "path": "/note/unknownjs3",
+     "content": "第三章 原生函数     JavaScript的内建函数（build-in function），也叫原生函数（native function）。常见的原生函数有："
    }
  ]
 }
