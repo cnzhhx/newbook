@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd7e7c8a-324d-4a55-886e-11b3b41bd4ee" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/page/blognote/inheritNote.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-blog/blog-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/blog-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/blog-server/blog/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/blog-server/blog/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/page/message/message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/page/message/message.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/mutation-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../my-blog/my-blog/my-blog/src/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,6 +20,7 @@
     <session id="1106667611">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -146,6 +142,12 @@
               <item name="music-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="music-server" type="462c0819:PsiDirectoryNode" />
               <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="music-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music-server" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,16 +204,15 @@
       <workItem from="1541588740453" duration="58000" />
       <workItem from="1541588837747" duration="11072000" />
       <workItem from="1542790878709" duration="3288000" />
-      <workItem from="1550288813568" duration="4803000" />
+      <workItem from="1550288813568" duration="4926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19235000" />
+    <option name="totallyTimeSpent" value="19358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
