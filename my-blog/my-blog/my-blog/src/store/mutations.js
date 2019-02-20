@@ -13,7 +13,7 @@ export default {
 
     //留言数据
     [LIUYAN_DATAS](state, {liuyan_Datas}){
-        state.LiuyanDatas = liuyan_Datas;
+        state.LiuyanDatas = liuyan_Datas.reverse();
     }
 
 }

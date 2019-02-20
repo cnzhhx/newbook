@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769a3ff5-d411-4094-b6bf-9f63b97d04ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/blognote/Unknown-JS-1.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/blognote/Unknown-JS-2.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/blognote/Unknown-JS-3.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/data/hotReommends.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/data/hotReommends.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/assets/1384285139964404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/assets/43baa4c7c03ed66bae98696de5ebc64e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/assets/author-img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/page/blognote/inheritNote.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/blognote/inheritNote.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/store/mutations.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -235,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550288799038</updated>
       <workItem from="1550288800322" duration="9862000" />
-      <workItem from="1550553792021" duration="3433000" />
+      <workItem from="1550553792021" duration="4124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13295000" />
+    <option name="totallyTimeSpent" value="13986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
