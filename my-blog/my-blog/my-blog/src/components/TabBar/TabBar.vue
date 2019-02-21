@@ -13,12 +13,8 @@
 <script>
     export default {
         name: "TabBar",
-        data() {
-            return {
-
-            };
-        },
         mounted() {
+            //路径
             let Right = document.getElementsByClassName("Right");
             const lujing = this.$route.path;
             for(let i=0; i<Right.length; i++) {
@@ -35,7 +31,8 @@
             }
         },
         watch: {
-          $route(to, from)  {
+            $route(to, from)  {
+              //路径
               let Right = document.getElementsByClassName("Right");
               const lujing = this.$route.path;
               for(let i=0; i<Right.length; i++) {
@@ -50,7 +47,15 @@
               }else if(lujing.indexOf("/message") === 0){
                   Right[0].className = "Right taCor";
               }
-          }
+          },
+
+
+            screenWidth (val) {
+                this.screenWidth = val;
+                if( val < 1220){
+
+                }
+            }
         },
         methods: {
             switchTo(path) {

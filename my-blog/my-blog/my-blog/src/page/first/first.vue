@@ -66,33 +66,33 @@
                 </div>
                 <div class="author-social">
                     <span class="author-weixin">
-                        <div></div>
+                        <div><img id="img1" src="../../assets/20190221134547.png" width="100" height="100"/></div>
                     </span>
                     <span class="author-qq">
-                        <div></div>
+                        <div><img id="img2" src="../../assets/20190221134611.png" width="100" height="100"/></div>
                     </span>
                     <span class="author-diy">
-                        <div></div>
+                        <div><a href="https://weibo.com/"  target="_blank"></a></div>
                     </span>
                 </div>
                 <p>小zh个人博客，是一个记录自己生活点滴、互联网技术的原创独立博客（xiaozhqq.cn）。</p>
             </div>
-            <div class="author_count">
-                <ul>
-                    <li>
-                        <span>文章</span>
-                        <strong>0</strong>
-                    </li>
-                    <li>
-                        <span>留言</span>
-                        <strong>0</strong>
-                    </li>
-                    <li>
-                        <span>浏览</span>
-                        <strong>0</strong>
-                    </li>
-                </ul>
-            </div>
+            <!--<div class="author_count">-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<span>文章</span>-->
+                        <!--<strong>0</strong>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span>留言</span>-->
+                        <!--<strong>0</strong>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span>浏览</span>-->
+                        <!--<strong>0</strong>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
             <div class="paihang">
                 <h2 class="ab_title">
                     <a href="#">点击排行</a>
@@ -126,6 +126,16 @@
             },
         },
         mounted() {
+            //自适应
+            const that = this;
+            window.onresize = () => {
+                return (() => {
+                    window.screenWidth = document.body.clientWidth;
+                    that.screenWidth = window.screenWidth;
+                })()
+            };
+
+
           this.$store.dispatch('reqRecommends')
         },
         data() {
@@ -133,9 +143,33 @@
                 ImgFirst: [
                     {img: require("../../assets/banner01.jpg")},
                     {img: require("../../assets/banner02.jpg")}
-                ]
+                ],
+                screenWidth: document.body.clientWidth   //给到了一个默认值
             }
-        }
+        },
+        watch: {
+            screenWidth (val) {
+                this.screenWidth = val;
+                let author_weixin = document.getElementsByClassName("author-weixin")[0];
+                let author_diy = document.getElementsByClassName("author-diy")[0];
+                let rightbox = document.getElementsByClassName("rightbox")[0];
+                let leftbox = document.getElementsByClassName("leftbox")[0];
+                if(val>1220){
+                    author_weixin.style.marginLeft = 10+"%";
+                    author_diy.style.marginRight = 10+"%";
+                    rightbox.style.display = "block";
+                    leftbox.style.width = 40 + "%";
+                }else if(val<1220&&val>979){
+                    author_weixin.style.marginLeft = 0;
+                    author_diy.style.marginRight = 0;
+                    rightbox.style.display = "block";
+                    leftbox.style.width = 40 + "%";
+                }else{
+                    rightbox.style.display = "none";
+                    leftbox.style.width = 60 + "%";
+                }
+            }
+        },
     }
 </script>
 
@@ -317,10 +351,23 @@
         float: left;
     }
     .author-weixin div{
+        position: relative;
         width: 60px;
         height: 35px;
-        background: url(../../assets/weixinlu.png) no-repeat;
+        background: url(../../assets/weixinlu.png) no-repeat center center;
         cursor: pointer;
+    }
+    .author-weixin div img{
+        display: none;
+        position: absolute;
+        top: -100px;
+        left: 0;
+    }
+    .author-weixin div:hover  #img1{
+        display: inline-block;
+        position: absolute;
+        top: -100px;
+        left: 0;
     }
     .author-weixin div:hover{
         cursor: pointer;
@@ -338,6 +385,21 @@
         height: 35px;
         background: url(../../assets/qqhong.png) no-repeat;
         cursor: pointer;
+    }
+    .author-qq div img{
+        display: none;
+    }
+    .author-qq div img{
+        display: none;
+        position: absolute;
+        top: -100px;
+        left: 0;
+    }
+    .author-qq div:hover  #img2{
+        display: inline-block;
+        position: absolute;
+        top: -100px;
+        left: 50px;
     }
     .author-qq div:hover{
         cursor: pointer;
@@ -362,6 +424,11 @@
         width: 57px;
         height: 35px;
         background: url(../../assets/weibohei.png) no-repeat;
+    }
+    .author-diy div a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
     }
     .sidebar_widget p{
         padding: 0 20px;
