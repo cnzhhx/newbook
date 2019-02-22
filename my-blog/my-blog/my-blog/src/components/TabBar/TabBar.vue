@@ -10,12 +10,49 @@
     </div>
 </template>
 
+<!--onresize="this.TopBalWidth = document.getElementsByClassName('pagetop')[0].style.width*10/6;"-->
 <script>
     export default {
         name: "TabBar",
+        data() {
+            return {
+
+            }
+        },
         mounted() {
-            //路径
             let Right = document.getElementsByClassName("Right");
+            let xiaozh = document.getElementById("xiaozh");
+
+            const that = this;
+            window.onresize = function () {
+                this.TopBalWidth = document.getElementsByClassName("pagetop")[0].style.width*10/6;
+                console.log(that.TopBalWidth);
+            };
+
+            // if( this.TopBalWidth > 747){
+            //     for(let i=0; i<4; i++){
+            //         Right[i].style.fontSize = 15+"px";
+            //         Right[i].style.paddingLeft = 15+"px";
+            //         Right[i].style.paddingRight = 15+"px";
+            //     }
+            //     xiaozh.style.fontSize = 20+"px";
+            // }else if(this.TopBalWidth<747&&this.TopBalWidth>615){
+            //     for(let i=0; i<4; i++){
+            //         Right[i].style.fontSize = 10+"px";
+            //         Right[i].style.paddingLeft = 10+"px";
+            //         Right[i].style.paddingRight = 10+"px";
+            //     }
+            //     xiaozh.style.fontSize = 20+"px";
+            // }else if(this.TopBalWidth<615){
+            //     for(let i=0; i<4; i++){
+            //         Right[i].style.fontSize = 7+"px";
+            //         Right[i].style.paddingLeft = 5+"px";
+            //         Right[i].style.paddingRight = 5+"px";
+            //     }
+            //     xiaozh.style.fontSize = 15+"px";
+            // }
+
+            //路径
             const lujing = this.$route.path;
             for(let i=0; i<Right.length; i++) {
                 Right[i].className = "Right";
@@ -50,11 +87,34 @@
           },
 
 
-            screenWidth (val) {
-                this.screenWidth = val;
-                if( val < 1220){
-
-                }
+            TopBalWidth (val) {
+                this.TopBalWidth = val;
+                console.log(that.TopBalWidth);
+                let Right = document.getElementsByClassName("Right");
+                let xiaozh = document.getElementById("xiaozh");
+                // if( this.TopBalWidth > 747){
+                //     for(let i=0; i<4; i++){
+                //         Right[i].style.fontSize = 15+"px";
+                //         Right[i].style.paddingLeft = 15+"px";
+                //         Right[i].style.paddingRight = 15+"px";
+                //     }
+                //     xiaozh.style.fontSize = 20+"px";
+                // }else if(this.TopBalWidth<747&&this.TopBalWidth>615){
+                //     for(let i=0; i<4; i++){
+                //         Right[i].style.fontSize = 10+"px";
+                //         Right[i].style.paddingLeft = 10+"px";
+                //         Right[i].style.paddingRight = 10+"px";
+                //     }
+                //     xiaozh.style.fontSize = 20+"px";
+                // }else if(this.TopBalWidth<615){
+                //     for(let i=0; i<4; i++){
+                //         Right[i].style.fontSize = 7+"px";
+                //         Right[i].style.paddingLeft = 5+"px";
+                //         Right[i].style.paddingRight = 5+"px";
+                //     }
+                //     xiaozh.style.fontSize = 15+"px";
+                //
+                // }
             }
         },
         methods: {

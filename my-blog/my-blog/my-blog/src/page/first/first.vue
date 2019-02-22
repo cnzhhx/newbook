@@ -130,10 +130,27 @@
             const that = this;
             window.onresize = () => {
                 return (() => {
-                    window.screenWidth = document.body.clientWidth;
-                    that.screenWidth = window.screenWidth;
+                    that.screenWidth = document.body.clientWidth;
                 })()
             };
+            let author_weixin = document.getElementsByClassName("author-weixin")[0];
+            let author_diy = document.getElementsByClassName("author-diy")[0];
+            let rightbox = document.getElementsByClassName("rightbox")[0];
+            let leftbox = document.getElementsByClassName("leftbox")[0];
+            if(this.screenWidth>1220){
+                author_weixin.style.marginLeft = 10+"%";
+                author_diy.style.marginRight = 10+"%";
+                rightbox.style.display = "block";
+                leftbox.style.width = 40 + "%";
+            }else if(this.screenWidth<1220&&this.screenWidth>979){
+                author_weixin.style.marginLeft = 0;
+                author_diy.style.marginRight = 0;
+                rightbox.style.display = "block";
+                leftbox.style.width = 40 + "%";
+            }else{
+                rightbox.style.display = "none";
+                leftbox.style.width = 60 + "%";
+            }
 
 
           this.$store.dispatch('reqRecommends')
