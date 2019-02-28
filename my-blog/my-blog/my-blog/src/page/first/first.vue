@@ -118,8 +118,10 @@
 </template>
 
 <script>
+    import BiuBiu from "../../components/BiuBiu/BiuBiu";
     export default {
         name: "first",
+        components: {BiuBiu},
         methods: {
             switchTo(path) {
                 this.$router.replace(path);
