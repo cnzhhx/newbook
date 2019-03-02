@@ -67,17 +67,26 @@
 </script>
 
 <style scoped>
+    .message{
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 1000px;
+        justify-content: center; /*子元素水平居中*/
+        align-items: center; /*子元素垂直居中*/
+        display: -webkit-flex;
+    }
+
     #box {
         width: 800px;
         border: 1px solid #ccc;
-        margin: 100px auto;
         padding: 20px;
+        margin-top: -30%;
     }
 
     #my_textarea {
         width: 80%;
         height: 120px;
-        resize:none
+        resize:none;
     }
     .box-top {
         margin-bottom: 20px;

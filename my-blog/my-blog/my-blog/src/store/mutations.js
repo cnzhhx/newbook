@@ -8,7 +8,7 @@ export default {
 
     //首页推荐
     [HOME_CASUAL](state, {hotRecommends}) {
-        state.hotRecommends = hotRecommends;
+        state.hotRecommends = hotRecommends.reverse();
     },
 
     //留言数据

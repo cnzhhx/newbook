@@ -43,7 +43,7 @@
                         </div>
                         <div class="autor">
                             <span class="dtime">
-                                2019-02-14
+                                {{hotRecommend.time}}
                             </span>
                         </div>
                     </li>
@@ -118,10 +118,8 @@
 </template>
 
 <script>
-    import BiuBiu from "../../components/BiuBiu/BiuBiu";
     export default {
         name: "first",
-        components: {BiuBiu},
         methods: {
             switchTo(path) {
                 this.$router.replace(path);
@@ -564,6 +562,10 @@
         border-bottom: #000 2px solid;
         position: relative;
     }
+    .newblogs{
+        background-color: white;
+        margin-top: 20px;
+    }
     .list{
         padding: 10px;
         overflow: hidden;
@@ -604,10 +606,8 @@
     }
     .dtime{
         margin: 0 10px 0 0;
-        padding-left: 20px;
         float: left;
         color: #838383;
         font-size: 12px;
-        background: url("../../assets/newsbg02.png") no-repeat left center;
     }
 </style>
