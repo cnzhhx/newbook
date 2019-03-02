@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a52a050-1de7-414a-9d9a-cb0dc40c5e0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../blog-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-server/blog/data/hotReommends.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-server/blog/data/hotReommends.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-blog/src/page/about/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/src/page/about/about.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-blog/src/page/first/first.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/src/page/first/first.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-blog/src/page/message/message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/src/page/message/message.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-blog/src/page/note/note.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/src/page/note/note.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-blog/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/src/store/mutations.js" afterDir="false" />
-    </list>
+    <list default="true" id="1a52a050-1de7-414a-9d9a-cb0dc40c5e0e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -334,15 +325,15 @@
       <workItem from="1550288796518" duration="20713000" />
       <workItem from="1550553790636" duration="9636000" />
       <workItem from="1551346447722" duration="5909000" />
-      <workItem from="1551490138413" duration="3771000" />
+      <workItem from="1551490138413" duration="4370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40029000" />
+    <option name="totallyTimeSpent" value="40628000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18335089" />

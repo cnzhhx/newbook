@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769a3ff5-d411-4094-b6bf-9f63b97d04ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/data/hotReommends.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/data/hotReommends.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/page/about/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/about/about.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/page/first/first.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/first/first.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/page/message/message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/message/message.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/page/note/note.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/page/note/note.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-blog/my-blog/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/my-blog/src/store/mutations.js" afterDir="false" />
-    </list>
+    <list default="true" id="769a3ff5-d411-4094-b6bf-9f63b97d04ab" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
