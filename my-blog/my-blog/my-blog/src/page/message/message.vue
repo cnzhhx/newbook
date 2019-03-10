@@ -15,13 +15,13 @@
                 </ul>
             </div>
             <div class="haoMa">
-                <div class="weiye">尾页</div>
+                <div class="weiye" @click="tiaoYue(Math.ceil($store.state.LiuyanDatas.length/13)-1)">尾页</div>
                 <ul class="ulliuyan">
-                    <li class="liliuyan" v-for="(LiuyanData, index) in Math.ceil($store.state.LiuyanDatas.length/13)" :key="index">
+                    <li class="liliuyan" @click="tiaoYue(index)" v-for="(LiuyanData, index) in Math.ceil($store.state.LiuyanDatas.length/13)" :key="index">
                         {{index+1}}
                     </li>
                 </ul>
-                <div class="shouye">首页</div>
+                <div class="shouye" @click="tiaoYue(0)">首页</div>
 
             </div>
         </div>
@@ -36,7 +36,7 @@
         name: "message",
         data() {
           return{
-              LiuyanDatas : this.$store.state.LiuyanDatas
+
           }
         },
         methods: {
@@ -59,7 +59,6 @@
                 let date2 = li.childNodes[1];
                 date2.innerHTML = date;
 
-                ul.style.margin = "0 80px";
                 li.style.borderBottom= '1px dashed #ccc';
                 li.style.lineHeight= '44px';
                 date2.style.float= 'right';
@@ -76,15 +75,18 @@
                 //     }
                 // }
             },
-            tiaoYue(){
+            tiaoYue(num){
                 let ul = document.getElementById("ul");
                 let uldiv = document.getElementsByClassName("uldiv")[0];
-
+                if(num === 0){
+                    ul.style.top = "0"
+                }else{
+                    ul.style.top = "-"+num*585+"px";
+                }
             }
         },
         mounted() {
             this.$store.dispatch('reqLiuyanDatas');
-            console.log(this.LiuyanDatas.length);
         },
     }
 </script>
@@ -115,11 +117,13 @@
     }
     .uldiv{
         margin:  0 80px;
-
+        height: 585px;
+        position: relative;
+        overflow: hidden;
     }
     #ul {
-        overflow: hidden;
         height: 590px;
+        position: relative;
     }
     #ul li a {
         float: right;
