@@ -6,12 +6,24 @@
                 <textarea id="my_textarea" cols="60" rows="10"></textarea>
                 <button @click="fabiao()" id="btn">发表</button>
             </div>
-            <ul id="ul">
-                <li v-for="(LiuyanData, index) in $store.state.LiuyanDatas" :key="index">
-                    {{LiuyanData.liuyan}}
-                    <span>{{LiuyanData.time}}</span>
-                </li>
-            </ul>
+            <div class="uldiv">
+                <ul id="ul">
+                    <li v-for="(LiuyanData, index) in $store.state.LiuyanDatas" :key="index">
+                        {{LiuyanData.liuyan}}
+                        <span>{{LiuyanData.time}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="haoMa">
+                <div class="weiye">尾页</div>
+                <ul class="ulliuyan">
+                    <li class="liliuyan" v-for="(LiuyanData, index) in Math.ceil($store.state.LiuyanDatas.length/13)" :key="index">
+                        {{index+1}}
+                    </li>
+                </ul>
+                <div class="shouye">首页</div>
+
+            </div>
         </div>
     </div>
 </template>
@@ -22,6 +34,11 @@
 
     export default {
         name: "message",
+        data() {
+          return{
+              LiuyanDatas : this.$store.state.LiuyanDatas
+          }
+        },
         methods: {
             async fabiao() {
                 let result;
@@ -58,10 +75,16 @@
                 //         this.parentNode.remove();
                 //     }
                 // }
+            },
+            tiaoYue(){
+                let ul = document.getElementById("ul");
+                let uldiv = document.getElementsByClassName("uldiv")[0];
+
             }
         },
         mounted() {
             this.$store.dispatch('reqLiuyanDatas');
+            console.log(this.LiuyanDatas.length);
         },
     }
 </script>
@@ -90,9 +113,13 @@
     .box-top {
         margin-bottom: 20px;
     }
-
-    #ul {
+    .uldiv{
         margin:  0 80px;
+
+    }
+    #ul {
+        overflow: hidden;
+        height: 590px;
     }
     #ul li a {
         float: right;
@@ -106,5 +133,31 @@
     #ul li span {
         float: right;
     }
-
+    .haoMa{
+        padding-top: 10px;
+    }
+    .shouye{
+        float: right;
+        padding: 0 2px 0 2px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .weiye{
+        float: right;
+        margin-left: 5px;
+        padding: 0 2px 0 2px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .ulliuyan{
+        display: inline-block;
+        float: right;
+    }
+    .liliuyan{
+        display: inline-block;
+        padding: 0 2px 0 2px;
+        margin-left: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
 </style>

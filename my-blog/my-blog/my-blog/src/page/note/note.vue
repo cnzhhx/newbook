@@ -96,6 +96,8 @@
     }
     #Note{
         overflow:hidden;
+        width: 100%;
+
     }
     .leftbox{
         width: 40%;
