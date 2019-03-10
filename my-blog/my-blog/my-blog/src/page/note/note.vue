@@ -92,7 +92,10 @@
     .note{
         background-color: #f1f1f1;
         width: 100%;
-        height: 2000px;
+        height: 100%;
+    }
+    #Note{
+        overflow:hidden;
     }
     .leftbox{
         width: 40%;

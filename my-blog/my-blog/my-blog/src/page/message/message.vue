@@ -80,7 +80,6 @@
         width: 800px;
         border: 1px solid #ccc;
         padding: 20px;
-        margin-top: -30%;
     }
 
     #my_textarea {

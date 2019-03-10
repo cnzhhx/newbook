@@ -3,15 +3,18 @@
         <TabBar></TabBar>
         <router-view></router-view>
         <BiuBiu class="biubiu"></BiuBiu>
+        <Bottom></Bottom>
     </div>
 </template>
 
 <script>
 import TabBar from "./components/TabBar/TabBar";
 import BiuBiu from "./components/BiuBiu/BiuBiu";
+import Bottom from "./components/Bottom/Bottom";
 export default {
     name: 'App',
     components: {
+        Bottom,
         BiuBiu,
         TabBar
     },
