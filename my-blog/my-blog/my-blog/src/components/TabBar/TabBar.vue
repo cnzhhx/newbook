@@ -119,7 +119,7 @@
         },
         methods: {
             switchTo(path) {
-                this.$router.replace(path);
+                this.$router.push(path);
             },
             select(e) {
                 let Right = document.getElementsByClassName('Right');

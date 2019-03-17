@@ -52,5 +52,11 @@ router.get('/api/liuyanDatas', (req, res, next)=>{
     });
 });
 
+//所有的note
+router.get('/api/allNotes', (req, res)=> {
+    const data = require('../data/allNotes');
+    res.json({success_code: 200, message: data})
+});
+
 
 module.exports = router;

@@ -122,7 +122,7 @@
         name: "first",
         methods: {
             switchTo(path) {
-                this.$router.replace(path);
+                this.$router.push(path);
             },
         },
         mounted() {

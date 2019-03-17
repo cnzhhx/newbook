@@ -1,0 +1,60 @@
+{
+  "allNotes": [
+    {
+      "img": "http://127.0.0.1:3000/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg",
+      "time": "2018-11-25",
+      "title": "BFC",
+      "path": "/note/bfc",
+      "content": "BFC即Block Formatting Content ‘块级格式化上下文’。它是页面的一块渲染区域，有一套渲染规则，决定了子元素如何布局，以及和其他元素之间的关系和作用。"
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/u=109979889,2287623035&fm=26&gp=0.jpg",
+      "time": "2018-12-17",
+      "title": "面向对象-继承",
+      "path": "/note/inherit",
+      "content": "一．继承的概念   它有三个类，分别是超类型、父类型、子类型。举例:类:  动物  狗类   哈士奇对于狗类来说  动物是它的父类型,而哈士奇类是它的子类型"
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/jichenglian.png",
+      "time": "2018-12-24",
+      "title": "继承的具体方式详解",
+      "path": "/note/inheritNote",
+      "content": "一． 继承-原型链继承1.原型链每个函数都能构造出一个对象，这个对象内部有个属性指向这个函数的原型对象；"
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/e9a39d461772ea47c308cb371ca904dd.jpeg",
+      "time": "2019-01-11",
+      "title": "你不知道的JS—第一章",
+      "path": "/note/unknownjs1",
+      "content": "1.1类型ECMAScript语言类型包括Undefined、Null、Boolean、String、Number和Object。"
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/u=3826702416,1930501860&fm=26&gp=0.jpg",
+      "time": "2019-01-20",
+      "title": "你不知道的JS—第二章",
+      "path": "/note/unknownjs2",
+      "content": "第二章 值   2.1 数组在JavaScript中，数组可以容纳任何类型的值。"
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/u=1526418290,3710003004&fm=26&gp=0.jpg",
+      "time": "2019-01-27",
+      "title": "你不知道的JS—第三章",
+      "path": "/note/unknownjs3",
+      "content": "第三章 原生函数     JavaScript的内建函数（build-in function），也叫原生函数（native function）。常见的原生函数有："
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/21be8caabce1bc9a54975e1b871d1a09.jpg",
+      "time": "2019-02-13",
+      "title": "JavaScript事件流",
+      "path": "/note/JsE_S",
+      "content": "JavaScript事件JavaScript与HTML之间的交互是通过事件来实现的。事件，就是文档或浏览器窗口中阿生的一些特定的交互瞬间。"
+    },
+    {
+      "img": "http://127.0.0.1:3000/images/d24095e06fb6b484287410e6f25d07f1.jpg",
+      "time": "2019-03-17",
+      "title": "客户端数据储存（上）",
+      "path": "/note/Client_dst",
+      "content": "客户端数据储存（上）  随着web应用程序的出现，也产生了对于能够直接在客户端上储存用户信息的能力的要求。"
+    }
+  ]
+}

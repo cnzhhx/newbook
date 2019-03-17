@@ -4,6 +4,8 @@ export default {
     hotRecommends: [],
 
     //留言
-    LiuyanDatas: []
+    LiuyanDatas: [],
 
+    //所有的笔记
+    allNotes:[]
 }

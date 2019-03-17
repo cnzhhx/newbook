@@ -1,27 +1,27 @@
 <template>
-    <div class="note" @click="routerxinxi()">
+    <div class="note">
         <div id="Note">
             <div class="leftbox">
                 <div class="newblogs">
                     <h2 class="hometitle">全部文章</h2>
                     <ul class="list">
-                        <li v-for="(hotRecommend, index) in $store.state.hotRecommends" :key="index">
+                        <li v-for="(allNote, index) in $store.state.allNotes" :key="index">
                             <h3 class="blogtitle" >
-                                <a @click="switchTo(hotRecommend.path)">{{hotRecommend.title}}</a>
+                                <a @click="switchTo(allNote.path)">{{allNote.title}}</a>
                             </h3>
                             <div class="bloginfo">
                             <span class="blogpic">
                                 <a href="#">
-                                    <img @click="switchTo(hotRecommend.path)" :src="hotRecommend.img"/>
+                                    <img @click="switchTo(allNote.path)" :src="allNote.img"/>
                                 </a>
                             </span>
                                 <p>
-                                    {{hotRecommend.content}}
+                                    {{allNote.content}}
                                 </p>
                             </div>
                             <div class="autor">
                             <span class="dtime">
-                                {{hotRecommend.time}}
+                                {{allNote.time}}
                             </span>
                             </div>
                         </li>
@@ -57,17 +57,20 @@
 </template>
 
 <script>
+
     export default {
         name: "note",
         methods:{
-            routerxinxi() {
-                console.log(this.$route.path)
-            },
             switchTo(path) {
-                this.$router.replace(path);
+                this.$router.push(path);
             }
         },
         mounted() {
+            this.$store.dispatch('reqAllNotes');
+            console.log(this.$store.state.allNotes);
+
+
+
             let Note = document.getElementById("Note");
             const lujing = this.$route.path;
             if(lujing === "/note"){

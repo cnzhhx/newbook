@@ -12,6 +12,8 @@ import InheritNote from "./../page/blognote/inheritNote"
 import Unknownjs1 from "./../page/blognote/Unknown-JS-1"
 import Unknownjs2 from "./../page/blognote/Unknown-JS-2"
 import Unknownjs3 from "./../page/blognote/Unknown-JS-3"
+import JsE_S from "./../page/blognote/jsE-S"
+import Client_dst from "./../page/blognote/client_dst"
 
 Vue.use(Router);
 
@@ -35,7 +37,9 @@ export default new Router({
                 {path: '/note/inheritNote', component: InheritNote},
                 {path: '/note/unknownjs1', component: Unknownjs1},
                 {path: '/note/unknownjs2', component: Unknownjs2},
-                {path: '/note/unknownjs3', component: Unknownjs3}
+                {path: '/note/unknownjs3', component: Unknownjs3},
+                {path: '/note/JsE_S', component: JsE_S},
+                {path: '/note/Client_dst', component: Client_dst}
             ]
         },
         {
