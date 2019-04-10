@@ -23,7 +23,6 @@ export default {
 
 //如果是移动端，则跳转到移动端对应的页面；否则，跳转到PC端对应的页面
             this.$router.replace("/first2");
-
         } else {
             this.$router.replace("/first");
         }

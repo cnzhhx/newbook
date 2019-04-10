@@ -4,7 +4,9 @@ import Router from 'vue-router'
 import About from "./../page/about/about"
 import Note from "./../page/note/note"
 import Message from "./../page/message/message"
+import First2 from "./../page/first/first2"
 import First from "./../page/first/first"
+
 
 import BFC from "./../page/blognote/BFC"
 import Inherit from "./../page/blognote/inherit"
@@ -45,6 +47,10 @@ export default new Router({
         {
             path: "/message",
             component: Message
+        },
+        {
+            path: "/first2",
+            component: First2
         }
         // {
         //     path: "/bfc",
