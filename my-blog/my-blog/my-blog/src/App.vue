@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <TabBar></TabBar>
-        <router-view></router-view>
+        <TabBar class="TabBar"></TabBar>
+        <router-view class="view"></router-view>
         <BiuBiu class="biubiu"></BiuBiu>
         <Bottom></Bottom>
     </div>
@@ -40,6 +40,14 @@ export default {
         position: fixed;
         top: 70%;
         left: 90%;
+    }
+    .TabBar{
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+    }
+    .view{
+        margin-top: 50px;
     }
 </style>
 

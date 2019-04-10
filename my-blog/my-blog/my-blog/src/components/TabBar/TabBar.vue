@@ -8,9 +8,24 @@
             <div class="Right" @click="switchTo('/first');select($event)">网站首页</div>
         </div>
         <div class="top-bar2">
-            <div>
-                2142234234324
-            </div>
+            <mu-appbar style="width: 100%;" color="#545C64">
+                个人简历
+                <mu-menu slot="right">
+                    <mu-button flat>MENU</mu-button>
+                    <mu-list slot="content">
+                        <mu-list-item button>
+                            <mu-list-item-content>
+                                <mu-list-item-title>Menu Item 1</mu-list-item-title>
+                            </mu-list-item-content>
+                        </mu-list-item>
+                        <mu-list-item button>
+                            <mu-list-item-content>
+                                <mu-list-item-title>Menu Item 2</mu-list-item-title>
+                            </mu-list-item-content>
+                        </mu-list-item>
+                    </mu-list>
+                </mu-menu>
+            </mu-appbar>
         </div>
     </div>
 </template>
@@ -26,11 +41,15 @@
             let xiaozh = document.getElementById("xiaozh");
             let top_bar = document.getElementsByClassName("top-bar")[0];
             let top_bar2 = document.getElementsByClassName("top-bar2")[0];
+            let pagetop = document.getElementsByClassName("pagetop")[0];
                 //更改手机版
             if(luJing === "/first2"){
-                top_bar.style.display = "none"
+                top_bar.style.display = "none";
+                pagetop.style.padding = "";
             }else{
-                top_bar2.style.display = "none"
+                top_bar2.style.display = "none";
+                pagetop.style.padding = "0 20%";
+
             }
                 //电脑版一定范围自适应
 
@@ -153,9 +172,8 @@
 <style>
     .pagetop{
         width: 100%;
-        padding: 0 20%;
         background-color: rgb(84, 92, 100);
-        height: 60px;
+        height: 55px;
     }
     #xiaozh{
         float: left;
@@ -184,9 +202,6 @@
         background-color: rgb(67, 74, 80);
         color: #ffd04b;
         border-bottom: 2px solid #ffd04b;
-    }
-    .top-bar2{
-        text-align: center;
     }
 </style>
 
