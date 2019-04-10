@@ -19,7 +19,14 @@ export default {
         TabBar
     },
     beforeCreate(){
-        this.$router.replace("/first");
+        if (/phone|pad|pod|iPhone|iPod|ios|iPad|Android|Fennec|BlackBerry|Mobile|IEMobile|MQQBrowser|JUC|Fennec|WosBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)) {
+
+//如果是移动端，则跳转到移动端对应的页面；否则，跳转到PC端对应的页面
+            this.$router.replace("/first2");
+
+        } else {
+            this.$router.replace("/first");
+        }
     }
 }
 </script>
@@ -36,3 +43,6 @@ export default {
         left: 90%;
     }
 </style>
+
+
+
