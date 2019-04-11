@@ -36,7 +36,7 @@
             ref="captcha"
             @click.prevent="getCaptcha()"
             class="miImg"
-            src="http://localhost:3000/api/captcha"/>
+            src="http://127.0.0.1:3001/api/captcha"/>
         </div>
       </div>
 
@@ -84,7 +84,7 @@
       methods: {
         ...mapActions(['syncUserInfo']),
         getCaptcha(){
-          this.$refs.captcha.src = 'http://localhost:3000/api/captcha?time=' + new Date();
+          this.$refs.captcha.src = 'http://127.0.0.1:3001/api/captcha?time=' + new Date();
         },
         async getVerifiCode(){
           //1.开启倒计时

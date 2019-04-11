@@ -1,7 +1,7 @@
 import ajax from './ajax'
 
 // 1. 基础路径
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://127.0.0.1:3001';
 
 // 2. 请求方法
 
