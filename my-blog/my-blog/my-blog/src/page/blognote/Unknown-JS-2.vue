@@ -102,7 +102,7 @@ typeof a === “number”； //true
 <style scoped>
     .page{
         background-color: rgb(241,241,241);
-        width: 60%;
+        width: 100%;
         height: 100%;
         padding: 20px 20% 0 20%;
     }

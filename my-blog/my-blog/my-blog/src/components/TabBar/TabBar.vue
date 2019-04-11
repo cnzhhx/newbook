@@ -8,7 +8,7 @@
             <div class="Right" @click="switchTo('/first');select($event)">网站首页</div>
         </div>
         <div class="top-bar2">
-            <mu-appbar style="width: 100%;" color="#545C64">
+            <mu-appbar style="width: 100%; height: 65px" color="#545C64">
                 个人简历
                 <mu-menu slot="right">
                     <mu-button flat>MENU</mu-button>
@@ -173,7 +173,7 @@
     .pagetop{
         width: 100%;
         background-color: rgb(84, 92, 100);
-        height: 55px;
+        height: 60px;
     }
     #xiaozh{
         float: left;

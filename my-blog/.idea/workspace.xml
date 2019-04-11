@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="0ff965b6-34de-4e34-be01-ee77348b02d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/about/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/about/about.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-2.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-3.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inheritNote.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inheritNote.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,86 +29,120 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+            <state relative-caret-position="690">
+              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3780">
-              <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
+            <state relative-caret-position="392">
+              <caret line="186" selection-start-line="186" selection-end-line="186" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/router/index.js">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="360">
+              <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+              <folding>
+                <element signature="n#template#0;n#!!top" />
+                <element signature="e#1857#1863#0" expanded="true" />
+                <element signature="e#2345#2351#0" expanded="true" />
+                <element signature="e#2623#2629#0" expanded="true" />
+                <element signature="e#2844#2850#0" expanded="true" />
+                <element signature="e#2938#2944#0" expanded="true" />
+                <element signature="e#3074#3080#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+              <folding>
+                <element signature="n#div#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inheritNote.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="248" column="20" lean-forward="true" selection-start-line="248" selection-start-column="20" selection-end-line="248" selection-end-column="20" />
+              <folding>
+                <element signature="n#template#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/first/first2.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/components/Bottom/Bottom.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5220">
-              <caret line="174" column="43" lean-forward="true" selection-start-line="174" selection-start-column="43" selection-end-line="174" selection-end-column="43" />
+            <state relative-caret-position="360">
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#mu-appbar#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/main.js">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="327">
+              <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/note/note.vue">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-1.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="44" />
+            <state relative-caret-position="330">
+              <caret line="77" column="20" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+              <folding>
+                <element signature="n#template#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-server/blog/bin/www">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+            <state relative-caret-position="389">
+              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+              <folding>
+                <element signature="n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-3.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+              <folding>
+                <element signature="n#template#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,14 +163,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue" />
         <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/message/message.vue" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/about/about.vue" />
         <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/js.vue" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue" />
         <option value="$PROJECT_DIR$/blog-server/blog/data/tsconfig.json" />
         <option value="$PROJECT_DIR$/blog-server/blog/data/allnotes.json" />
         <option value="$PROJECT_DIR$/blog-server/blog/routes/index.js" />
@@ -140,9 +179,19 @@
         <option value="$PROJECT_DIR$/my-blog/my-blog/src/components/Bottom/Bottom.vue" />
         <option value="$PROJECT_DIR$/my-blog/my-blog/src/main.js" />
         <option value="$PROJECT_DIR$/my-blog/my-blog/src/router/index.js" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/App.vue" />
-        <option value="$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue" />
         <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/first/first2.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/about/about.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/App.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inheritNote.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-1.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-2.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-3.vue" />
+        <option value="$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue" />
       </list>
     </option>
   </component>
@@ -160,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,7 +300,34 @@
               <item name="my-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="blognote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="my-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -275,12 +350,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my-blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -322,14 +398,16 @@
       <workItem from="1554808228757" duration="10693000" />
       <workItem from="1554885239340" duration="4716000" />
       <workItem from="1554889972535" duration="9000" />
+      <workItem from="1554956671345" duration="1287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36591000" />
+    <option name="totallyTimeSpent" value="37878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17386723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -349,6 +427,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17386723" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3275488" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -361,59 +458,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/zhhx-master (1)/zhhx-master/myFunc.js" />
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/about/about.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/api/ajax.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inheritNote.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#1857#1863#0" expanded="true" />
-            <element signature="e#2345#2351#0" expanded="true" />
-            <element signature="e#2623#2629#0" expanded="true" />
-            <element signature="e#2844#2850#0" expanded="true" />
-            <element signature="e#2938#2944#0" expanded="true" />
-            <element signature="e#3074#3080#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-server/blog/data/hotReommends.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,44 +549,6 @@
     <entry file="file://$PROJECT_DIR$/my-blog/my-blog/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/components/Bottom/Bottom.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5220">
-          <caret line="174" column="43" lean-forward="true" selection-start-line="174" selection-start-column="43" selection-end-line="174" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#mu-appbar#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -550,24 +559,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/note/note.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-server/blog/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state relative-caret-position="360">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/first/first2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+        <state relative-caret-position="1530">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/first/first.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="248" column="16" lean-forward="true" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/components/Bottom/Bottom.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/note/note.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/about/about.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inheritNote.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="248" column="20" lean-forward="true" selection-start-line="248" selection-start-column="20" selection-end-line="248" selection-end-column="20" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/jsE-S.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-1.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="77" column="20" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/Unknown-JS-3.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/inherit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/client_dst.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+            <element signature="e#1857#1863#0" expanded="true" />
+            <element signature="e#2345#2351#0" expanded="true" />
+            <element signature="e#2623#2629#0" expanded="true" />
+            <element signature="e#2844#2850#0" expanded="true" />
+            <element signature="e#2938#2944#0" expanded="true" />
+            <element signature="e#3074#3080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/page/blognote/BFC.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="186" selection-start-line="186" selection-end-line="186" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-blog/my-blog/src/components/TabBar/TabBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#mu-appbar#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

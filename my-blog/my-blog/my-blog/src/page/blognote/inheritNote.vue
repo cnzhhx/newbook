@@ -245,8 +245,8 @@ SubType.prototype.sayAge = function(){
 <style scoped>
     .page{
         background-color: rgb(241,241,241);
-        width: 60%;
         height: 100%;
+        width: 100%;
         padding: 20px 20% 0 20%;
     }
     .inheritNote{

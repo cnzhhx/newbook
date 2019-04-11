@@ -247,7 +247,7 @@
         position: relative;
     }
     .tuijian li{
-        width: 26%;
+        width: 32%;
         float: left;
         border-bottom: #ccc 1px solid;
         border-left: #ccc 1px solid;
