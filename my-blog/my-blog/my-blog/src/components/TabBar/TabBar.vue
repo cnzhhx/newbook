@@ -13,14 +13,34 @@
                 <mu-menu slot="right">
                     <mu-button flat>MENU</mu-button>
                     <mu-list slot="content">
-                        <mu-list-item button>
+                        <mu-list-item button @click="qiehuan()">
                             <mu-list-item-content>
-                                <mu-list-item-title>Menu Item 1</mu-list-item-title>
+                                <mu-list-item-title>首页</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
                         <mu-list-item button>
                             <mu-list-item-content>
-                                <mu-list-item-title>Menu Item 2</mu-list-item-title>
+                                <mu-list-item-title>关于我</mu-list-item-title>
+                            </mu-list-item-content>
+                        </mu-list-item>
+                        <mu-list-item button>
+                            <mu-list-item-content>
+                                <mu-list-item-title>前端技能</mu-list-item-title>
+                            </mu-list-item-content>
+                        </mu-list-item>
+                        <mu-list-item button>
+                            <mu-list-item-content>
+                                <mu-list-item-title>学习经历</mu-list-item-title>
+                            </mu-list-item-content>
+                        </mu-list-item>
+                        <mu-list-item button>
+                            <mu-list-item-content>
+                                <mu-list-item-title>我的作品</mu-list-item-title>
+                            </mu-list-item-content>
+                        </mu-list-item>
+                        <mu-list-item button>
+                            <mu-list-item-content>
+                                <mu-list-item-title>留言</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
                     </mu-list>
@@ -163,7 +183,11 @@
                     Right[i].className = "Right";
                 }
                 e.target.className = "Right taCor";
-                }
+            },
+
+            qiehuan(){
+
+            }
 
         }
     }
