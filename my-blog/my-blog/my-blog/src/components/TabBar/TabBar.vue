@@ -13,7 +13,7 @@
                 <mu-menu slot="right">
                     <mu-button flat>MENU</mu-button>
                     <mu-list slot="content">
-                        <mu-list-item button @click="qiehuan()">
+                        <mu-list-item button @click.prevent="Return()">
                             <mu-list-item-content>
                                 <mu-list-item-title>首页</mu-list-item-title>
                             </mu-list-item-content>
@@ -54,6 +54,11 @@
 <script>
     export default {
         name: "TabBar",
+        data(){
+            return{
+                scrollTop:window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+            }
+        },
         props: ["model"],
         mounted() {
             const luJing = this.$route.path;
@@ -185,8 +190,23 @@
                 e.target.className = "Right taCor";
             },
 
-            qiehuan(){
+            Return(){
 
+                let begin = this.scrollTop, end = 0, timer = null;
+
+                //清除定时器
+                clearInterval(timer);
+
+                //开启缓动动画
+                timer = setInterval(function () {
+                    begin = begin + (end - begin) * 0.2;
+                    window.scrollTo(0,begin);
+
+                    //清除定时器
+                    if(Math.round(begin) === end) {
+                        clearInterval(timer);
+                    }
+                }, 15);
             }
 
         }

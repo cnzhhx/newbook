@@ -9,15 +9,94 @@
             <p class="topp3">“Diligence is the mother of good fortune.”</p>
         </div>
         <div class="about">
-            <div>
+            <div class="aboutd1">
                 <p>关于我</p>
                 <hr>
             </div>
             <p class="aboutp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp您好，我现在是一名湖南工程学院大二学生，软件工程专业。从小对计算机感兴趣，读大学后开始自学前端。不浮躁，学习能力还算ok。</p>
             <p class="aboutp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp暂时目标是朝着全栈发展,正在学习vue，nodejs等一些技术（仅仅能够使用一部分），写过响应式布局，移动端页面，pc端页面。</p>
         </div>
-        <div></div>
-        <div></div>
+        <div class="skills">
+            <div class="aboutd1">
+                <p>前端技能</p>
+                <hr>
+            </div>
+            <p class="skillsp">
+                1.精通Web前端技术，包括HTML、DIV、CSS、Javascript、AJAX、JSON、Cookie等。<br/>
+
+                2.使用响应式布局,设备判断,解决不同移动端设备的适配和兼容问题<br/>
+
+                3.熟悉vue库进行pc端项目快速开发。<br/>
+
+                4.熟练使用github进行代码管理，使用git版本管理工具。<br/>
+
+                5.熟悉原生JS,熟悉JavaScript的面向对象编程，了解作用域以及闭包的原理。<br/>
+
+                6.熟练使用Chrome 、Firefox等主流浏览器的开发人员工具调试页面。<br/>
+
+                7.了解nodejs,了解mysql数据库，并对此有兴趣,期待向全栈方向发展<br/>
+            </p>
+            <div class="mui">
+                <mu-container>
+                    <p class="html5">HTML5</p>
+                    <mu-flex class="demo-linear-progress">
+                        <mu-linear-progress mode="determinate" :value="75"  :size="30" color="green"></mu-linear-progress>
+                    </mu-flex>
+                </mu-container>
+            </div>
+            <div class="mui">
+                <mu-container>
+                    <p class="html5">CSS3</p>
+                    <mu-flex class="demo-linear-progress">
+                        <mu-linear-progress mode="determinate" :value="70"  :size="30" color="orange"></mu-linear-progress>
+                    </mu-flex>
+                </mu-container>
+            </div>
+            <div class="mui">
+                <mu-container>
+                    <p class="html5">JAVASCRIPT</p>
+                    <mu-flex class="demo-linear-progress">
+                        <mu-linear-progress mode="determinate" :value="80"  :size="30" color="pink"></mu-linear-progress>
+                    </mu-flex>
+                </mu-container>
+            </div>
+            <div class="mui">
+                <mu-container>
+                    <p class="html5">VUE</p>
+                    <mu-flex class="demo-linear-progress">
+                        <mu-linear-progress mode="determinate" :value="60"  :size="30" color="skyblue"></mu-linear-progress>
+                    </mu-flex>
+                </mu-container>
+            </div>
+            <div class="mui">
+                <mu-container>
+                    <p class="html5">NODEJS</p>
+                    <mu-flex class="demo-linear-progress">
+                        <mu-linear-progress mode="determinate" :value="20"  :size="30" color="gray"></mu-linear-progress>
+                    </mu-flex>
+                </mu-container>
+            </div>
+            <div class="mui">
+                <mu-container>
+                    <p class="html5">MYSQL</p>
+                    <mu-flex class="demo-linear-progress">
+                        <mu-linear-progress mode="determinate" :value="40"  :size="30" color="yellow"></mu-linear-progress>
+                    </mu-flex>
+                </mu-container>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience1">
+                <p>学习经历</p>
+                <hr>
+            </div>
+            <p class="experiencep">2017年进入大学</p>
+            <p class="experiencep">2018年上半年开始自学前端，并且模仿了学校教务处的静态网页</p>
+            <p class="experiencep">2018年暑假在我哥那，更加详细的了解了h5跟c3还有js，并学习了一定的vue知识</p>
+            <p class="experiencep">2018年下半年通过自学简单使用vue nodejs mysql做了一个半成品的网易云音乐，实现了自适应布局，登录注册和一些基本功能。其中遇到了很多问题，类似于跨域，配置数据库、服务器，布局。从中也学到了很多调试bug的经验</p>
+            <p class="experiencep">2018年寒假在家花了点时间用写网易云音乐的技术栈快速开发了我的博客（pc版），也就是当前这个网站，移动端跟pc端展示内容不同</p>
+            <p class="experiencep">2019年上半年（这学期结束补充）</p>
+        </div>
     </div>
 </template>
 
@@ -30,7 +109,7 @@
 <style scoped>
     .first2{
         background-color: rgb(241,241,241);
-        height: 2000px;
+        height: 2500px;
         width: 100%;
     }
     .top{
@@ -66,6 +145,8 @@
         background-color: rgb(241,241,241);
         width: 100%;
         height: 200px;
+    }
+    .aboutd1{
         text-align: center;
     }
     .about div p{
@@ -81,5 +162,57 @@
     }
     .aboutp{
         margin: 20px;
+        line-height: 30px;
+    }
+    .skills{
+        background-color: rgb(241,241,241);
+        width: 100%;
+        height: 850px;
+        margin-top: 100px;
+    }
+    .skills div p{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .skills div hr{
+        width: 200px;
+        height: 5px;
+        margin: 10px auto;
+        border: none;
+        background: #333;
+    }
+    .skillsp{
+        margin: 20px;
+        line-height: 30px;
+    }
+    .mui{
+        margin: 20px;
+    }
+    .html5{
+        font-size: 15px!important;
+    }
+    .experience{
+        background-color: rgb(241,241,241);
+        width: 100%;
+        height: 200px;
+        margin-top: 100px;
+    }
+    .experience div p{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .experience div hr{
+        width: 200px;
+        height: 5px;
+        margin: 10px auto;
+        border: none;
+        background: #333;
+    }
+    .experience1{
+        text-align: center;
+    }
+    .experiencep{
+        margin: 20px;
+        line-height: 30px;
     }
 </style>
