@@ -13,32 +13,32 @@
                 <mu-menu slot="right">
                     <mu-button flat>MENU</mu-button>
                     <mu-list slot="content">
-                        <mu-list-item button @click.prevent="Return()">
+                        <mu-list-item button @click.prevent="Return(0)">
                             <mu-list-item-content>
                                 <mu-list-item-title>首页</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
-                        <mu-list-item button>
+                        <mu-list-item button @click.prevent="Return(500)">
                             <mu-list-item-content>
                                 <mu-list-item-title>关于我</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
-                        <mu-list-item button>
+                        <mu-list-item button @click.prevent="Return(800)">
                             <mu-list-item-content>
                                 <mu-list-item-title>前端技能</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
-                        <mu-list-item button>
+                        <mu-list-item button @click.prevent="Return(1750)">
                             <mu-list-item-content>
                                 <mu-list-item-title>学习经历</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
-                        <mu-list-item button>
+                        <mu-list-item button @click.prevent="Return(2350)">
                             <mu-list-item-content>
                                 <mu-list-item-title>我的作品</mu-list-item-title>
                             </mu-list-item-content>
                         </mu-list-item>
-                        <mu-list-item button>
+                        <mu-list-item button @click.prevent="Return(3200)">
                             <mu-list-item-content>
                                 <mu-list-item-title>留言</mu-list-item-title>
                             </mu-list-item-content>
@@ -61,6 +61,10 @@
         },
         props: ["model"],
         mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+
+
+
             const luJing = this.$route.path;
             let Right = document.getElementsByClassName("Right");
             let xiaozh = document.getElementById("xiaozh");
@@ -179,6 +183,10 @@
             }
         },
         methods: {
+            handleScroll () {
+                this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+            },
+
             switchTo(path) {
                 this.$router.push(path);
             },
@@ -190,9 +198,9 @@
                 e.target.className = "Right taCor";
             },
 
-            Return(){
+            Return(end){
 
-                let begin = this.scrollTop, end = 0, timer = null;
+                let begin = this.scrollTop, timer = null;
 
                 //清除定时器
                 clearInterval(timer);

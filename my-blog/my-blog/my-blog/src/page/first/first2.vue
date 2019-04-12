@@ -92,10 +92,31 @@
             </div>
             <p class="experiencep">2017年进入大学</p>
             <p class="experiencep">2018年上半年开始自学前端，并且模仿了学校教务处的静态网页</p>
-            <p class="experiencep">2018年暑假在我哥那，更加详细的了解了h5跟c3还有js，并学习了一定的vue知识</p>
+            <p class="experiencep">2018年暑假去了我表哥那，在他的帮助下，更加详细的了解了h5跟c3还有js，并学习了一定的vue知识</p>
             <p class="experiencep">2018年下半年通过自学简单使用vue nodejs mysql做了一个半成品的网易云音乐，实现了自适应布局，登录注册和一些基本功能。其中遇到了很多问题，类似于跨域，配置数据库、服务器，布局。从中也学到了很多调试bug的经验</p>
             <p class="experiencep">2018年寒假在家花了点时间用写网易云音乐的技术栈快速开发了我的博客（pc版），也就是当前这个网站，移动端跟pc端展示内容不同</p>
             <p class="experiencep">2019年上半年（这学期结束补充）</p>
+        </div>
+        <div class="sample_reels">
+            <div class="sample_reel1">
+                <p>我的作品</p>
+                <hr>
+            </div>
+            <a class="sample_reela1" href="http://152.136.94.149:3001/" target="_blank">
+                <img width="250px" height="250px" src="../../assets/20190412190857.png">
+                <p>仿制网易云音乐开发的可实现登录注册（暂未增加听音乐功能，后面会加上）的简易网站</p>
+            </a>
+            <a class="sample_reela2" href="http://xiaozhqq.cn/" target="_blank">
+                <img width="250px" height="250px" src="../../assets/20190412190552.png">
+                <p>自己的小博客</p>
+            </a>
+        </div>
+        <div class="liuyan">
+            <div class="liuyan1">
+                <p>留言</p>
+                <hr>
+            </div>
+
         </div>
     </div>
 </template>
@@ -109,7 +130,7 @@
 <style scoped>
     .first2{
         background-color: rgb(241,241,241);
-        height: 2500px;
+        height: 4000px;
         width: 100%;
     }
     .top{
@@ -194,7 +215,7 @@
     .experience{
         background-color: rgb(241,241,241);
         width: 100%;
-        height: 200px;
+        height: 500px;
         margin-top: 100px;
     }
     .experience div p{
@@ -214,5 +235,74 @@
     .experiencep{
         margin: 20px;
         line-height: 30px;
+    }
+    .sample_reels{
+        background-color: rgb(241,241,241);
+        width: 100%;
+        height: 750px;
+        margin-top: 100px;
+        position: relative;
+    }
+    .sample_reels div p{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .sample_reels div hr{
+        width: 200px;
+        height: 5px;
+        margin: 10px auto;
+        border: none;
+        background: #333;
+    }
+    .sample_reel1{
+        text-align: center;
+    }
+    .sample_reela1 img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -125px;
+    }
+    .sample_reela1 p{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60%;
+        margin: 0 20% 0 20%;
+        color: orangered;
+    }
+    .sample_reela2 img{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -125px;
+    }
+    .sample_reela2 p{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 60%;
+        margin: 0 20% 0 20%;
+        color: orangered;
+    }
+    .liuyan{
+        background-color: rgb(241,241,241);
+        width: 100%;
+        height: 750px;
+        margin-top: 100px;
+        position: relative;
+    }
+    .liuyan div p{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .liuyan div hr{
+        width: 200px;
+        height: 5px;
+        margin: 10px auto;
+        border: none;
+        background: #333;
     }
 </style>
