@@ -3,12 +3,14 @@
     <TabBar></TabBar>
     <router-view></router-view>
     <Login></Login>
+    <play></play>
   </div>
 </template>
 
 <script>
   import TabBar from './components/TabBar/TabBar'
   import Login from "./components/Login/Login";
+  import Play from "./components/play/play";
 
 export default {
   name: 'App',
@@ -16,6 +18,7 @@ export default {
     this.$store.dispatch('getUserInfo')
   },
   components:{
+    Play,
     Login,
     TabBar
   },

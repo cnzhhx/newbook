@@ -5,6 +5,7 @@ import Found from './../page/found/found'
 import Down from './../page/down/down'
 import Friend from './../page/friend/friend'
 import My from './../page/my/my'
+import play2 from '../components/play/play2'
 
 import Anchor from './../page/found/anchor/anchor'
 import Dvd from './../page/found/dvd/dvd'
@@ -46,5 +47,9 @@ export default new Router({
     {
       path: '/',
       redirect: '/found/recommend'
+    },
+    {
+      path: '/play2',
+      component: play2,
     }
   ]})
