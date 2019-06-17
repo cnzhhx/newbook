@@ -44,7 +44,7 @@
                     if(Math.round(begin) === end) {
                         clearInterval(timer);
                     }
-                }, 15);
+                }, 16);
             }
         }
     }
@@ -53,12 +53,13 @@
 <style scoped>
     .BiuBiu{
         border: 1px solid #ccc;
-        width: 45px;
-        padding-left: 5px;
+        width: 42px;
+        height:42px;
         display: none;
     }
     .BiuBiu img{
         height: 40px;
+        width: 40px;
     }
     .BiuBiu span{
         display: none;

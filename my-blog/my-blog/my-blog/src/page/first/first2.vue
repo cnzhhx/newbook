@@ -14,7 +14,7 @@
                 <hr>
             </div>
             <p class="aboutp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp您好，我现在是一名湖南工程学院大二学生，软件工程专业。从小对计算机感兴趣，读大学后开始自学前端。不浮躁，学习能力还算ok。</p>
-            <p class="aboutp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp暂时目标是朝着全栈发展,正在学习vue，nodejs等一些技术（仅仅能够使用一部分），写过响应式布局，移动端页面，pc端页面。</p>
+            <p class="aboutp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp暂时目标是朝着前端发展,正在学习vue，nodejs等一些技术（nodejs仅仅能够使用一部分，了解的程度），写过响应式布局，移动端页面，pc端页面。</p>
         </div>
         <div class="skills">
             <div class="aboutd1">
@@ -22,13 +22,13 @@
                 <hr>
             </div>
             <p class="skillsp">
-                1.精通Web前端技术，包括HTML、DIV、CSS、Javascript、AJAX、JSON、Cookie等。<br/>
+                1.熟悉Web前端技术，包括HTML、CSS、Javascript、AJAX、JSON、Cookie等。<br/>
 
                 2.使用响应式布局,设备判断,解决不同移动端设备的适配和兼容问题<br/>
 
                 3.熟悉vue库进行pc端项目快速开发。<br/>
 
-                4.熟练使用github进行代码管理，使用git版本管理工具。<br/>
+                4.能够使用github进行代码管理。<br/>
 
                 5.熟悉原生JS,熟悉JavaScript的面向对象编程，了解作用域以及闭包的原理。<br/>
 

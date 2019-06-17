@@ -140,10 +140,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1196" />
-    <option name="height" value="1019" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1197" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,7 +263,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/music-server/music/bin">
+    <configuration name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/music-server/music/bin">
       <method v="2" />
     </configuration>
     <recent_temporary>
