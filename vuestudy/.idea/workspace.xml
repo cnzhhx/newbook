@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144ef1ed-5106-4ef6-ae28-247ff0293cc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/components/left.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/components/right.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/selectCoures.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/first/first.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/result.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/selection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/withdrawal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/selectCoures.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/selectCoures.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,6 +26,7 @@
     <session id="-2143300831">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -35,11 +34,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="1" />
+          <entry key="vue" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="1" />
+          <entry key="Vue.js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="vue" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Vue.js" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -49,17 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-music/src/components/TabBar/TabBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-music/src/store/actions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="315">
+              <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -73,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-music/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="-297">
+              <caret line="3" selection-start-line="3" selection-end-line="4" />
               <folding>
                 <element signature="e#153#200#0" expanded="true" />
               </folding>
@@ -88,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-music/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="510">
+              <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -98,8 +100,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-music/src/page/my/my.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-music/src/page/found/found.vue">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -169,6 +184,7 @@
         <option value="$PROJECT_DIR$/my-music/src/router/index.js" />
         <option value="$PROJECT_DIR$/my-music/src/components/play/play2.vue" />
         <option value="$PROJECT_DIR$/my-music/src/components/TabBar/TabBar.vue" />
+        <option value="$PROJECT_DIR$/my-music/src/page/found/found.vue" />
       </list>
     </option>
   </component>
@@ -1467,10 +1483,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="6" />
-    <option name="width" value="1043" />
-    <option name="height" value="1050" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="1945" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1502,7 +1518,38 @@
               <item name="vuestudy" type="462c0819:PsiDirectoryNode" />
               <item name="my-music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vuestudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vuestudy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="TabBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vuestudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vuestudy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vuestudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vuestudy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="found" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vuestudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vuestudy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vuestudy" type="b2602c69:ProjectViewProjectNode" />
@@ -1579,18 +1626,17 @@
       <workItem from="1555574535026" duration="160000" />
       <workItem from="1555574768068" duration="29000" />
       <workItem from="1557039502226" duration="564000" />
-      <workItem from="1560730239215" duration="2220000" />
+      <workItem from="1560730239215" duration="5681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20548000" />
+    <option name="totallyTimeSpent" value="24009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11426684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21202114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1724,6 +1770,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1741,13 +1790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-music/src/components/TabBar/TabBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-music/src/store/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1761,9 +1803,6 @@
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-music/src/page/found/found.vue">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/my-music/src/page/found/recommend/recommend.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -1794,10 +1833,24 @@
     <entry file="file://$PROJECT_DIR$/my-music/src/store/state.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-music/src/components/TabBar/TabBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-music/src/page/my/my.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-music/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="510">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -1806,11 +1859,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-music/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="-297">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
           <folding>
             <element signature="e#153#200#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-music/src/page/found/found.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
         </state>
       </provider>
     </entry>

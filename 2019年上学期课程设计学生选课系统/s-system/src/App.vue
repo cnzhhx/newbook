@@ -8,7 +8,7 @@
 export default {
     name: 'App',
     beforeCreate(){
-        this.$router.replace("/selectCourses");
+        this.$router.replace("/selectCourses/first");
     }
 }
 </script>
