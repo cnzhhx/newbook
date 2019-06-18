@@ -7,8 +7,6 @@
             </el-table-column>
             <el-table-column prop="course" label="课程" width="140">
             </el-table-column>
-            <el-table-column prop="surplus" label="剩余人数">
-            </el-table-column>
             <el-table-column
                 fixed="right"
                 label="操作"
@@ -34,14 +32,16 @@
                 course: '数学',
                 name: '王小虎',
                 studentId: '201703140204',
-                surplus:'10'
             };
             return {
                 tableData: Array(20).fill(item)
             }
         },
         methods: {
-        }
+            deleteRow(index, rows) {
+                rows.splice(index, 1);
+            }
+        },
     }
 </script>
 
