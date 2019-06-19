@@ -29,15 +29,14 @@
                 <div class=shuRu>
                     <input placeholder="用户名/手机" type="text" v-model="user_name"/>
                     <input placeholder="密码" type="password" v-model="pwd"/>
-                    <input placeholder="验证码" v-model="captcha"/>
                 </div>
             </div>
 
 
 
             <div class="loginSubmit">
-                <div class="Submit">登陆</div>
-                <div class="Close" @click.prevent="Close()">返回</div>
+                <div class="Submit" @click.prevent="login()">登陆</div>
+                <div class="Close">返回</div>
             </div>
         </div>
         <span class="loginClose" @click.prevent="Close()"></span>
@@ -45,6 +44,9 @@
 </template>
 
 <script>
+
+    import {pwdLogin} from "../api/index";
+
     export default {
         name: "Login",
         data() {
@@ -68,6 +70,44 @@
         computed: {
         },
         methods: {
+            async login() {
+                //登录模式
+                let result;
+                if(false) {//验证码登录
+                }else{ //账号密码登录
+                    //校验
+                    if(!this.user_name) {
+                        alert('请输入手机/用户名!');
+                        return;
+                    }else if(!this.pwd) {
+                        alert('请输入密码!');
+                        return;
+                    }
+                    //登录
+                    result = await pwdLogin(this.user_name, this.pwd);
+                    console.log(result);
+
+                }
+                //后续处理
+
+                // if(result.success_code === 200) {
+                //     this.userInfo = result.message;
+                //     // console.log(this.userInfo.id);
+                // }else{
+                //     this.userInfo = {
+                //         message: '登录失败， 手机或验证码不正确'
+                //     }
+                // }
+                //
+                // if(!this.userInfo.id) { //失败
+                //     alert(this.userInfo.message);
+                // }else{ //成功
+                //     //同步用户数据
+                //     this.syncUserInfo(this.userInfo);
+                //     this.$router.replace('/found/recommend');
+                //     this.Close();
+                // }
+            },
             Close() {
                 let login = document.getElementById('login');
                 login.style.display = 'none';

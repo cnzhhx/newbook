@@ -37,7 +37,7 @@
                     <el-dropdown>
                         <i class="el-icon-setting" style="margin-right: 15px"></i>
                         <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item  @click="login()">登录</el-dropdown-item>
+                            <el-dropdown-item  @click.native="login()">登录</el-dropdown-item>
                             <el-dropdown-item>退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
@@ -70,7 +70,6 @@
                 this.$router.push(path);
             },
             login(){
-                console.log(111);
                 let login = document.getElementById('login');
                 login.style.display = 'inline-block';
             },

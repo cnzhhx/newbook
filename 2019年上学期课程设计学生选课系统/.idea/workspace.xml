@@ -2,29 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b36cf0-18d7-42d6-8b55-7dffe2d9ddf7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/s-system/src/api/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/store/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/store/mutation-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-system/src/store/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s-system/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/components/left.vue" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/components/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/components/right.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-system/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-system/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/components/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s-system/src/page/selectCoures.vue" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/page/selectCoures.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/page/student/selection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/page/student/selection.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-system/src/page/student/withdrawal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/page/student/withdrawal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-system/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/s-system/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my-blog/blog-server/blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/-34550ac663a8f32b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/1384285139964404.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/21be8caabce1bc9a54975e1b871d1a09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/43baa4c7c03ed66bae98696de5ebc64e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/6a1b508e0bc2580ddc18b3c32364a4ae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/author-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/banner01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/banner02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/d24095e06fb6b484287410e6f25d07f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/e9a39d461772ea47c308cb371ca904dd.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/jichenglian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/newsbg02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/qqhei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/qqhong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/u=109979889,2287623035&amp;fm=26&amp;gp=0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/u=1526418290,3710003004&amp;fm=26&amp;gp=0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/u=3826702416,1930501860&amp;fm=26&amp;gp=0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/weibohei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/weibolan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/weixinhei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/images/weixinlu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-blog/blog-server/blog/public/stylesheets/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vuestudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vuestudy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../vuestudy/music-server/music/views/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vuestudy/my-music/src/components/TabBar/TabBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vuestudy/my-music/src/components/TabBar/TabBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/1384285139964404.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/banner-pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/button2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/coverall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/down_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/iconall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/topbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/入驻歌手images/109951162895674268.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/入驻歌手images/19027048718765608.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/入驻歌手images/3302932937408956.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/入驻歌手images/5931865232210340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/入驻歌手images/7943971513291094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163471486090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163520422030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163560553058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163575819047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163582829847.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163596401683.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163598029062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/热门推荐images/109951163598909773.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/网易轮播图images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/网易轮播图images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/网易轮播图images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/网易轮播图images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/网易轮播图images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/首页专辑images/109951163575279930.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/首页专辑images/109951163596240238.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/首页专辑images/109951163606377163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/首页专辑images/109951163608338651.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/images/首页专辑images/109951163611604497.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/css/app.964446bda793ba2ca62017d8dcd30ca0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/css/app.964446bda793ba2ca62017d8dcd30ca0.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/fonts/element-icons.6f0a763.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/109951163552724449.c427316.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/109951163608338651.c4dcf66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/b1.9befbeb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/banner-pc.b5e9060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/bg.434486a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/button.52c2a54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/button2.b54144b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/coverall.6cb90db.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/download.48c0047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/foot_enter_new.dd3d926.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/foot_enter_tt.f3b1490.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/icon.29cd843.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/icon2.ba32baa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/iconall.de77152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/index.5556d9c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/layer.c381155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/mymusic.3a84570.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/img/notlogin.ee2c772.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/js/app.21096b70648eb3b41e22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/js/app.21096b70648eb3b41e22.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/js/manifest.2ae2e69a05c33dfc65f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/js/vendor.00e8b533cba846d959fb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/static/js/vendor.00e8b533cba846d959fb.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuestudy/music-server/music/public/stylesheets/style.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +112,7 @@
     <session id="-1483187937">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="2" />
@@ -48,13 +121,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="editorconfig" value="1" />
-          <entry key="js" value="11" />
+          <entry key="js" value="13" />
           <entry key="vue" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="11" />
+          <entry key="JavaScript" value="13" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Vue.js" value="15" />
         </counts>
@@ -62,15 +135,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="editorconfig" value="1" />
-          <entry key="js" value="85" />
-          <entry key="vue" value="860" />
+          <entry key="js" value="134" />
+          <entry key="vue" value="936" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="85" />
+          <entry key="JavaScript" value="134" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="860" />
+          <entry key="Vue.js" value="936" />
         </counts>
       </usages-collector>
     </session>
@@ -78,19 +151,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/s-system/src/store/getters.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s-system/src/page/selectCoures.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-aside#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -131,8 +195,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/s-system/src/api/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="204">
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s-system/src/store/actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#0#120#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,19 +219,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/s-system/src/store/state.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s-system/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="555">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -163,8 +230,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s-system/src/components/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1598">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="918">
+              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s-system/src/api/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -193,19 +269,19 @@
         <option value="$PROJECT_DIR$/s-system/src/router/index.js" />
         <option value="$PROJECT_DIR$/s-system/src/page/student/result.vue" />
         <option value="$PROJECT_DIR$/s-system/src/App.vue" />
-        <option value="$PROJECT_DIR$/s-system/src/components/login.vue" />
         <option value="$PROJECT_DIR$/s-system/src/api/ajax.js" />
         <option value="$PROJECT_DIR$/s-system/src/main.js" />
-        <option value="$PROJECT_DIR$/s-system/src/store/actions.js" />
         <option value="$PROJECT_DIR$/s-system/src/store/mutation-types.js" />
         <option value="$PROJECT_DIR$/s-system/src/store/mutations.js" />
         <option value="$PROJECT_DIR$/s-system/src/store/index.js" />
         <option value="$PROJECT_DIR$/s-system/src/store/getters.js" />
         <option value="$PROJECT_DIR$/s-system/src/store/state.js" />
-        <option value="$PROJECT_DIR$/s-system/config/index.js" />
         <option value="$PROJECT_DIR$/s-system/src/page/student/selection.vue" />
-        <option value="$PROJECT_DIR$/s-system/src/page/selectCoures.vue" />
         <option value="$PROJECT_DIR$/s-system/src/page/student/withdrawal.vue" />
+        <option value="$PROJECT_DIR$/s-system/src/page/selectCoures.vue" />
+        <option value="$PROJECT_DIR$/s-system/src/store/actions.js" />
+        <option value="$PROJECT_DIR$/s-system/src/components/login.vue" />
+        <option value="$PROJECT_DIR$/s-system/config/index.js" />
         <option value="$PROJECT_DIR$/s-system/src/api/index.js" />
       </list>
     </option>
@@ -230,11 +306,11 @@
       <path value="$PROJECT_DIR$/s-system/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="457" />
-    <option name="y" value="7" />
-    <option name="width" value="1359" />
-    <option name="height" value="1045" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -366,12 +442,12 @@
       <updated>1557039390823</updated>
       <workItem from="1557039392075" duration="674000" />
       <workItem from="1560730217719" duration="7877000" />
-      <workItem from="1560816715635" duration="5836000" />
+      <workItem from="1560816715635" duration="8580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14387000" />
+    <option name="totallyTimeSpent" value="17131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -445,13 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s-system/src/api/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/s-system/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -461,9 +530,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/s-system/src/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/s-system/src/store/mutations.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -492,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s-system/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/s-system/src/components/left.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -523,17 +582,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s-system/src/components/login.vue">
+    <entry file="file://$PROJECT_DIR$/s-system/src/page/student/withdrawal.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1598">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="238">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/s-system/src/page/selectCoures.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        <state relative-caret-position="306">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-aside#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -543,17 +602,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s-system/src/page/student/withdrawal.vue">
+    <entry file="file://$PROJECT_DIR$/s-system/src/api/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="272">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s-system/src/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s-system/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s-system/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/s-system/src/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="204">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
         </state>
       </provider>
     </entry>
