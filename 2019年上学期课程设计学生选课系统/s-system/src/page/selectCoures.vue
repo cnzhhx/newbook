@@ -41,7 +41,8 @@
                             <el-dropdown-item>退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
-                    <span>小zh</span>
+                    <span v-if="$store.state.userInfo">{{$store.state.userInfo.name}}</span>
+                    <span v-if="!$store.state.userInfo">未登录</span>
                 </el-header>
 
                 <el-main>
@@ -64,6 +65,9 @@
             return {
                 tableData: Array(20).fill(item)
             }
+        },
+        mounted(){
+            this.$store.dispatch('userInfo');
         },
         methods: {
             switchTo(path) {

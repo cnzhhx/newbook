@@ -46,6 +46,7 @@
 <script>
 
     import {pwdLogin} from "../api/index";
+    import {mapActions} from "vuex"
 
     export default {
         name: "Login",
@@ -61,19 +62,16 @@
                 pwd: "",//密码
             }
         },
-        // created: {
-        //   getCaptcha(){
-        //     var loginZhimg = document.getElementById(loginZhimg);
-        //     loginZhimg.src = 'http://localhost:3000/api/captcha';
-        //   },
-        // },
         computed: {
         },
         methods: {
+            ...mapActions(['syncUserInfo']),
+
             async login() {
                 //登录模式
                 let result;
                 if(false) {//验证码登录
+
                 }else{ //账号密码登录
                     //校验
                     if(!this.user_name) {
@@ -85,28 +83,25 @@
                     }
                     //登录
                     result = await pwdLogin(this.user_name, this.pwd);
-                    console.log(result);
-
                 }
                 //后续处理
 
-                // if(result.success_code === 200) {
-                //     this.userInfo = result.message;
-                //     // console.log(this.userInfo.id);
-                // }else{
-                //     this.userInfo = {
-                //         message: '登录失败， 手机或验证码不正确'
-                //     }
-                // }
-                //
-                // if(!this.userInfo.id) { //失败
-                //     alert(this.userInfo.message);
-                // }else{ //成功
-                //     //同步用户数据
-                //     this.syncUserInfo(this.userInfo);
-                //     this.$router.replace('/found/recommend');
-                //     this.Close();
-                // }
+                if(result.success_code === 200) {
+                    this.userInfo = result.message;
+                }else{
+                    this.userInfo = {
+                        message: '登录失败， 手机或验证码不正确'
+                    }
+                }
+
+                if(!this.userInfo.id) { //失败
+                    alert(this.userInfo.message);
+                }else{ //成功
+                    //同步用户数据
+                    this.syncUserInfo(this.userInfo);
+                    this.$router.replace('/selectCourses/first');
+                    this.Close();
+                }
             },
             Close() {
                 let login = document.getElementById('login');
