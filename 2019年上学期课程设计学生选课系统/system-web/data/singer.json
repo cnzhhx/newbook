@@ -1,0 +1,9 @@
+{
+  "singers": [
+    {"name":"Fine乐团", "introduce": "独立音乐人", "img": "http://127.0.0.1:3001/images/入驻歌手images/3302932937408956.jpg"},
+    {"name":"张惠妹aMEI", "introduce": "台湾歌手张惠妹", "img": "http://127.0.0.1:3001/images/入驻歌手images/5931865232210340.jpg"},
+    {"name":"萬曉利", "introduce": "民谣歌手、中国现代民谣的代表人物之一", "img": "http://127.0.0.1:3001/images/入驻歌手images/19027048718765608.jpg"},
+    {"name":"音乐人赵雷", "introduce": "民谣歌手", "img": "http://127.0.0.1:3001/images/入驻歌手images/7943971513291094.jpg"},
+    {"name":"王三溥", "introduce": "音乐人", "img": "http://127.0.0.1:3001/images/入驻歌手images/109951162895674268.jpg"}
+  ]
+}

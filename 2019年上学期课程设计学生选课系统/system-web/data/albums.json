@@ -1,0 +1,9 @@
+{
+  "albums":[
+    {"img": "http://127.0.0.1:3001/images/首页专辑images/109951163606377163.jpg", "singer": "李荣浩" , "name": "耳朵"},
+    {"img": "http://127.0.0.1:3001/images/首页专辑images/109951163596240238.jpg", "singer": "IU" , "name": "삐삐"},
+    {"img": "http://127.0.0.1:3001/images/首页专辑images/109951163575279930.jpg", "singer": "Various Artists" , "name": "Billboard Presents Electric Asia Vol. 2"},
+    {"img": "http://127.0.0.1:3001/images/首页专辑images/109951163611604497.jpg", "singer": "布瑞吉Bridge" , "name": "新大陆"},
+    {"img": "http://127.0.0.1:3001/images/首页专辑images/109951163608338651.jpg", "singer": "郑恩地" , "name": "혜화(暳花)"}
+  ]
+}

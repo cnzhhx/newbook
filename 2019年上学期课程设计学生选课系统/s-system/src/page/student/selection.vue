@@ -1,13 +1,13 @@
 <template>
     <div class="selection">
-        <el-table :data="tableData">
+        <el-table :data="$store.state.getSelection">
             <el-table-column prop="teacher" label="授课老师">
             </el-table-column>
-            <el-table-column prop="course" label="课程" width="140">
+            <el-table-column prop="name" label="课程" width="140">
             </el-table-column>
-            <el-table-column prop="surplus" label="剩余人数">
+            <el-table-column prop="chosen" label="剩余人数">
             </el-table-column>
-            <el-table-column prop="all" label="总人数">
+            <el-table-column prop="all_number" label="总人数">
             </el-table-column>
             <el-table-column
                 fixed="right"
@@ -30,15 +30,12 @@
     export default {
         name: "selection",
         data() {
-            const item = {
-                course: '数学',
-                teacher: '王小虎',
-                surplus:'10',
-                all:'50'
-            };
             return {
-                tableData: Array(20).fill(item)
+
             }
+        },
+        mounted(){
+            this.$store.dispatch('reqGetSelection');
         },
         methods: {
             handleClick(row,e) {

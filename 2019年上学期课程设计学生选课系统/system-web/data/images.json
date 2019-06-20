@@ -1,0 +1,9 @@
+{
+  "images": [
+    {"img": "http://127.0.0.1:3001/images/网易轮播图images/1.jpg", "color":"rgb(222,221,219)"},
+    {"img": "http://127.0.0.1:3001/images/网易轮播图images/2.jpg", "color":"rgb(227,188,94)"},
+    {"img": "http://127.0.0.1:3001/images/网易轮播图images/3.jpg", "color":"rgb(236,249,261)"},
+    {"img": "http://127.0.0.1:3001/images/网易轮播图images/4.jpg", "color":"rgb(44,52,106)"},
+    {"img": "http://127.0.0.1:3001/images/网易轮播图images/5.jpg", "color":"rgb(244,217,228)"}
+  ]
+}

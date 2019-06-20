@@ -18,8 +18,8 @@
                     <el-submenu index="3">
                         <template slot="title"><i class="el-icon-s-check"></i>老师</template>
                         <el-menu-item-group>
-                            <el-menu-item index="3-1">教学安排表</el-menu-item>
-                            <el-menu-item index="3-2">停/调课信息</el-menu-item>
+                            <el-menu-item index="3-1" @click="switchTo('/selectCourses/watch')">教学安排表</el-menu-item>
+                            <el-menu-item index="3-2" @click="switchTo('/selectCourses/ClassAdjustment')">停/调课信息</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
                     <el-submenu index="4">
@@ -41,8 +41,8 @@
                             <el-dropdown-item>退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
-                    <span v-if="$store.state.userInfo">{{$store.state.userInfo.name}}</span>
-                    <span v-if="!$store.state.userInfo">未登录</span>
+                    <span v-if="$store.state.userInfo.id">{{$store.state.userInfo.name}}</span>
+                    <span v-if="!$store.state.userInfo.id">未登录</span>
                 </el-header>
 
                 <el-main>
@@ -54,20 +54,16 @@
 </template>
 
 <script>
+    import {mapActions} from 'vuex'
+
     export default {
         name: "selectCourses",
         data() {
-            const item = {
-                date: '2016-05-02',
-                name: '王小虎',
-                address: '上海市普陀区金沙江路 1518 弄'
-            };
             return {
-                tableData: Array(20).fill(item)
             }
         },
         mounted(){
-            this.$store.dispatch('userInfo');
+            console.log(this.$store.state.userInfo)
         },
         methods: {
             switchTo(path) {

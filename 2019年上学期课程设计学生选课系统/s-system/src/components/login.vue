@@ -36,7 +36,7 @@
 
             <div class="loginSubmit">
                 <div class="Submit" @click.prevent="login()">登陆</div>
-                <div class="Close">返回</div>
+                <div class="Close" @click.prevent="Close()">返回</div>
             </div>
         </div>
         <span class="loginClose" @click.prevent="Close()"></span>
@@ -62,7 +62,11 @@
                 pwd: "",//密码
             }
         },
-        computed: {
+        mounted(){
+            if(this.$store.state.userInfo.id){
+                let login = document.getElementById('login');
+                login.style.display = 'none';
+            }
         },
         methods: {
             ...mapActions(['syncUserInfo']),
