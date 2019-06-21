@@ -1,11 +1,13 @@
 <template>
     <div class="withdrawal">
-        <el-table :data="tableData">
-            <el-table-column prop="studentId" label="学号">
+        <el-table :data="$store.state.getSelectionResult">
+            <el-table-column prop="teacher" label="授课老师">
             </el-table-column>
-            <el-table-column prop="name" label="姓名" width="120">
+            <el-table-column prop="name" label="课程" width="140">
             </el-table-column>
-            <el-table-column prop="course" label="课程" width="140">
+            <el-table-column prop="chosen" label="剩余人数">
+            </el-table-column>
+            <el-table-column prop="all_number" label="总人数">
             </el-table-column>
             <el-table-column
                 fixed="right"
@@ -42,6 +44,9 @@
                 rows.splice(index, 1);
             }
         },
+        mounted(){
+            this.$store.dispatch('reqGetSelectionResult');
+        }
     }
 </script>
 

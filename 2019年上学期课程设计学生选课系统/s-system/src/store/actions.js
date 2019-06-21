@@ -1,6 +1,7 @@
 import {
     getSelection,
-    getSelectionResult
+    getSelectionResult,
+    getUserInfo
 } from "../api/index"
 
 import state from './state'
@@ -19,6 +20,15 @@ export default {
     syncUserInfo({commit}, userInfo){
         commit(USER_INFO, {userInfo});
     },
+
+    // 异步获取用户信息
+    async getUserInfo({commit}){
+        const result = await getUserInfo();
+        if(result.success_code === 200){
+            commit(USER_INFO, {userInfo: result.message});
+        }
+    },
+
 
     //获取学生选课数据
     async reqGetSelection({commit}) {

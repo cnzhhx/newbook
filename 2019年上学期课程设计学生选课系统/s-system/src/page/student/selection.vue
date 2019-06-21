@@ -27,6 +27,8 @@
 </template>
 
 <script>
+    import {selectSourse} from "../../api/index";
+
     export default {
         name: "selection",
         data() {
@@ -38,14 +40,14 @@
             this.$store.dispatch('reqGetSelection');
         },
         methods: {
-            handleClick(row,e) {
+            async handleClick(row,e) {
+                let result;
                 if(e.target.innerText === "已选"){
                     window.confirm("已经选课，无需重复选择")
                 }else{
-                    if(row.surplus>0){
-                        row.surplus = row.surplus-1
-                    }
                     e.target.innerText = "已选";
+                    result = await selectSourse(this.$store.state.userInfo.id, row.name);
+
                 }
             }
         }

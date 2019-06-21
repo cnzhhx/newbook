@@ -23,7 +23,7 @@
         },
         mounted(){
             this.$store.dispatch('reqGetSelectionResult');
-        },
+        }
     }
 </script>
 

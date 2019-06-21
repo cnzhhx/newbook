@@ -37,7 +37,7 @@
                     <el-dropdown>
                         <i class="el-icon-setting" style="margin-right: 15px"></i>
                         <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item  @click.native="login()">登录</el-dropdown-item>
+                            <el-dropdown-item v-if="$store.state.userInfo.id"  @click.native="login()">登录</el-dropdown-item>
                             <el-dropdown-item>退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>

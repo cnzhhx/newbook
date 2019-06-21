@@ -62,7 +62,7 @@
                 pwd: "",//密码
             }
         },
-        mounted(){
+        beforeMount(){
             if(this.$store.state.userInfo.id){
                 let login = document.getElementById('login');
                 login.style.display = 'none';

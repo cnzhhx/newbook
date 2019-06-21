@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
+
+
 /**
  * Module dependencies.
  */
 
 let app = require('../app');
-let debug = require('debug')('music:server');
+let debug = require('debug')('system-web:server');
 let http = require('http');
 
 /**
@@ -14,6 +16,7 @@ let http = require('http');
 
 let port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
+
 
 /**
  * Create HTTP server.

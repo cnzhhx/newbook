@@ -12,7 +12,11 @@ export default {
     components: {Login},
     beforeCreate(){
         this.$router.replace("/selectCourses/first");
-    }
+    },
+    created(){
+        this.$store.dispatch('getUserInfo');
+        console.log(this.$store.state.userInfo)
+    },
 }
 </script>
 
