@@ -121,17 +121,19 @@ router.post('/api/select_sourse', (req, res) => {
 
     const number = req.body.number;
     const name = req.body.name;
-    let sum = number + ","+ name;
-    let sqlStr = "INSERT INTO garde values ( '" + sum + "')";
-    console.log(sqlStr);
-    conn.query(sqlStr, (error, results, fields) => {});
-
+    let sqlStr = "INSERT INTO garde (number,name) values ( " + number +"," + '"' + name + '"' + ");";
     let sqlStr2 = "update courses set chosen = chosen + 1 where name = '"+ name +"'";
-    conn.query(sqlStr2, (error, results, fields) => {});
+    conn.query(sqlStr, (error, results, fields) => {
+        if(error){
+            console.log(error);
+        }else{
+            conn.query(sqlStr2, (error, results, fields) => {});
+            res.json({
+                success_code: 200
+            })
+        }
+    });
 
-    res.json({
-        success_code: 200
-    })
 });
 
 /**

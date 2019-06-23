@@ -5,7 +5,7 @@
             </el-table-column>
             <el-table-column prop="name" label="课程" width="140">
             </el-table-column>
-            <el-table-column prop="chosen" label="剩余人数">
+            <el-table-column prop="chosen" label="已选人数">
             </el-table-column>
             <el-table-column prop="all_number" label="总人数">
             </el-table-column>
@@ -46,7 +46,7 @@
                     window.confirm("已经选课，无需重复选择")
                 }else{
                     e.target.innerText = "已选";
-                    result = await selectSourse(this.$store.state.userInfo.id, row.name);
+                    result = await selectSourse(this.$store.state.userInfo.number, row.name);
 
                 }
             }
