@@ -15,7 +15,7 @@
                 width="120">
                 <template slot-scope="scope">
                     <el-button
-                        @click.native.prevent="deleteRow(scope.$index, tableData)"
+                        @click.native.prevent="deleteRow(scope.$index,scope.row, $store.state.getSelectionResult)"
                         type="text"
                         size="small">
                         移除
@@ -27,20 +27,17 @@
 </template>
 
 <script>
+    import {goWithdrawal} from "../../api/index";
     export default {
         name: "withdrawal",
         data() {
-            const item = {
-                course: '数学',
-                name: '王小虎',
-                studentId: '201703140204',
-            };
             return {
-                tableData: Array(20).fill(item)
             }
         },
         methods: {
-            deleteRow(index, rows) {
+            async deleteRow(index,row, rows) {
+                let result;
+                result = await goWithdrawal(this.$store.state.userInfo.number, row.name);
                 rows.splice(index, 1);
             }
         },

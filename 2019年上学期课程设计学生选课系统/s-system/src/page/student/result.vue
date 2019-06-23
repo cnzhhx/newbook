@@ -16,11 +16,6 @@
 <script>
     export default {
         name: "result",
-        data() {
-            return {
-
-            }
-        },
         mounted(){
             this.$store.dispatch('reqGetSelectionResult');
         }

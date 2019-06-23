@@ -116,6 +116,22 @@ router.get('/api/user_info', (req, res) => {
     });
 });
 
+
+//老师的课程表
+router.get('/api/get_select_teacher', (req, res)=>{
+    let name = req.query.name;
+
+    let sqlStr = "select garde.number,courses.name,users.name as name2 from courses,garde,users where courses.teacher = "+ '"' + name + '"'+ " AND courses.name = garde.name AND garde.number = users.number;";
+    conn.query(sqlStr, (error, results, fields) => {
+        results = JSON.parse(JSON.stringify(results));
+        res.json({
+            success_code: 200,
+            message: results
+        });
+    });
+});
+
+
 //学生选择课程
 router.post('/api/select_sourse', (req, res) => {
 
@@ -136,6 +152,26 @@ router.post('/api/select_sourse', (req, res) => {
 
 });
 
+
+//学生退选课程
+router.post('/api/go_withdrawal', (req, res) => {
+
+    const number = req.body.number;
+    const name = req.body.name;
+    let sqlStr = "DELETE FROM garde where number = " + number + " AND name = "+ '"' + name + '"';
+    let sqlStr2 = "update courses set chosen = chosen - 1 where name = '"+ name +"'";
+    conn.query(sqlStr, (error, results, fields) => {
+        if(error){
+            console.log(error);
+        }else{
+            conn.query(sqlStr2, (error, results, fields) => {});
+            res.json({
+                success_code: 200
+            })
+        }
+    });
+
+});
 /**
  * 退出登录
  */

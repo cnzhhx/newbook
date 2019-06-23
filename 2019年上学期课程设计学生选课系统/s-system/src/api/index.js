@@ -19,5 +19,9 @@ export const selectSourse = (number,name)=>ajax(BASE_URL + '/api/select_sourse',
 //学生退选课程
 export const goWithdrawal = (number,name)=>ajax(BASE_URL + '/api/go_withdrawal', {number,name},'POST');
 
+
+//请求老师课程表
+export const getSelectTeacher = (name)=>ajax(BASE_URL + '/api/get_select_teacher', {name});
+
 //获取登录的用户信息
 export const getUserInfo = () => ajax(BASE_URL + '/api/user_info');
