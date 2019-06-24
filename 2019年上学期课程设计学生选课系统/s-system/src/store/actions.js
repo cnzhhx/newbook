@@ -37,6 +37,13 @@ export default {
         commit(GRTSELECTION, {getSelection: result.message})
     },
 
+
+    //获取学生选课数据结果
+    async reqGetSelectionResult({commit}) {
+        const result = await getSelectionResult(state.userInfo.number);
+        commit(GRTSELECTIONRESULT, {getSelectionResult: result.message})
+    },
+
     //请求老师课程表
     async reqgetSelectTeacher({commit}) {
         const result = await getSelectTeacher(state.userInfo.name);

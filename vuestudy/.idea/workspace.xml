@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144ef1ed-5106-4ef6-ae28-247ff0293cc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/result.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/result.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/withdrawal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/withdrawal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/teacher/ClassAdjustment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/teacher/ClassAdjustment.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/teacher/watch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/teacher/watch.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutation-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/system-web/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/system-web/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -178,7 +168,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-98" />
     <option name="y" value="418" />
     <option name="width" value="1893" />
@@ -384,7 +374,7 @@
     <option name="totallyTimeSpent" value="53870000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21202114" />
