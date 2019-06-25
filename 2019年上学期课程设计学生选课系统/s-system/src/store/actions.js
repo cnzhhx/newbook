@@ -2,7 +2,8 @@ import {
     getSelection,
     getSelectionResult,
     getUserInfo,
-    getSelectTeacher
+    getSelectTeacher,
+    getAllInfo
 } from "../api/index"
 
 import state from './state'
@@ -11,7 +12,8 @@ import {
     USER_INFO,
     GRTSELECTION,
     GRTSELECTIONRESULT,
-    GETSELECTTEACHER
+    GETSELECTTEACHER,
+    GETALLINFO
 } from "./mutation-types"
 
 
@@ -48,5 +50,11 @@ export default {
     async reqgetSelectTeacher({commit}) {
         const result = await getSelectTeacher(state.userInfo.name);
         commit(GETSELECTTEACHER, {getSelectTeacher: result.message})
+    },
+
+    //请求管理员所有数据
+    async reqgetAllInfo({commit}) {
+        const result = await getAllInfo();
+        commit(GETALLINFO, {getAllInfo: result.message})
     }
 }

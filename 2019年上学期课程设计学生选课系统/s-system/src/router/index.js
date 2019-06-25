@@ -8,24 +8,30 @@ import withdrawal from '../page/student/withdrawal.vue'
 import first from '../page/first/first.vue'
 import watch from '../page/teacher/watch.vue'
 import ClassAdjustment from '../page/teacher/ClassAdjustment.vue'
+import courses from '../page/Administrator/courses.vue'
+import garde from '../page/Administrator/garde.vue'
+import users from '../page/Administrator/users.vue'
 
 
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/selectCourses',
-      name: 'selectCourses',
-      component: selectCourses,
-      children: [
-          {path: '/selectCourses/result', component: result},
-          {path: '/selectCourses/withdrawal', component: withdrawal},
-          {path: '/selectCourses/first', component: first},
-          {path: '/selectCourses/selection', component: selection},
-          {path: '/selectCourses/watch', component: watch},
-          {path: '/selectCourses/ClassAdjustment', component: ClassAdjustment}
-      ]
-    }
-  ]
+    routes: [
+        {
+            path: '/selectCourses',
+            name: 'selectCourses',
+            component: selectCourses,
+            children: [
+                {path: '/selectCourses/result', component: result},
+                {path: '/selectCourses/withdrawal', component: withdrawal},
+                {path: '/selectCourses/first', component: first},
+                {path: '/selectCourses/selection', component: selection},
+                {path: '/selectCourses/watch', component: watch},
+                {path: '/selectCourses/ClassAdjustment', component: ClassAdjustment},
+                {path: '/selectCourses/courses', component: courses},
+                {path: '/selectCourses/garde', component: garde},
+                {path: '/selectCourses/users', component: users}
+            ]
+        }
+    ]
 })

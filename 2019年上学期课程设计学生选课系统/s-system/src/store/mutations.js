@@ -2,10 +2,10 @@ import {
     USER_INFO,
     GRTSELECTION,
     GRTSELECTIONRESULT,
-    GETSELECTTEACHER
+    GETSELECTTEACHER,
+    GETALLINFO
 } from "./mutation-types"
-import {getSelectionResult} from "../api";
-
+import {getAllInfo} from "../api";
 
 
 
@@ -30,5 +30,10 @@ export default {
     //请求老师课程表
     [GETSELECTTEACHER](state, {getSelectTeacher}) {
         state.getSelectTeacher = getSelectTeacher;
+    },
+
+    //请求管理员所有数据
+    [GETALLINFO](state, {getAllInfo}) {
+        state.getAllInfo = getAllInfo;
     }
 }

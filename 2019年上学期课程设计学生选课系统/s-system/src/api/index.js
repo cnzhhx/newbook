@@ -25,3 +25,6 @@ export const getSelectTeacher = (name)=>ajax(BASE_URL + '/api/get_select_teacher
 
 //获取登录的用户信息
 export const getUserInfo = () => ajax(BASE_URL + '/api/user_info');
+
+//获取管理员需求信息
+export const getAllInfo = () => ajax(BASE_URL + '/api/getAllInfo');

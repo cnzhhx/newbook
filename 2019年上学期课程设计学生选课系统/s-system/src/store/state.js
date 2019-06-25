@@ -9,5 +9,8 @@ export default {
     getSelectionResult: [],
 
     //请求老师课程表
-    getSelectTeacher:[]
+    getSelectTeacher:[],
+
+    //请求管理员所有数据
+    getAllInfo:[]
 }

@@ -172,6 +172,42 @@ router.post('/api/go_withdrawal', (req, res) => {
     });
 
 });
+//管理员所显示的所有信息
+router.get('/api/getAllInfo', (req, res)=>{
+    let allmessage = {
+        garde : 0,
+        courses : 1,
+        users : 2
+    };
+    let sqlStr = "select * from garde";
+    let sqlStr1 = "select * from courses";
+    let sqlStr2 = "select * from users";
+    conn.query(sqlStr, (error, results, fields) => {
+        results = JSON.parse(JSON.stringify(results));
+        if(error){
+            console.log(error);
+        }else{
+            allmessage.garde = results;
+            conn.query(sqlStr1, (error, results, fields) => {
+                if(error){
+                    console.log(error);
+                }else{
+                    allmessage.courses = results;
+                    conn.query(sqlStr2, (error, results, fields) => {
+                        allmessage.users = results;
+                        res.json({
+                            success_code: 200,
+                            message: allmessage
+                        })
+                    });
+                }
+            });
+
+        }
+    });
+});
+
+
 /**
  * 退出登录
  */

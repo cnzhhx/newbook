@@ -16,7 +16,7 @@ export default function ajax(url = '', params = {}, type = 'GET') {
                 paramsStr = paramsStr.substr(0, paramsStr.lastIndexOf('&'))
             }
             // 2.3 完整路径
-            url += '?' + paramsStr + '&time=' + new Date();
+            url += '?' + paramsStr;
             // 2.4 发送get请求
             promise = axios.get(url)
         }else if('POST' === type){

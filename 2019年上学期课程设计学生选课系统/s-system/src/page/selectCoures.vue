@@ -7,7 +7,7 @@
                         <i class="el-icon-s-home"></i>
                         <span slot="title" >首页</span>
                     </el-menu-item>
-                    <el-submenu index="2">
+                    <el-submenu index="2" v-if="$store.state.userInfo.type === 0">
                         <template slot="title"><i class="el-icon-user"></i>学生</template>
                         <el-menu-item-group>
                             <el-menu-item index="2-1" @click="switchTo('/selectCourses/selection')">选课</el-menu-item>
@@ -15,18 +15,19 @@
                             <el-menu-item index="2-3" @click="switchTo('/selectCourses/withdrawal')">退选</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
-                    <el-submenu index="3">
+                    <el-submenu index="3" v-if="$store.state.userInfo.type === 1">
                         <template slot="title"><i class="el-icon-s-check"></i>老师</template>
                         <el-menu-item-group>
                             <el-menu-item index="3-1" @click="switchTo('/selectCourses/watch')">教学安排表</el-menu-item>
                             <el-menu-item index="3-2" @click="switchTo('/selectCourses/ClassAdjustment')">停/调课信息</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
-                    <el-submenu index="4">
+                    <el-submenu index="4" v-if="$store.state.userInfo.type === 2">
                         <template slot="title"><i class="el-icon-s-custom"></i>管理员</template>
                         <el-menu-item-group>
-                            <el-menu-item index="4-1">教学安排表</el-menu-item>
-                            <el-menu-item index="4-2">全局管理</el-menu-item>
+                            <el-menu-item index="4-1" @click="switchTo('/selectCourses/courses')">所有课程</el-menu-item>
+                            <el-menu-item index="4-2" @click="switchTo('/selectCourses/garde')">所有选课学生</el-menu-item>
+                            <el-menu-item index="4-2" @click="switchTo('/selectCourses/users')">所有用户</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
                 </el-menu>
