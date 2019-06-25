@@ -47,7 +47,6 @@
                 }else{
                     e.target.innerText = "已选";
                     result = await selectSourse(this.$store.state.userInfo.number, row.name);
-
                 }
             }
         }

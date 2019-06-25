@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144ef1ed-5106-4ef6-ae28-247ff0293cc1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/Administrator/addUsers.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/api/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/api/ajax.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/Administrator/users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/Administrator/users.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/selectCoures.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/selectCoures.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/selection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/selection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/withdrawal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/page/student/withdrawal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutation-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/s-system/src/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/system-web/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/system-web/db/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/system-web/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2019年上学期课程设计学生选课系统/system-web/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -157,9 +155,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="311" />
-    <option name="y" value="212" />
-    <option name="width" value="1217" />
+    <option name="x" value="948" />
+    <option name="y" value="90" />
+    <option name="width" value="952" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

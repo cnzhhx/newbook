@@ -27,7 +27,7 @@
                         <el-menu-item-group>
                             <el-menu-item index="4-1" @click="switchTo('/selectCourses/courses')">所有课程</el-menu-item>
                             <el-menu-item index="4-2" @click="switchTo('/selectCourses/garde')">所有选课学生</el-menu-item>
-                            <el-menu-item index="4-2" @click="switchTo('/selectCourses/users')">所有用户</el-menu-item>
+                            <el-menu-item index="4-3" @click="switchTo('/selectCourses/users')">所有用户</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
                 </el-menu>

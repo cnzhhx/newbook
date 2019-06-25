@@ -28,3 +28,6 @@ export const getUserInfo = () => ajax(BASE_URL + '/api/user_info');
 
 //获取管理员需求信息
 export const getAllInfo = () => ajax(BASE_URL + '/api/getAllInfo');
+
+//学生退选课程
+export const addusers = (type,number,courses,password,name)=>ajax(BASE_URL + '/api/add_users', {type,number,courses,password,name},'POST');

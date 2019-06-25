@@ -11,6 +11,7 @@ import ClassAdjustment from '../page/teacher/ClassAdjustment.vue'
 import courses from '../page/Administrator/courses.vue'
 import garde from '../page/Administrator/garde.vue'
 import users from '../page/Administrator/users.vue'
+import addUsers from '../page/Administrator/addUsers.vue'
 
 
 Vue.use(Router);
@@ -30,7 +31,8 @@ export default new Router({
                 {path: '/selectCourses/ClassAdjustment', component: ClassAdjustment},
                 {path: '/selectCourses/courses', component: courses},
                 {path: '/selectCourses/garde', component: garde},
-                {path: '/selectCourses/users', component: users}
+                {path: '/selectCourses/users', component: users},
+                {path: '/selectCourses/users/addUsers', component: addUsers}
             ]
         }
     ]

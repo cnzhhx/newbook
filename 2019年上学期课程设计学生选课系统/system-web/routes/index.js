@@ -183,7 +183,6 @@ router.get('/api/getAllInfo', (req, res)=>{
     let sqlStr1 = "select * from courses";
     let sqlStr2 = "select * from users";
     conn.query(sqlStr, (error, results, fields) => {
-        results = JSON.parse(JSON.stringify(results));
         if(error){
             console.log(error);
         }else{
@@ -207,6 +206,27 @@ router.get('/api/getAllInfo', (req, res)=>{
     });
 });
 
+//新增用户
+router.post('/api/add_users', (req, res) => {
+
+    const type = req.body.type;
+    const number = req.body.number;
+    const courses = req.body.courses;
+    const password = req.body.password;
+    const name = req.body.name;
+    let sqlStr = "INSERT INTO users (type,number,courses,password,name) values ( "+ type+"," + number +","+'"'+courses+'"'+","+password+"," + '"' + name + '"' + ");";
+
+    conn.query(sqlStr, (error, results, fields) => {
+        if(error){
+            console.log(error);
+        }else{
+            res.json({
+                success_code: 200
+            })
+        }
+    });
+
+});
 
 /**
  * 退出登录

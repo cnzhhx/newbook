@@ -12,15 +12,28 @@
             <el-table-column prop="name" label="用户姓名">
             </el-table-column>
         </el-table>
+        <el-button type="text" @click="open">增加新用户</el-button>
     </div>
+
 </template>
 
 <script>
     export default {
         name: "users",
+        data(){
+          return{
+
+          }
+        },
+
         mounted(){
             this.$store.dispatch('reqgetAllInfo');
         },
+        methods: {
+            open() {
+                this.$router.push("/selectCourses/users/addUsers");
+            }
+        }
     }
 </script>
 
