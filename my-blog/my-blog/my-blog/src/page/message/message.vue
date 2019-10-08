@@ -53,7 +53,12 @@
                 let ul = document.getElementById("ul");
                 let myDate = new Date();
                 let Month = myDate.getMonth()+1;
-                let date = myDate.getFullYear()+"-"+ "0"+ Month+"-"+myDate.getDate();
+                let date = "";
+                if(Month > 9){
+                    date = myDate.getFullYear()+"-"+ Month+"-"+myDate.getDate();
+                }else{
+                    date = myDate.getFullYear()+"-"+ "0"+ Month+"-"+myDate.getDate();
+                }
                 li.innerHTML = content + "<span></span>";
                 ul.insertBefore(li, ul.children[0]);
                 let date2 = li.childNodes[1];
