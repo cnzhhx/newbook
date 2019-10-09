@@ -159,7 +159,7 @@
         cursor: pointer;
     }
     .ulliuyan{
-        display: inline-block;
+        /* display: inline-block; */
         float: right;
     }
     .liliuyan{

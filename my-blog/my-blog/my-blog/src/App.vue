@@ -36,6 +36,9 @@ export default {
         padding: 0;
         list-style: none;
     }
+    #app{
+        min-width: 1000px;
+    }
     .biubiu{
         position: fixed;
         top: 70%;
@@ -43,6 +46,7 @@ export default {
     }
     .TabBar{
         position: fixed;
+        min-width: 1000px;
         top: 0;
         z-index: 10000;
     }
