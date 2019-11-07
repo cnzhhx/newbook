@@ -29,3 +29,10 @@ rs.on("data", (data)=>{
 
 //简便方法
 // rs.pipe(ws);
+
+let http = require("http");
+
+
+let server = http.createServer((req, res)=>{
+    res.writeHead()
+})

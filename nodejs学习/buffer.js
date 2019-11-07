@@ -27,5 +27,6 @@ buffer2[20] = 11;//溢出不做处理
 console.log(buffer2);
 buffer2.forEach((item, index) => {
     console.log(index+ ':' + item);
+    console.log(index+ ':' + item);
 });
 
