@@ -40,7 +40,7 @@ router.get('/api/get_selection_result', (req, res)=>{
     });
 });
 
-//手机密码登录
+//账号密码登录
 router.post('/api/login', (req, res) => {
 
     const user_name = req.body.username;
@@ -172,6 +172,7 @@ router.post('/api/go_withdrawal', (req, res) => {
     });
 
 });
+
 //管理员所显示的所有信息
 router.get('/api/getAllInfo', (req, res)=>{
     let allmessage = {
