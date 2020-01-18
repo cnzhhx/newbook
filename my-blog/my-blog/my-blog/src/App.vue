@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 import TabBar from "./components/TabBar/TabBar";
 import BiuBiu from "./components/BiuBiu/BiuBiu";
 import Bottom from "./components/Bottom/Bottom";
@@ -26,6 +27,22 @@ export default {
         } else {
             this.$router.replace("/first");
         }
+    },
+    created () {
+        setTimeout(() => {
+            //萌萌的看板娘
+            window.L2Dwidget.init({
+                pluginRootPath: 'static/live2dw/',
+                pluginJsPath: 'lib/',
+                pluginModelPath: 'live2d-widget-model-koharu/assets/',
+                tagMode: false,
+                debug: false,
+                model: { jsonPath: '/static/live2dw/live2d-widget-model-koharu/assets/koharu.model.json' },
+                display: { position: 'left', width: 150, height: 300 },
+                mobile: { show: true },
+                log: false
+            })
+        }, 1000)
     }
 }
 </script>
