@@ -8,6 +8,8 @@ let buffer = new Buffer(10);
 console.log(buffer);
 */
 
+// lalalalal
+
 // Buffer.from()将一个字符串转成buffer
 // 一个字符在buffer中占据1个bit   中文字符占3bit
 let str = "xiaozh";
